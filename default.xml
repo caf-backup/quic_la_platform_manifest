@@ -227,11 +227,11 @@
   <project groups="pdk,libxml2" name="platform/external/libxml2" path="external/libxml2" />
   <project groups="pdk" name="platform/external/libtextclassifier" path="external/libtextclassifier" />
   <project groups="pdk,libyuv" name="platform/external/libyuv" path="external/libyuv" />
-  <project groups="vts,pdk" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="refs/tags/android-vts-8.0_r5" />
+  <project groups="vts,pdk" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/external/littlemock" path="external/littlemock" />
   <project groups="pdk" name="platform/external/lld" path="external/lld" />
   <project groups="pdk" name="platform/external/llvm" path="external/llvm" />
-  <project groups="vts,pdk" name="platform/external/ltp" path="external/ltp" revision="refs/tags/android-vts-8.0_r5" />
+  <project groups="vts,pdk" name="platform/external/ltp" path="external/ltp" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/external/lz4" path="external/lz4" />
   <project groups="pdk" name="platform/external/lzma" path="external/lzma" />
   <project groups="pdk" name="platform/external/markdown" path="external/markdown" />
@@ -337,11 +337,11 @@
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" />
   <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" />
-  <project groups="pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" />
+  <project groups="pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ml" path="frameworks/ml" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" />
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" />
+  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" />
@@ -383,7 +383,7 @@
   <project groups="intel,pdk" name="platform/hardware/intel/img/psb_headers" path="hardware/intel/img/psb_headers" />
   <project groups="intel,pdk" name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video" />
   <project groups="intel_sensors,pdk" name="platform/hardware/intel/sensors" path="hardware/intel/sensors" />
-  <project groups="pdk" name="platform/hardware/interfaces" path="hardware/interfaces" />
+  <project groups="pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="invensense,pdk" name="platform/hardware/invensense" path="hardware/invensense" />
   <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware" />
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
@@ -550,16 +550,16 @@
   <project groups="pdk" name="platform/system/core" path="system/core" />
   <project groups="pdk" name="platform/system/extras" path="system/extras" />
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" />
-  <project groups="pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" />
+  <project groups="pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" />
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" />
-  <project groups="pdk" name="platform/system/libfmq" path="system/libfmq" />
+  <project groups="pdk" name="platform/system/libfmq" path="system/libfmq" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/system/libhidl" path="system/libhidl" />
-  <project groups="pdk" name="platform/system/libhwbinder" path="system/libhwbinder" />
+  <project groups="pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/system/libufdt" path="system/libufdt" />
   <project groups="pdk" name="platform/system/libvintf" path="system/libvintf" />
   <project groups="pdk" name="platform/system/media" path="system/media" />
-  <project groups="pdk" name="platform/system/netd" path="system/netd" />
+  <project groups="pdk" name="platform/system/netd" path="system/netd" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="platform/system/nfc" path="system/nfc" />
   <project name="platform/system/nvram" path="system/nvram" />
   <project groups="pdk" name="platform/system/security" path="system/security" />
@@ -569,14 +569,14 @@
   <project name="platform/system/tpm" path="system/tpm" />
   <project groups="pdk" name="platform/system/update_engine" path="system/update_engine" />
   <project groups="pdk" name="platform/system/vold" path="system/vold" />
-  <project groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="refs/tags/android-vts-8.0_r5" />
-  <project groups="vts,pdk" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="refs/tags/android-vts-8.0_r5" />
+  <project groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="refs/tags/android-vts-8.0_r6" />
+  <project groups="vts,pdk" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="refs/tags/android-vts-8.0_r6" />
   <project groups="pdk" name="toolchain/binutils" path="toolchain/binutils" />
   <project groups="notdefault,tools" name="platform/tools/adt/idea" path="tools/adt/idea" />
   <project groups="pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" />
