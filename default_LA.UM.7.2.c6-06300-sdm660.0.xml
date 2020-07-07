@@ -653,11 +653,8 @@
   <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
   <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
   <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
-  <project groups="p-fs-release,pdk,tools,vendor" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
   <project dest-branch="refs/heads/atel-prop.lnx.3.0.c4" name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="1f5941ba7b46e7ef786bceb2fc8657bb8e1377e0" upstream="refs/heads/atel-prop.lnx.3.0.c4"/>
   <project dest-branch="refs/heads/atel-prop.lnx.3.0.c4" name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="8f97fccaa7cf4b4ab0c1ffd1f4e2fd4377ebdb65" upstream="refs/heads/atel-prop.lnx.3.0.c4"/>
-  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_easel" path="vendor/google_easel" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
-  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_paintbox" path="vendor/google_paintbox" revision="refs/heads/ks-aosp.lnx.1.0.c2"/>
   <project dest-branch="refs/heads/nfc.lnx.4.0.c1" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="625b14fd61e9a755205273f3b590d168c12b3bbb" upstream="refs/heads/nfc.lnx.4.0.c1"/>
   <project dest-branch="refs/heads/nfc.lnx.4.0.c1" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="976597d31f675722d47f4d676110ad61b75edbe8" upstream="refs/heads/nfc.lnx.4.0.c1"/>
   <project dest-branch="refs/heads/nfc.lnx.4.0.c1" name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="ad613e9be7005b3dc1dbf3a276785e2b8c721374" upstream="refs/heads/nfc.lnx.4.0.c1"/>
