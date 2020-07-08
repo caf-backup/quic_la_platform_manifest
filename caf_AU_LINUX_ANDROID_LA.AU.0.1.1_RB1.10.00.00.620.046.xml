@@ -707,7 +707,6 @@
   <project groups="aosp" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="96725150810a03e41414cedd75d3be940f0b722a" upstream="LA.AU.0.1.1_rb1.7"/>
   <project groups="aosp" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="3b482c60f428d8c80a17f32e3cab7a7b65465605" upstream="LA.AU.0.1.1_rb1.7"/>
   <project groups="aosp" name="platform/tools/trebuchet" path="tools/trebuchet" revision="5c74aa19df59af3292dadc6db03ffbf5235b3a9d" upstream="LA.AU.0.1.1_rb1.7"/>
-  <project groups="aosp" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="6f0f3627f490e9538622faf7afd59fcbdf5a3b93" upstream="LA.AU.0.1.1_rb1.7"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="dea8021cfa48eea899fd07152fd57b7f53bbd786" upstream="LA.AU.0.1.1_rb1.7"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="e86eb2377db0be1a81ae7500310ff322ab4ea2ef" upstream="LA.AU.0.1.1_rb1.7"/>
   <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="5a0a5e138790a9eea06864e63c6e04b8433bc60b" upstream="LA.AU.0.1.1_rb1.7"/>

@@ -707,7 +707,6 @@
   <project groups="aosp" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="bfdfecbd2a89c9345fda6223411181c39484a8fb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
   <project groups="aosp" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="0d1a0a46cea5b86be8e58c2add40a992abff0c74" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
   <project groups="aosp" name="platform/tools/trebuchet" path="tools/trebuchet" revision="bf6734f0712deba2b08f8577a72e756e79723711" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
-  <project groups="aosp" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="6f0f3627f490e9538622faf7afd59fcbdf5a3b93" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="cffbd1e38414985136961f07547029edd79b2e1c" upstream="refs/heads/atel-prop.lnx.4.0.r15-rel"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="19e53ef3d5affa9ee3827ad5c943073c62d69b4e" upstream="refs/heads/atel-prop.lnx.4.0.r15-rel"/>
   <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="383ed6ef360810342bad33bd6d8d4e5ac7413774" upstream="refs/heads/audio-drivers.lnx.3.1.r4-rel"/>

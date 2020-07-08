@@ -650,7 +650,6 @@
   <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="25e7640bd6446f701c33be0fe294249f5994502d" upstream="LAW.BR.5.0"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="3bd9fec77b87fc0a3978d158393e8143daff862f" upstream="LAW.BR.5.0"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="7f0eb92286a2eac972839dfa4a84ef75503962f4" upstream="LAW.BR.5.0"/>
-  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_easel" path="vendor/google_easel" revision="923fb98ae5047f2ad842bc19fb1b60111516970f" upstream="LAW.BR.5.0"/>
   <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="5831586393ff33bccb53dab0e7065a3a5447212c" upstream="LAW.BR.5.0"/>
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="a281db72891566d40bb56e20a2dc1a8e3bc2d70f" upstream="LAW.BR.5.0"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="530b24e04f37d766380b00a5b956b2147a0d7eca" upstream="LAW.BR.5.0"/>
