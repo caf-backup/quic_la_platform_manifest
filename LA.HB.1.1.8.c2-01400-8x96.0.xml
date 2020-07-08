@@ -639,7 +639,6 @@
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="f14adb8123c9d7aa8b88960c2042f5fc271b65bf" upstream="LA.HB.1.1.8.c2"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="69cc92f764ba980324372862a3b08b1261f447ab" upstream="LA.HB.1.1.8.c2"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="64aa6bd9bc430409f354f0e906cbe1620df9e913" upstream="LA.HB.1.1.8.c2"/>
-  <project name="platform/vendor/google_vts" path="vendor/google_vts" revision="0e3c2b945e2ef86a936b0a472dad5c979e89ebf9" upstream="LA.HB.1.1.8.c2"/>
   <project name="platform/vendor/qcom-opensource/Ethernet" path="vendor/qcom/opensource/ethernet/neutrino/driver" revision="360c53bc4c97db3357e00e1b0672edf50b3484fc" upstream="LA.HB.1.1.8.c2"/>
   <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="cd981d805ce1adbcbf55bc1abeea7a243b6ad367" upstream="LA.HB.1.1.8.c2"/>
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="c0f433cec15fcedb71ed648f554fa069606884d6" upstream="LA.HB.1.1.8.c2"/>

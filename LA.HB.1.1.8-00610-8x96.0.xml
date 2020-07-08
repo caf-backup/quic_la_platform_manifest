@@ -627,12 +627,8 @@
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="241b580aec1347a287cf939fe63aa4f32af2ee8e" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="0f23659ea94a35ac7764909c39abb2aa448156f8" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="d5cb37813e7e126241766f004d93765b6473af2a" upstream="LA.HB.1.1.8_rb1.1"/>
-  <project name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="1f82834f0cf49d36db96bfd26b8daa055c845d5e" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="25edcd63013606fa3a21f3a566ecee521bf44ee9" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="6066f9eaf25a5e741c74a995c8c152a3a86ee2ae" upstream="LA.HB.1.1.8_rb1.1"/>
-  <project name="platform/vendor/google_tradefederation" path="vendor/google_tradefederation/core" revision="81ddc1f41417171de24bc10924e6270bc7407710" upstream="LA.HB.1.1.8_rb1.1"/>
-  <project name="platform/vendor/google_tradefederation/contrib" path="vendor/google_tradefederation/contrib" revision="eed5818dbf9a68070cb0ba93055184a86b6d5e3b" upstream="LA.HB.1.1.8_rb1.1"/>
-  <project name="platform/vendor/google_vts" path="vendor/google_vts" revision="0e3c2b945e2ef86a936b0a472dad5c979e89ebf9" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/vendor/qcom-opensource/Ethernet" path="vendor/qcom/opensource/ethernet/neutrino/driver" revision="099b54d3ae10c9dc85b31ae2e06cabd838b218df" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="97ef21761625ee20cea70b74d7d00bbeb87d1b58" upstream="LA.HB.1.1.8_rb1.1"/>
   <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="a7841b086ce6bf96a4836e7d87565089c1d5c6ae" upstream="LA.HB.1.1.8_rb1.1"/>

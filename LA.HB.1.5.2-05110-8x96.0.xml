@@ -623,9 +623,7 @@
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="241b580aec1347a287cf939fe63aa4f32af2ee8e" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="0f23659ea94a35ac7764909c39abb2aa448156f8" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="d5cb37813e7e126241766f004d93765b6473af2a" upstream="LA.HB.1.5.2_rb1.18"/>
-  <project name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="1f82834f0cf49d36db96bfd26b8daa055c845d5e" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="f6732010a96e5c535d505501ebb5b2b6274edc50" upstream="LA.HB.1.5.2_rb1.18"/>
-  <project name="platform/vendor/google_vts" path="vendor/google_vts" revision="0e3c2b945e2ef86a936b0a472dad5c979e89ebf9" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/vendor/qcom-opensource/Ethernet" path="vendor/qcom/opensource/ethernet/neutrino/driver" revision="4cfa1a760b6fc43e13c56a2681cf1930583a5486" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="8a2ea10857e315b86af969cf267752bb1ba883a7" upstream="LA.HB.1.5.2_rb1.18"/>
   <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="68a6c95654590b86028b9d736672642dbf660c63" upstream="LA.HB.1.5.2_rb1.18"/>
