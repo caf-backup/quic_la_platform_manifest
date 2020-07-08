@@ -649,7 +649,6 @@
   <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="dc5595545adb0b4b94debe20651bfe280a378882" upstream="refs/heads/ks-aosp.lnx.1.0.r17-rel"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="57f83db3af3b71b935b59d427003fd5665523c3f" upstream="refs/heads/atel-prop.lnx.3.0.r17-rel"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="795a389c0a4d34c46651eac6c9749c17a21b527f" upstream="refs/heads/atel-prop.lnx.3.0.r17-rel"/>
-  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_easel" path="vendor/google_easel" revision="923fb98ae5047f2ad842bc19fb1b60111516970f" upstream="refs/heads/ks-aosp.lnx.1.0.r17-rel"/>
   <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="df8e288ff957dd6e08b124402a8dfbdc6231da47" upstream="refs/heads/nfc.lnx.4.0.r18-rel"/>
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="6e33fb7ab14ffeb290a6d6d14c01a8e04a093e5a" upstream="refs/heads/nfc.lnx.4.0.r18-rel"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="d1776bc5f45999a545fd093502de86621f3c60d6" upstream="refs/heads/nfc.lnx.4.0.r18-rel"/>
