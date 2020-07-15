@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="qcom-devices-auto.lnx.2.0"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="37ddb7ab920815d8efbff48bab0b70d892f92e11" upstream="refs/heads/uefi.lnx.1.9.1.r2-rel"/>
+  <project groups="aosp" name="device/common" revision="414e5d297e27d64d24c533cd93cb2203c2ef4c09" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/arm64" revision="b558c055183ec2548d0c9ebced9b04a68b526af4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/armv7-a-neon" revision="915b6fa7868d2f0cc52c8937593a5f27e0cd59fe" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/car" revision="8d411c5264731424b4f7006fcf2347e49b65ba0f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/common" revision="0dbc1c9bffd29767baacb13b5fb0845a93496ddf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/goldfish" revision="fe813efd6cc9f8d47ff2407a0f9c34ba31d47c3d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/goldfish-opengl" revision="d291bbd969a8cdb7bf9ac6f7d46af5b3d2b6c309" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/mini-emulator-arm64" revision="27f545068f5203d7eb6c3d6db5a4cef6a6ceaa62" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/mini-emulator-armv7-a-neon" revision="00f5e31ff795b1fabe346196a85148973390520a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/mini-emulator-x86" revision="79e6bbded1b327a93c1837a18a4978ed2cf23c71" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/mini-emulator-x86_64" revision="5dddb5f38ba7007deac19090cd083ddb929acfd4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/qemu" revision="8ec1b3117487b7705a288706e988e011e0aa3893" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/uml" revision="c66df1844e2d26fed2920e1776f5b5975b26e610" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/x86" revision="ba6d65e98fef24902143ca10b92fff8fd7f444e4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/atv" revision="42f73667681583a9c69c1f2e43d7bded752b6155" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/contexthub" revision="c2970c0b6646caddee27e572a08378a68c6d02ef" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/cuttlefish" revision="616d789ea6b5c1ac10ad390388a85cd7aa1b0684" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/cuttlefish_common" revision="c1c9f57640931524eb07813b4686fea27d168035" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/cuttlefish_kernel" revision="5d1729031e722a709b5c1ebe9dd9cfb13b78f038" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/cuttlefish_vmm" revision="3fce0d8ab7c3bcec23cc5eeb4c7d32034f8db4eb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="device/google/vrservices" revision="4baef0007442af74161af343091aa8afbe38e007" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="device/qcom/common" revision="973606104076033e76e7a9bd4f2a113ce42ebfce" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="device/qcom/qssi" revision="760606b2fb529db56793b5bdadefe10ddaa9b0d2" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="device/qcom/sepolicy" revision="dd47d2a649d7948374df18d5ce413febbf91b4f1" upstream="refs/heads/sepolicy.lnx.5.9.r10-rel"/>
+  <project groups="aosp" name="device/sample" revision="299fe60cb028e05c2b8339e7a75656ca19d2d4f6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="kernel/configs" revision="30112286fa61c966be8fcfe1e6c949a61e214131" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="cyborg" name="kernel/msm-4.14" revision="4cf5ad96f626384f4f1c7b1c7cde674563b43de8" upstream="refs/heads/kernel.lnx.4.14.r34-rel"/>
+  <project groups="aosp" name="platform/art" path="art" revision="a2c365fda7962c984fca573bbd5719e3f447fd6d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/bionic" path="bionic" revision="04a0f83d2d5ee11498187bef28efc13334d5e5f9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/bootable/recovery" path="bootable/recovery" revision="5cf228e8fa18075dc6c12ebd0d381c7b030b19ba" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/build" path="build/make" revision="a7d3f4a55d33ece5b8de4c5514449fb685d29702" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="aosp" name="platform/build/blueprint" path="build/blueprint" revision="2235a86e3e40fcaf5e813635bd8d135182698000" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/build/kati" path="build/kati" revision="e30eb34771b23aafba117cc1a1c69f0d579410b6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/build/soong" path="build/soong" revision="0a1bcf74a1d21f6539947bd52df25867199b6e3d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="aosp" name="platform/cts" path="cts" revision="c8ffae4cd50839760e59b114d7585884ad86f52f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/dalvik" path="dalvik" revision="fe2aac565d887079ab0b1a1a4fc41d8c572a4a4c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/developers/build" path="developers/build" revision="579d5d5c9acdc396ba618137d6bbac8edfc0a8db" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/development" path="development" revision="52b43f5c447dca88045bc2d0be13d7b71005d8dd" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ARMComputeLibrary" path="external/ARMComputeLibrary" revision="23a16533b968b01c0fab733dd13dc418bd8434ef" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ImageMagick" path="external/ImageMagick" revision="150eef1b33f93c607abb6ea8b152a953c220cdc0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="9db1cf399fe52160241f9ac91de8ac1103fbf42e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="platform/external/Open-AVB" path="external/open-avb" revision="c09e3ef68948eaebbe21570f37bed9ffcdd28f10" upstream="refs/heads/vnw-open-avb.lnx.1.1.r2-rel"/>
+  <project groups="aosp" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="bae49ad92f3e19eb0905c3558fbbc2a6ac5e0115" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/aac" path="external/aac" revision="566b6fd0a4116df5e70b3bf833be88aa39542bdb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/adeb" path="external/adeb" revision="b87800bca109f7b1bcfaf0a46f74e24350552977" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/adhd" path="external/adhd" revision="2d432e6230a24b132faa4ac3e20a0c6194edd567" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/android-clat" path="external/android-clat" revision="7a459c9d6b413adb172c079e384b9289178a76d0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/androidplot" path="external/androidplot" revision="ee00951a1669b95c3a8a534028ba622c45bb17a8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ant-glob" path="external/ant-glob" revision="04caf2c753045f529bf068cc09d286bd66619c92" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/antlr" path="external/antlr" revision="9b59a5da94b5c1fe3e6f07a2c252aa211f0a1aa7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" revision="5c719840ad597f7504e11b7020bfb6203bbdc960" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-commons-compress" path="external/apache-commons-compress" revision="c7ab1069eb39e6325155cb228a51be78f4c8b132" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="7f4db537a07b33c61e96891e2bbd2cb845e76dac" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-harmony" path="external/apache-harmony" revision="058157e4d3566f2b08c989a8e542199aaf3f1bf3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-http" path="external/apache-http" revision="1f8668e30d3c8e617593af776b79186f5b6db724" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/apache-xml" path="external/apache-xml" revision="f86aef26025c07b3d07f4c56be6f80ae9fc7eb4f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/archive-patcher" path="external/archive-patcher" revision="6403002c15c66ae2750009e8ca0e0fe88127cead" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="bc9bbf361c8cabbd4ae0a215de5871fad527915e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="2b1324f72857be13c6096a3bfba9e4265d26c8e6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/autotest" path="external/autotest" revision="c6c19305d52523ff304ee7b934be1680d0a93ba3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/avb" path="external/avb" revision="0fd37e7e3dc8977054b32e5ef5b7709f67da8da6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/bcc" path="external/bcc" revision="3c322a224807a4d4b95b709797f0667c3c0df97e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/blktrace" path="external/blktrace" revision="b6cc8765dc362ebe69c2669bd5038f7b967dab65" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/boringssl" path="external/boringssl" revision="7cb5584227c12b41ba11407b98bf896cdbd3d833" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/bouncycastle" path="external/bouncycastle" revision="647fdcd4d4b779cb4c5878875f0d0529f37c54ca" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/brotli" path="external/brotli" revision="1f51c95f80e50fb8cacbe995ab24ce0702f26147" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/bsdiff" path="external/bsdiff" revision="58f535dfc203abbfd43c3eb1784cad62ad20dbe9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/bzip2" path="external/bzip2" revision="6a47db2a90c40da61e63a361a9226a3a486bd081" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/caliper" path="external/caliper" revision="8a30b0f5e5c13873fcbef25a8395fac137ff013d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="platform/external/can-utils" path="external/can-utils" revision="de6b200b2e142992e634f85fde3afa1101748706" upstream="refs/heads/can-utils-external-platform.lnx.1.0.r2-rel"/>
+  <project groups="aosp" name="platform/external/capstone" path="external/capstone" revision="1c760114342b1ab82b91f78cc7ce66691c36fb81" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/catch2" path="external/catch2" revision="4f4fe895f8413b3c0c40bcfd1ea7381d629fce77" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/cblas" path="external/cblas" revision="b9f9bfc8cde5c44f5b1bde83dc1863dd414c3bd3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="1c398f319fa3c93baaccdc8e3817fa31c4216b39" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/chromium-trace" path="external/chromium-trace" revision="512889e796747d8138210ce63b8f08860898a709" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/chromium-webview" path="external/chromium-webview" revision="fdc11bf23c4f2f920a1af8567ad0ec11e1298757" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/clang" path="external/clang" revision="15de91adf9620bdd48369ef8bb90ade214ba187c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/cldr" path="external/cldr" revision="f08c4f6551c4099ac7159a9143637e0567185626" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/cn-cbor" path="external/cn-cbor" revision="0205b470c8abc46559123aa94c72ae183983b8b0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/compiler-rt" path="external/compiler-rt" revision="aa9a1d65f4e4a4061b666effbc8b7225c1eab7d4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/conscrypt" path="external/conscrypt" revision="45047bbd721164010319e619463ae37dd30ab65d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/crcalc" path="external/crcalc" revision="ce5df439d984b6458f33d6d2fb30dfb0b6fa0011" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/cros/system_api" path="external/cros/system_api" revision="45f79514ee80f9cffbbb24593d418ca56c936912" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/curl" path="external/curl" revision="5b9754d7cf13bde5554863fdec56a8debdc8100a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dagger2" path="external/dagger2" revision="f2e62afed15438609c3bf6a5c6ee008e9b79cf9b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/deqp" path="external/deqp" revision="9aea7d23ed8a232892b6db4f19b759a515d9d1d7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" revision="9661b7f76f3d34116bf3697d1f4dc441596b103b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" revision="28e588e4098583c8ce2d0fa1865053a17c9a27fb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang" revision="7aa847057dbcab05591bb11ccbdc78a7e6e77028" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/desugar" path="external/desugar" revision="6379d2307646540a058a02edf50e8e860e5bc700" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dexmaker" path="external/dexmaker" revision="a82c36e1eede1ab4f55d0b7e5207a0b7c798ac43" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dlmalloc" path="external/dlmalloc" revision="de834e580278908d8de8baca89f44a9e052958d0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dng_sdk" path="external/dng_sdk" revision="f17914d62b7972114fff07dce701f1bedfb7786c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dnsmasq" path="external/dnsmasq" revision="685feb702f11e51103ce77989dfcc10f8b452579" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/doclava" path="external/doclava" revision="78de805d6b1a71e4d079a8f65d872f42b1263a6f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dokka" path="external/dokka" revision="ae8be6a3714adf173fe88b59ed834cbed7db3fc6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="7003f711357733ab728f17fdaba29bbea8d8c02d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/droiddriver" path="external/droiddriver" revision="dcc3607de58ddc2431c14ff860401f6a3226aeed" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/drrickorang" path="external/drrickorang" revision="f1675b549f7499611f6f6b3801dbf01ec9d2a9ec" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dtc" path="external/dtc" revision="bb8b81602c1d27e0fda0e5139b502010a624e447" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="37e5bbe88427ddcde00bda5da4f4c17187b596e5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="81cfc58743c02abd772185be8675f94725d98e05" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/easymock" path="external/easymock" revision="78d86ce0d5d66cfef96c76df6714c6e60756c186" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/eigen" path="external/eigen" revision="50a475f73bc2eeda76fd972bf71b7acf4dd15cf6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/elfutils" path="external/elfutils" revision="26eea58be0a78ea40b0ba18ba0dfd6ba470313b6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/emma" path="external/emma" revision="fcaab987ab8749344561f891323a2720601f3e86" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/epid-sdk" path="external/epid-sdk" revision="4928703dc4e6ff14a210e5d044ed2155560ee8ee" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/error_prone" path="external/error_prone" revision="d46dc622f8239e55801ebc233a08338d08092b7b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/expat" path="external/expat" revision="3fa94021293127ffd7694867e64cba719dd8fcf1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="2874c8108063d2c0fd9c5558fde73c1385dea0bc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/fdlibm" path="external/fdlibm" revision="4bf7b1b62df9a2e7eb8ce1de1e8691a67a9afce0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/fec" path="external/fec" revision="e4f74218f68b0b32fee602c2cd1f719ab5dc6030" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/flac" path="external/flac" revision="643d45e16e62e0afc5f984195bc26a26540f7cba" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/flatbuffers" path="external/flatbuffers" revision="7a2e12488e4ac1a65ba9f27564b0b74569172d91" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/fonttools" path="external/fonttools" revision="e6cdbdc58040bd40b5ad40d042512c97d75f11b4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/freetype" path="external/freetype" revision="93615c094b6b7a87b751916f79fe8849477d7ca8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="0326a7888e7e0ef3f85945879a346bac5736bad2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/fsverity-utils" path="external/fsverity-utils" revision="0409109a29b8149754ba279f609facf86dea54a7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/gemmlowp" path="external/gemmlowp" revision="b4cafeb2bfd12c1aba2560c63034377d1a3b1a43" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/gflags" path="external/gflags" revision="0ade797e0dc90d0db0d3d8746e5d5a431252fe0d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/giflib" path="external/giflib" revision="5deb30d063cde09ec0df0e1d2c245438c6a6ab93" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/glide" path="external/glide" revision="19f8f10f939820f3b8a604a03405a7d96c7efbab" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="e5f96040f99593a411ae059fd3862434ae07e5a6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-benchmark" path="external/google-benchmark" revision="1c0646176b301720c83bb38d4e6cb02e58f35515" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-breakpad" path="external/google-breakpad" revision="59c6358e410caee0059bcfba752e5c374f7bfa42" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" revision="1b64875b1aa610c1d36f4ff41ad8003cae179e4f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" revision="af25f6c486f4ce9acd1619ecc84de8ba0bf1e16a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="8dbc5d490aaefe688d5ef63d09ab9dfd88412656" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="261f1d232c228b76235cbcb1ebf2f0edcf69feae" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="06cf0826111d0780725dcee3c2ede685677aeaa6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="a626819a74ec282fc6282dfc4c297fa8d5867a60" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/lato" path="external/google-fonts/lato" revision="ca94ba950b5b3fc19aeed55742ac3dbc94ba6c94" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" revision="6474d0dfd41de59248b1bbc270860f79e26b4aa4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" revision="3b9ec6478d20b2344f8945dc3c08ae7cd4f76d92" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fonts/zilla-slab" path="external/google-fonts/zilla-slab" revision="11c07b19edec7867860296950b14cf7b687240bd" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-fruit" path="external/google-fruit" revision="ed15a9646d93f21d88937dd6fc9b9c43f922bb7b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/google-styleguide" path="external/google-styleguide" revision="749f7ae008c0d2dd9767fdfe202e6873e864a956" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/googletest" path="external/googletest" revision="1b1cb4e05a1b279996e5d3ddccc80f3332973ef8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/gptfdisk" path="external/gptfdisk" revision="db296b2c241fc8c391788ca94240d256ee0643b0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/grpc-grpc" path="external/grpc-grpc" revision="59cfc14f331646a1a9a329f7525eb4761b280a14" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" revision="c2064c49a215ed3f537af817a300468107cbfb70" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/guava" path="external/guava" revision="b0e6c33ea6f6f2f01b822b2bb9e1be8d78e9e80d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/guice" path="external/guice" revision="e9bcfb5a4a7b67b12f098bedc19df6fce2872321" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/hamcrest" path="external/hamcrest" revision="52cd4d20e5e5f93820fc81a1cdce0617eaaae629" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="c3bc8c80b6344456fe86adb378f224bceb5e7eb8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/honggfuzz" path="external/honggfuzz" revision="1f8547542d62134c7bf402e15a267f5cc0a24a8b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="8d31bda2eeaad2153a2452f493076f2b26112893" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/icu" path="external/icu" revision="4dadd98d5d6d2c31774a9ac6eddeb4e72d770ac1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/image_io" path="external/image_io" revision="1c21ce75a5862c157ca30bba4a48522c41880021" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ims" path="external/ims" revision="6a3bb0d9fa0c12cd11c80abb86bf891262ff850b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/iperf3" path="external/iperf3" revision="4728ed5e27729365ed8369a7d18c2e3aefbf9784" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/iproute2" path="external/iproute2" revision="609f843bac1344e9aa6cb05da1fc576fc35900e6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="ef134b7fdb24d2f2bc9adb27c18e8f3b1abed658" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/iptables" path="external/iptables" revision="fde7e54806e247a5aa4a1b32ccf6450d2c4fb9a6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/iputils" path="external/iputils" revision="e94b4433bb8a6d54d26f2c38627431f2d552efe6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/iw" path="external/iw" revision="f0b821f4270abc2c8658592d1ca975bdffa395de" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jacoco" path="external/jacoco" revision="9e2a616d3f830a4bf8c05bd8f1a8ce089957f15a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jarjar" path="external/jarjar" revision="bf247505b132755d118f94753c939164818fdbfd" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/javaparser" path="external/javaparser" revision="8b50f1fcb619f216eb81f2977cc7e982a01ffd8a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/javapoet" path="external/javapoet" revision="5110124a043357890d3e39b8452b0f0d4f2434d5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/javasqlite" path="external/javasqlite" revision="7e179176425d90949ac64cf24a335753c682f204" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jcommander" path="external/jcommander" revision="b77ac3a9800b3b6d5f0fb9d1f5beb0f6d84f6c4b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jdiff" path="external/jdiff" revision="578a47229888711c8ae0aa0b74e6dc853a01095e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jemalloc" path="external/jemalloc" revision="191514d4d6cfa83d4379269dda3586a5e9e4422a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jemalloc_new" path="external/jemalloc_new" revision="8129245231d25fdcd829e00fda895d177d552cdf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jline" path="external/jline" revision="c8431439fb94d0173f3762828ebc30ca6eaaee2a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jsilver" path="external/jsilver" revision="3d1bccd365acd874b88c56796a310f5b248f5d06" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jsmn" path="external/jsmn" revision="f1def95191cff7ec43b47f529435c7a5bf8ce797" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="platform/external/json-c" path="external/json-c" revision="0bd91c7d11d94638b1bb2d3ab46453d4ded6244b"/>
+  <project groups="aosp" name="platform/external/jsoncpp" path="external/jsoncpp" revision="c79fb39ebc68f67237008caee6044bedbb70b667" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jsr305" path="external/jsr305" revision="1f973a62b1b88d88377640af09146e281f702fa3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/jsr330" path="external/jsr330" revision="e0211d480f56643be326abe6910662b4c0a0705c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/junit" path="external/junit" revision="81a7dfc93ee1c8566774d233086ee9f6a2a3d802" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/junit-params" path="external/junit-params" revision="738f67d1a51140e5f3b79821e483251c29505875" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/kernel-headers" path="external/kernel-headers" revision="b7dc99752afda020540c907de151db383071197d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/kmod" path="external/kmod" revision="8e6aed6a42d232acfca00924d89c43150f023f77" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/kotlinc" path="external/kotlinc" revision="41076dadb696f752ca6f6b96fcbcee6145739e32" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ksoap2" path="external/ksoap2" revision="27dd0f93eb7f144039d95f2a34182ebb4b8e2588" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libaom" path="external/libaom" revision="ae9e769d90104bb1a680601e15c9befdd26e21cf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libavc" path="external/libavc" revision="47ce2aff87e0cd4014168283084077a1a8dca742" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libbackup" path="external/libbackup" revision="836cc4bc5b4cf077a38124bd5c93a3e109c0c223" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libbrillo" path="external/libbrillo" revision="4a5874013883cae8ae808bd7dc87dfd7be141d4b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libcap" path="external/libcap" revision="5028a14854ec5ada942bf461ea320aeb2e201681" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libcap-ng" path="external/libcap-ng" revision="86fa2e5819d690eb8bfec18d9ebb470316e9f0c4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libchrome" path="external/libchrome" revision="dd4bfc287142cf9786847bc680dafbc811ea60a9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libcups" path="external/libcups" revision="20e802de71731e05888a318bd8950d1913f16f0c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libcxx" path="external/libcxx" revision="a366aa4a24743adfa024187eca0325cd70a84285" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libcxxabi" path="external/libcxxabi" revision="b599c4d59ebf8d589c82a1d5fd98a6c0a955fe7b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libdaemon" path="external/libdaemon" revision="e142788e1d94b0e9b72cc0eea08e93d6d1c91309" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="2141a1de3061f5ca6c6e4e52ea7bec2a4a899a01" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libdrm" path="external/libdrm" revision="13a1e448b86ceef18cdb559631634b3547cf1dc5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libese" path="external/libese" revision="6f74c590af487e00a0854402273b05aed25684ae" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libevent" path="external/libevent" revision="96db3fd6426b3f087c35b424ce2d3bdd5eb4cb23" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libexif" path="external/libexif" revision="ee0d695cf4402d8107e56556175b465672c6b3ca" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libffi" path="external/libffi" revision="ae37f888918b2b747f41a05e9ef44eef64555ced" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libgav1" path="external/libgav1" revision="7f8ad8f0a2bb6c21025dffe3c8394fa70c0568ea" upstream="qcom-devices-auto.lnx.2.0"/>
+  <project groups="aosp" name="platform/external/libgsm" path="external/libgsm" revision="80a78c87f2b3b610d7c40108dc800283d13588e3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libhevc" path="external/libhevc" revision="bf45b696b970f09d8da03c6c2c0a8cd0e848efb9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="947e8bc06f2dd5301d1d2d36f3d8480344e4e644" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libkmsxx" path="external/libkmsxx" revision="da532047ae149efa759c779ee727a7546d6be1ce" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libldac" path="external/libldac" revision="cf9f5e779e51bc08881f9b974c90a386eec49ffe" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libmpeg2" path="external/libmpeg2" revision="894916aaf7fe5795d0d6fe2bee3c3b158f6aaa21" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libmtp" path="external/libmtp" revision="3df8813cd888e41da669cc973a395e7241770177" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="d2e84af93307c60a0c8f08cc94b36c911bd447bd" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="6ab4f09c43cfc4f36249638eca48720b9e762c5e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libnl" path="external/libnl" revision="c188cb50c21960213a754eda442b6964381daf05" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libogg" path="external/libogg" revision="86fca8fc4b3c40e258cddfebb1a1f9325ecdab18" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libopus" path="external/libopus" revision="59b97619b21fc2dc8fed530923f07af28314feb5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libpcap" path="external/libpcap" revision="457d411a864056f09d464cf47fa66b89c46ca728" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libphonenumber" path="external/libphonenumber" revision="29c42a22c0600e9fb41d899c5735f92a7f39f148" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libpng" path="external/libpng" revision="80c03e1c7bd6d3edebe795375103927bef2b67f3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" revision="6ea5db4875e45a8851aa617a14eea27cf3d73103" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="875c78caf6ecfaeec70307b5d3a13bf5b4d33636" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libunwind" path="external/libunwind" revision="8ee50f9f4628b49328cf760adfc23981aa1dced0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="c84e52d2279c3ba0017511b64515ea56c18e327d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libusb" path="external/libusb" revision="1dc724d10ebd8c22f748df743f9a0973839e50d4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libusb-compat" path="external/libusb-compat" revision="05b9b5e722ac178e9fdec2f65c8004eb21bc54fe" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libutf" path="external/libutf" revision="52b0b2a51391c419abc921a5b3f68a1126ac7809" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libvpx" path="external/libvpx" revision="01bb117ba171a127b6c2158df4a02dff451fe691" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libvterm" path="external/libvterm" revision="bcf55745eed74e6e927aac2faceafa6351910e7b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libxaac" path="external/libxaac" revision="bfe7fe1e90011700833497ac0afbe9e4df50dbe8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libxcam" path="external/libxcam" revision="516bcc7ab47d03c1b25c3f81831ddfdb8f63da0c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="e2df268a8c9b22ec40d08bcc0561ea8d0bb29620" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libxml2" path="external/libxml2" revision="e6664e3ad58b78015ac6b4b4f4012d044ef76353" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/libyuv" path="external/libyuv" revision="c2feb2a91e7982566ec8ba61f48988cefec596a4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="81d89aa35553f1890f120bb42b45c46f221e5421" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/llvm" path="external/llvm" revision="b2be197561e9bf4640ef26b09dfa6903eb6f7eaf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/lmfit" path="external/lmfit" revision="4bb6cc21b914153cf251613fb94535a0390e2ee3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ltp" path="external/ltp" revision="3da693aa522203c35c0af46a126064e0d7b6f5de" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/lua" path="external/lua" revision="0b7af50e30960f67ace45d1c2efbe7e6903c2f0f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/lz4" path="external/lz4" revision="03641fec203ff27510bc528c0abf06d88f28421e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/lzma" path="external/lzma" revision="f288e2b376d897e038074d8093b0a363bd690dbc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/markdown" path="external/markdown" revision="e767a48fbd95d7cc7f73d3189eb9e0e34915444d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="748da835d39cd7516d23e7f534298f4d2c9f7626" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mesa3d" path="external/mesa3d" revision="29cf72879f6553530ddffeb48745331a24d64941" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/minigbm" path="external/minigbm" revision="21af9e8991b33877cb8d713e419ba285c40a692f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/minijail" path="external/minijail" revision="1232d0de14a06b2273b0e2431d96398f511c1344" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mksh" path="external/mksh" revision="913d3aefd6305651909e1ee2757ffa5695b2e43e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mockftpserver" path="external/mockftpserver" revision="8a5dd17ee41a38f1a6c4c4e045e43a78a1b5fd54" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mockito" path="external/mockito" revision="04539913bb06078951fa0d9b192cb896a006de3c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mockwebserver" path="external/mockwebserver" revision="9a5aa90d0e8d7585625e463240ec3081527003f1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/modp_b64" path="external/modp_b64" revision="58d57da79ad86f11c5be09d117846da060aecf67" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mp4parser" path="external/mp4parser" revision="7456ce74efaba7db5e94451ac7d967a537f489a1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/mtpd" path="external/mtpd" revision="c12dd96f7694e098fbd2fd4e1d0f15869f349d49" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nanohttpd" path="external/nanohttpd" revision="66d704343de931004ba23ea5b11119d8b48db843" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nanopb-c" path="external/nanopb-c" revision="f0581c36240af1e25a4f7c36dd4c5fd7da6bf85b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/naver-fonts" path="external/naver-fonts" revision="f06257d8edec23934a0147a67c0fc37f0ef9e39f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/neon_2_sse" path="external/neon_2_sse" revision="7dff91633c4faf01e78427a0d1626853d96289ab" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/neven" path="external/neven" revision="a407604240250ba0547df4cfe210c904ff4453ce" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/newfs_msdos" path="external/newfs_msdos" revision="10bfab6bf50fdb667aaf49783040a6a168576011" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nfacct" path="external/nfacct" revision="e9f5ade8ae87ade8c6f4d1a500a60497b4d2e9ab" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nist-pkits" path="external/nist-pkits" revision="dff23d408b4c1dde613d801df73be1d9b29e7fb8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nist-sip" path="external/nist-sip" revision="69c2559a60d9297936969d3d42eaaf96f3f53f63" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/nos/host/generic" path="external/nos/host/generic" revision="eb60b5d1412ab4ffa43410681ca797f1317f66cb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/noto-fonts" path="external/noto-fonts" revision="82e94a34aaed0ed1d65d7384bbc300629e00451a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/oauth" path="external/oauth" revision="51244be8e3d1a230a1fee68dfc0c2b295b04585b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/objenesis" path="external/objenesis" revision="16f450956df30c8e6d22d3b56b5c14fba8d77bcf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="d6d36dd34485f6774b54269d7a7838990755de90" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/okhttp" path="external/okhttp" revision="b8e8451e7df29f0d08bc8e7512266844ba304a84" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/one-true-awk" path="external/one-true-awk" revision="8b68d9e476b2cb280b55010da762efe11d61c0fe" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/opencensus-java" path="external/opencensus-java" revision="f1d70d2509d17ab6ad67f63e6ea4672c19d0c447" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/openssh" path="external/openssh" revision="afe267d03e6dc520359e8129c9ae31fd38229384" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="3b6b6e044df6dda07c5a9171521dba166870d414" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/parameter-framework" path="external/parameter-framework" revision="20467725a2aeb324f03b6bae9b54d54ebbc1c3cb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/pcre" path="external/pcre" revision="7bfc4bd443fcfdef4b74adfecd29b060e217af28" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/pdfium" path="external/pdfium" revision="139f0ef2ee5da8dcb3c0c65151569555f6e801be" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/perf_data_converter" path="external/perf_data_converter" revision="0bc27b1776bc23222daf9d258cc77ea8d1abc0dc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/perfetto" path="external/perfetto" revision="bd8d9517b1cbd08777b970bfdf072bde8d4c00f0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/piex" path="external/piex" revision="7df351d7fc9356ff8d244ca830a736936bd7343d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ply" path="external/ply" revision="48dedf06abaeb7604f9dae1fc8055fe8d2a57d94" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ppp" path="external/ppp" revision="0c8a862146f616b98c8079d3faafada2934b39c9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/proguard" path="external/proguard" revision="cc4ab376521b1cb4b214bc3fcdc58f762fa4f88c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/protobuf" path="external/protobuf" revision="72d4b92eaca9390c6f857103c6c8f7b2ee1b6e29" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/protobuf-javalite" path="external/protobuf-javalite" revision="d82e8323be74e924ee85311faab4cc4d6703d6f2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/puffin" path="external/puffin" revision="e30f4ba45cd9a1d388fe6a09014fe127699d4943" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/Pillow" path="external/python/Pillow" revision="719b198e667e67cf2fb74a749e210756ff9d22f0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/apitools" path="external/python/apitools" revision="4d1c975944c0378e2c0c4690da6d785c40e2533c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/appdirs" path="external/python/appdirs" revision="27229790864dc31c397dcd38a8d0edc33d28b8f2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/asn1crypto" path="external/python/asn1crypto" revision="1208f0f8b78755298ebb98a9f4ce5ef76814c708" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/atomicwrites" path="external/python/atomicwrites" revision="c45a589a1d343174b0e00040ba891c5c1455738a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/attrs" path="external/python/attrs" revision="f686d286464366dd8aee26174a31acdc220b10c1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/cachetools" path="external/python/cachetools" revision="76f5c9b19f329df8f3660feb678a024cbe9f68db" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/cffi" path="external/python/cffi" revision="99013222844839c42437f16eace25f4e6a8a8b20" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/cpython2" path="external/python/cpython2" revision="b141bd8b25320c886ccb01ba765675de397481c8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/cpython3" path="external/python/cpython3" revision="cf496f4c338e8e8b402c2176ced4650bba6244ef" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/cryptography" path="external/python/cryptography" revision="d45069b23a8e6d21df64d5b6f2553a7aa7ef9886" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/dateutil" path="external/python/dateutil" revision="090b693d2e223396dc5052337859056d1ec3d709" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/dill" path="external/python/dill" revision="fadcabfa80986207cd299e887494faceb0f4eb3a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/enum" path="external/python/enum" revision="b209840b59ed80cde4d52b4f5917bcc2e345697f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/enum34" path="external/python/enum34" revision="5fbd04b55e2765ce855d1332d0e985fe77aef3b5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/funcsigs" path="external/python/funcsigs" revision="71cea45d853ff5400f2fbf0399e9eb3075688de3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/future" path="external/python/future" revision="f2902af409ee15cf7cf47345c5fb5b9766428025" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/futures" path="external/python/futures" revision="16b5c97debef1f44d4f8d783cc8b3258ba2ea041" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/gapic-google-cloud-pubsub-v1" path="external/python/gapic-google-cloud-pubsub-v1" revision="53439ac06f8019329aec98c36838e4925ddc71aa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="edd59ad4b05633bf68f8aa7cabb946004a098abf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-auth" path="external/python/google-auth" revision="cdea6777ae163531a180bfdf310b613b2314b323" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-auth-httplib2" path="external/python/google-auth-httplib2" revision="ebbb731499ffcb0d4af2ffaf07f24bfe2242755f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-cloud-core" path="external/python/google-cloud-core" revision="d1dc39e306f5c247d89b8f3adfac860d5779a82d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-cloud-pubsub" path="external/python/google-cloud-pubsub" revision="f8297d99318f8908299cc46734f55faccede6c39" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/google-gax" path="external/python/google-gax" revision="29ecd1b13094ee692d62b0fadbd964e03b0d6d0a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/googleapis" path="external/python/googleapis" revision="42f8455de873773117912b9d36cb9137101ca121" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/grpc-google-iam-v1" path="external/python/grpc-google-iam-v1" revision="04aee9909d321c4df2c15aa66ff684c104b635fa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/grpcio" path="external/python/grpcio" revision="1e3b736c746c9400816574eec1445ae0accbd35c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/httplib2" path="external/python/httplib2" revision="84b28b3f940ca7510765882cbbfeff5bbe64860c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/matplotlib" path="external/python/matplotlib" revision="ca9b95a31d6f98dfa47d04a151a0d5675958f085" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/mock" path="external/python/mock" revision="22bca6e5cd42dbc85ca8671169338d2f9b279b86" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/more-itertools" path="external/python/more-itertools" revision="43712815e5b42047784e5a77cd3e30ad9503d9d1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/numpy" path="external/python/numpy" revision="20f08e71680c1290e453f0724e9022e3f77216e2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="c3b2f67c4c9e174e6e03a2752be3b0cebc9a1338" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/olefile" path="external/python/olefile" revision="689f30f1b3d24270e0d71c415d765c4de16e2f08" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/packaging" path="external/python/packaging" revision="130af65f17eba712ad5412361bb4b25e0a83b4ee" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/parse" path="external/python/parse" revision="a4cff74a5820eb7df3c057105baf613b890c3c5e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pluggy" path="external/python/pluggy" revision="18148fc1b8618772a8dd7bf3cfd7f59603aaa37d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/ply" path="external/python/ply" revision="64b73765599c811856239b7497d25488627615d8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/proto-google-cloud-pubsub-v1" path="external/python/proto-google-cloud-pubsub-v1" revision="ea3fd547d28c7d53f39ee56ee3a8c73e0ac12feb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/protobuf" path="external/python/protobuf" revision="47e327e35912fe461d9dc2a1922068e0ec144dcc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/py" path="external/python/py" revision="a7a67cf073146a615e2357b304a1169979ee2b09" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="d4f97e1b01b29f875b8e42ffc30d60261201d975" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="013935969f2aab6388616a1a6c801cec45a3dfc2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pycparser" path="external/python/pycparser" revision="775e41a49bd0233ed94f379fd99b5a5837e257b2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pyopenssl" path="external/python/pyopenssl" revision="3d7e6f31c43fe50e1147b4cfa49fd365a71295cb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pyparsing" path="external/python/pyparsing" revision="9e04c46d23c70ba9d6234128d89018733522d4c9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/pytest" path="external/python/pytest" revision="a66325ebe4d4a94e680ea022695e5cbbfeb93489" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/requests" path="external/python/requests" revision="97b8746b588c13a58ec6c4ba44b0b0fec80cfed7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/rsa" path="external/python/rsa" revision="e16419273fcda5508d2a01cc8d0c92c900b5ea02" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/scipy" path="external/python/scipy" revision="1f40279637bc8b5570a27464797922e06895a8ac" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/setuptools" path="external/python/setuptools" revision="e1b5c5292d37b4a93caa3bb1bef128fc8b8cd20d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/six" path="external/python/six" revision="e154f5d90a0495f7baa8c82b6518bf3184022a65" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="531f56ea118efed6755f96ac1530c02e99e8d3df" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/rapidjson" path="external/rapidjson" revision="908d461a0bb20eafba2a2c4c0f1003d9c9ab188a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/rappor" path="external/rappor" revision="e7a269ba8a9297e85d76c03c0fade6a6f38cab87" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/replicaisland" path="external/replicaisland" revision="53db0245e22440fda27fd317b66c55ae6ea81f1b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/rmi4utils" path="external/rmi4utils" revision="36dd0e7c19fa9fc9e72aa10c939e30acf7333ab4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/robolectric" path="external/robolectric" revision="fabd4b89e9a409bd544a3768f7e3261ef268b87a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="57a605f8d61a7be8674a2ee3b4097dba3a0f879f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="897ea064fc5e62b0591c560f1ed19df1fa6f47b4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/rootdev" path="external/rootdev" revision="4ad506dc050e5c22a2fd423024381d08e3140564" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/scapy" path="external/scapy" revision="b508bd2a18a600032833f5b378dd7a652b1c7a67" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/scrypt" path="external/scrypt" revision="84d0b6a8d98227990a11005472234176cfb017e0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="130567a28a26f38aa2330cd076b5af8f7b12fa4e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/selinux" path="external/selinux" revision="c4d3d93c335fbcd34b589b008ee27e5a2a590a43" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/setupcompat" path="external/setupcompat" revision="bb6bffc30c990fde875892858c0a4be3ce1ca6ab" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/setupdesign" path="external/setupdesign" revision="eb05b7b9d3e7f3956d81fc65803968d88d8335df" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/sfntly" path="external/sfntly" revision="e24107ebaf001b0131ff2b8bb7072f0792ac04f9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="43fb5f2f895a55315738a8b2f15fc4857fa3782a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/shflags" path="external/shflags" revision="635033e34d294667e9be19a11d83739a289b0af3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/skia" path="external/skia" revision="e55724765970cd22e74b8cfed61307c01c350e8d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/skqp" path="external/skqp" revision="0bf9256bb3b89abaec28280c7d1bd5078c448275" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/sl4a" path="external/sl4a" revision="5d1b3669a0551f8392a9b6f89b4b9c960e3588b3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/slf4j" path="external/slf4j" revision="abc22344620c3a1477daea5ea2154364ce35595b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/smali" path="external/smali" revision="6086a28cb749e9bf6248c4b0c58fff0791b0762d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/snakeyaml" path="external/snakeyaml" revision="26dc55e990ed5f4ea75f0856d60fef8cf70c718d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/sonic" path="external/sonic" revision="0409fded9d89c3ed3fb9f9dc513a9815bbe9a8cd" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/sonivox" path="external/sonivox" revision="b40626853695e83206373809f46dfdc9d30aaa4d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/speex" path="external/speex" revision="d7db6d4c3c7713065ace3fce8385b21d5763830b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="539253b1bbafdc0d8848fc2577dfd46b736ec6d2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/sqlite" path="external/sqlite" revision="9a0c9082a6e554c0987099361f923d8ab236f41c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="22fabea1054acd6f2f1346a78c7343cc3f182c10" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/strace" path="external/strace" revision="351909a213bcce0bafce7aeeb2d553ca91a53fa4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/stressapptest" path="external/stressapptest" revision="3483ad6fe901ad207a3dfe1fbbc1615499412204" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" revision="c7038a016d13f2011e998ea1812ca8f3fae7c065" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/swiftshader" path="external/swiftshader" revision="9f7bb6637f6b8ffd8f0ae542f9e7481875a8281b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/syzkaller" path="external/syzkaller" revision="180ae32517ac69d7e67051453ea9a58ad82ba629" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tagsoup" path="external/tagsoup" revision="1eb6cdbbcff6c9611e40080231b396a31d709942" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tcpdump" path="external/tcpdump" revision="d6daf7b89c3f7f055fb3845e5ddf073ccb30e71c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tensorflow" path="external/tensorflow" revision="d23a53b840a21f84d897df3b4fa8580bc2786675" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/testng" path="external/testng" revision="09e3102096a716310ac36f3a24daa53c9ee64ee0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tinyalsa" path="external/tinyalsa" revision="a5bd854bf1d4c66fb084a05a541267b6fa518f10" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tinycompress" path="external/tinycompress" revision="5a86fd0d7dcaf45a3680f654926fe362acc30e76" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tinyxml" path="external/tinyxml" revision="eb1213d6385ab44f325c51ff7dc54b4ad7fafffa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tinyxml2" path="external/tinyxml2" revision="4eb67394a8dc6169d7af7546ce5880b80c544084" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/toolchain-utils" path="external/toolchain-utils" revision="ccead650bb8e050400f55dc44b60f989b1f8e117" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/toybox" path="external/toybox" revision="d362c3db9f259110d485b908cd2874141e736432" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/tremolo" path="external/tremolo" revision="821836d715f2a34c181ea2de0bd40c0ca3ce8806" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/turbine" path="external/turbine" revision="def4aeed368a8370e01162723b0a5395158d8a8e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/u-boot" path="external/u-boot" revision="358d4cae7b40510c549d3b1873236c46aff314af" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/ukey2" path="external/ukey2" revision="7df34cdaeaff990e8bae1e7f45a96ce14d60a470" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/unicode" path="external/unicode" revision="e44f2b5451bae10462f90e3d704eede6f36a8ae4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="a25198de0eabc2eceb34325d850c3c8abf2db59f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="c4c55a5e5722350ed2adb23c4fcba6676e61d23f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/v8" path="external/v8" revision="547e43082f10937a8e4ea7f1a4f3a20725a9586a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/vboot_reference" path="external/vboot_reference" revision="92a9fcce1e664e5f0b60de26f902731b3c22dea0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/virglrenderer" path="external/virglrenderer" revision="ac756c01c328b4e7494a2915625af6f33cd03794" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/vixl" path="external/vixl" revision="0d7e40d00f531cba3eb8d850017491e8ced2134f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/vogar" path="external/vogar" revision="2d3425eb2dd03f313dcb03c8ebec69c99653fcc5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/volley" path="external/volley" revision="ea01835aa128abf149f05aed0301defc7600eb6f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/vulkan-headers" path="external/vulkan-headers" revision="bea897952445381add9b3ef2b2f6406d2163e087" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="24a912c55afeb28b19b19dc01d0606f7feb2d8c4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/walt" path="external/walt" revision="bb6a254d9769acc1d022d74977fe5680c2c6218c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/wayland" path="external/wayland" revision="49e4fc2f2692c76a6f410423bce3c750d60a47f8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="f05350b128408fe2a6eeea35711ce5ba30df5001" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/webp" path="external/webp" revision="08b9c0fea91369a3a42aa02ad4db50dbbb3f82b5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/webrtc" path="external/webrtc" revision="38af3265029c44a6bb7835b1106bed8e3c0a60ca" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="aa91c2a3886ced9ae84be274d335c7d752ffd54c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/wycheproof" path="external/wycheproof" revision="28c7419226cd249f436f08fdc54605bbdd64dd5e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="c6d08432d09fe5bf4f52065216da37bcc73a958e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/xz-embedded" path="external/xz-embedded" revision="91d19f661ea057c8fa97a17e0ef64924f48b81fb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/xz-java" path="external/xz-java" revision="8085cbc8a2f3e93188475769550db7e83b09f483" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/yapf" path="external/yapf" revision="b940c5bbd269eacc31d6cdaadafddd12e947aab5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/zlib" path="external/zlib" revision="73968beb892091e38d611e4ca559b8580226c86b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/zopfli" path="external/zopfli" revision="59ddf1b07e1a6479463ee39af6bb7bc0613af857" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/external/zxing" path="external/zxing" revision="518f17e6727ca8f395175c3f8833d303d6cdd877" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/av" path="frameworks/av" revision="40b92dba53f755d909fa15fa983a3c62e66ce2c0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/base" path="frameworks/base" revision="0890ef00cac60c711118bf62f78ed5ddd80e3023" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="fe79261aabe2e8671d6a3d12f4571e0d007a6cfb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="536e85d253acf6ed4996d2f24ecbea0ba69378ea" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="c302054ca18219493b27d56c2e0c1eb7ba526ca0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/ex" path="frameworks/ex" revision="6a2716ca27f6a5e29f92e67734e3d3b77123af05" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="f26e2f856447a5c782bd533d1480488690dd89ed" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="ae2275abf39f8eea243ca2535f98dde3efaf670a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/minikin" path="frameworks/minikin" revision="1ec0bed41d0455a688cdebb77cd2f2c3bab6381a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/ml" path="frameworks/ml" revision="10bda6da4d237a9a9d6089bde19ced5ee8c77211" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/multidex" path="frameworks/multidex" revision="b9aef4192f9584a1e708df6e516fd10febaeb1f5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/native" path="frameworks/native" revision="c17e345b76b886fb6e086d688ae64e7269d173fa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="e71f951516e76d63d27b9ecefbbb2838465e6094" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="414314a7501e22ec5abd29496b881a2c5ea07c10" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="9a40d0e54edd2229ef0c75ca5cf90f69ec90f1be" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="fe3635d9be589b55685f0af02b97b10298d66aae" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="a5c75819408da95f515253f2580932353f88f053" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="e32282b48e259fe33a8d3bb0304e0dac6bc51fce" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="260f97ca1b6601ddf1e03effdca4ac60568a6e37" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/gamesdk" path="frameworks/opt/gamesdk" revision="222ea766a65999e619da08f0fda0f7af7a34ed08" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="cc003c911a1fa06825869aa488b37f5465cc3df0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ike" path="frameworks/opt/net/ike" revision="071fc9769f4164753e2fb3b762eba2b139e6fbee" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="e112005f4e8210bafdcd2b5b0b3a1699127d15df" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="e1aea2f1faed81035dfc79f883b59f808b58cae4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="d215a0641196ac2251c9fb8c203a192488f64b8d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="c73a281042ad5419dda204046a6760ab2f33299f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="d7675f44dff43e2ab4c7dbd2bb653cae1c6830b6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="0441269836afbf7ee7b2789ad79cb56e64b4076e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="92f4c209536f72e3e8b88cc52d5f92a7b9277a05" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="941a1d9c0870c94c7df904feb246369a70a7bcdf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/rs" path="frameworks/rs" revision="c950db3b8c410ce7eaed0dcb3afd873241fc8b81" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="e951a49f16c96f6459a1a831dde175b63b1f47ed" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="eadbe5eb83b7b8b3128579bed4eed97171a271c4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="db361048ed45f6cddc26d9db5311d5e58c6abd89" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/google/apf" path="hardware/google/apf" revision="db705f26e241f37c120ba59726cd05931292172c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/google/av" path="hardware/google/av" revision="6cc1fb1a308b7bd0e174edc95dca1800017ddec5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/google/easel" path="hardware/google/easel" revision="59ef4f3c3c838c9b8d9521504cacb20de09fad88" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="9fd219a9a40f24aca20d51dc5c504a3589da1c65" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/interfaces" path="hardware/interfaces" revision="b91180753273d97441953e2907ebc9c4364e5a8c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/invensense" path="hardware/invensense" revision="b2508d43f754b9d8272fa74c5afe722136c6c025" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/libhardware" path="hardware/libhardware" revision="463272b13369b0dfbd333a7d3094029dc23051c4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="2beb507f3031751c41503c3e7912b7704583793e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="6cd7e01cb73acfa5b5a8723fd5fdff3fc1358a8d" upstream="refs/heads/audio-hal.lnx.6.0.r17-rel"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="c94d11a34ecb2da9ea9916288e105a0dcb4d1acf" upstream="refs/heads/android-blast.lnx.4.0.r14-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="b6a05208955e3672c2d5dc31be9d106bd944cdf1" upstream="refs/heads/display.lnx.5.1.r3-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="2009d246b9ebaf6039623c537379dc90824c5d1f" upstream="refs/heads/location.lnx.5.0.r11-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="64f60f51919fb30c3fbdfef6a30773b46605c447" upstream="refs/heads/video-userspace.lnx.4.2.r4-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="70eb2b83ea5bc9ffc8c361f4b69178796f02c177" upstream="refs/heads/core-technologies.lnx.2.0.r43-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="85eeb68f66fe092fbc1e59afd14320061e14bffd" upstream="refs/heads/wlan-aosp.lnx.5.0.r11-rel"/>
+  <project groups="aosp" name="platform/hardware/ril" path="hardware/ril" revision="61502f1e7c7e0d0fcce8f3b37510ffe8f53677c2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/libcore" path="libcore" revision="d5eb240b8dc39f28ad8c7ba8555785f8ac1aa34c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/libnativehelper" path="libnativehelper" revision="2f4c4c1bc36811b007b926ade8a8f3d2beb75dc0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="4d088a2134fd751f2acf991619439b1e6c6e67c2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="16271e19036dbb1bafe5496f45645466a636f27b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="13c2ee77ae1f14c3d249af0ceb6b773ac72787aa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="ba490c43e518d6c767b2cf44569470dd3f0fc191" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="d34f10c830806b2532161d99d82fd44f80521767" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" revision="c543a30fb6c18fd14739af9efa33f21730f1861b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="3569719c8cb330a443ab5400e99e777cf8e515b1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="15c1e41791281f3c47b63575bda1f71ad4ed1897" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="09439cae33cc0a7ae06697e54ed9aa06959511b9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="5e4c363d10a2406bcf4e553dd5810b0c66bd0b5b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="1799c91e0c1a1c912e41979b3deae8fdcf9b8c69" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" revision="e3f327083ce57e9a789bdaaab883d6b266386022" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="8ef60f8662c4a1270ffa4ce73de36c270599bf7f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="0f19d8d17d4701e013a6338183f43583b36cde88" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="7be5b25edf370889b3d215df26245649ab028d70" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" revision="f900de1fac4dbe3beed45a7ef4f787fb55d019aa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="9ca3933565c55e4ebfd035dd65cf22afc5ddf072" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="8e67a83a6d44d7ed0051720381cc67a840e47843" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="c31960f6667a915d46f724f79ef158efa35bf18d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="14d8df110f76fa3b8c396ac31dd36e4b0fb2bc84" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="bfa4c6136316a38991f7b4218289c7b54e5445b9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/externallibs" path="packages/apps/Car/externallibs" revision="bc16257053938c32c75d502cd990b4fec5a76be8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="847f8f2fb14934300b69baaf5a5a52a41832358b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" revision="28636947ffa31dca3ab8e5412510415ac8ea7e3e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="e85cf3c276baf8384ed8103f2c80dbd3b0833743" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="24184e93398e471a62b040282b4b15cecae3faa4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="dbaa312a18a7c72b824b0e27b85a568c252b9f23" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="4da3917727121dcae5a0bf9c4b88cd4f44145542" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="32aa56eb6719bce65f8b8e4c88f013f872a96a69" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="95668c85858dbec1e951e6b0516ea28185a63201" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="f6f12e03b4f6b320179b65893b95ac539ee5019d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="de6628285416b7d9d20cd70c27efe1f00cdde99d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Email" path="packages/apps/Email" revision="11b1dcb30c30dcfcefac75a26a2591b9f396bd34" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="6ec658f5c54d4a136a85bea10870850958902b6a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="0d928b35173106fc164faa99f319e0140b94e8f7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="a56b2293697895480e91b7447e6f44c1da2e9c9d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="17be5ce44bfaf5fb8e4ec0ae54561dc90932fa17" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="84a790311d1bb7668ae1e8ee76d5af07408059f0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="0df7699645383f0b2ce75e32d946597169df1521" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="03e64567a4b446640a1eeff877e04365f25ebf58" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="a8e7771696476587e363429d18d32d2a62224103" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="54fe7011b97b2b25494f71f3edba5ab52b345868" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Music" path="packages/apps/Music" revision="790ed24f0782e8af819f473a3e4dd5476c1cf6d2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="3d8677c9c9ed0b3f81afa488c2eb7378c16ddef3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="940546e351e0f75251e35557a13a58547e7c9efc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="33b9bec07ebf2c75e39683fae9eae5ab6b2eb5c8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" revision="0f27fd5d6adae13f96b8e97b855da503492a75d1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="9e9d10b5a2b57ea71af33b8e714f1b24848fead4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="9f73d71d64df8f052a64ced34d6206e26285c20b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="80dd2867884401102b8f297a6ebc3391368343bb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="aca23267401621448afffda3e7f2743044ce579e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="0686e172d81fc68b0f4ba336de85cfb07b991a02" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="c7919337268fb77fe92b6b8f096a9ca67d07b455" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="4293fb687abcf09f4a2d49cafe5c86a8c5b07b4e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="eca9f5593ee0a9f061ed618dce4469e48303ca71" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="da8a7a5b421b4b224bb7287fafb065120764075e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="95533bf49b8aeb92ab11b538e4e1cc68e6ec8a72" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="1c8c7288f766fc9458199808bfd322e82f056130" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="63629e432414bbde689cee6d3ed8a5435dc92341" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="35ef6ebe38bd37eafd5e1a36f0b3bd5d8008cd1c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/TV" path="packages/apps/TV" revision="2dbfd6c05fe1ec40d39b43ef9c1270f2b5ca0b5d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="804b4e4827a2c2809eae4166724010b3a5e0d542" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="8b293e43dc87adcc7b92e7291c9a80738e89bf38" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="bf6e0398c0868ef99e3066d5f1865859fe4a387c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" revision="3523c6008634731d63ee228c54191073238d6eae" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="bbb4e5d111ad613c2830ceac8f1864548d3549e5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="da35d9927a971db4e4210090c0f99bac897961d6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="4c75fe86ec84af11b2a45cd80517db2334464291" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="1705cc75292476a96262900942ca2e0c52339194" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="4b2b345861678af016b4cd9e0a3b81dcae37ddf0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" revision="e549c4eda26b4ca4ca4d02944b74557123175c81" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="d1ae5204a2c09841b03f6556822317b359df5bf7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="44dc6d66536885bb1ad9c9fef1771668dd1e47f2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="6d8964b6022ab011456febaab3357b1ca9823ed1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogini" revision="16dc7fa050faf21683391defc83a1af76f223019" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" revision="3da4865be64db601c03eb6a0acddc02f5c0b5f78" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" revision="236534f664f46286b67bb58b5c83065dc50958cc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="1e0afecf9c967a0557779cec59fa4878fb30b60e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="ee3e9225bc38e5449d81531cec65c8c428e23669" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/modules/TestModule" path="packages/modules/TestModule" revision="3523a2f0f9b12d4e60374af63aae14f75a2b4c10" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="33d26f5eedb3d3011762ce5b2de66e931bf64b35" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="ca4a35de8bb9197ea5079c4f756ada00e157a480" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="e04f9a0dbc612d9e3a4f0b685dd4c8b4a4f36c06" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="f013f1c6428ebb1702543a184d6f6d356321d9ef" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="0913d2843bea9c7ecd713b2657ba2635b825fffb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="962e0481de7d0005851d531e7734205719d2b3cb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="0d1d3ab256bc63114934d1017e0684379a5487f7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="07b89c65c9db24b67664b9bda09b411fa3b03e8e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="e24f2cd08b857db0dfb5d76d73423a25b88468a9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="d2817ffa32dbdd9a1de2f60d771fd152974e8ebc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="49ffe227f4b2a42355af1815cdb99180e24b3a3b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="5c21809c435c0add40ebd626eda66da4fac0a52d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="869790d43bdc635daae4e8f68222403993061131" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="f233c7eafcbedcf250e14da1cd9f256882c2c9bb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" revision="5b6f83f645141000506183950dfe391e4378ae3a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="4bb5ac84ef8b1a6d93ebd2e47c0862b5b7bdb9fc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/Car" path="packages/services/Car" revision="222be961a8f7930e48c742e9322e0a4a65c558cf" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/Mms" path="packages/services/Mms" revision="b6de2f94809cc3b459754d93fe4cc334f86cbc8e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="519e8e06925c41b186a40757ff29f8b78863693a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="1870fc03a56d08ad3697d50744846ddf6cba886c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="d80449f6d41303fe9cd4115a967df9fd79a9fca4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/pdk" path="pdk" revision="9f2c75b72f2ad4b636b0158bd6b33b33f6bb0bc9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/platform_testing" path="platform_testing" revision="699479e01e55261ed87b97d36e799b349140521a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="5c689e9c36b7185f8b3b4af2834c5ccee97d3233" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="c04e08049446ff5c117220385f3e1a59d9e07fd5" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="734fb74db98890a73098df214ec0296e4c9fd096" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="c20a813293d9d88ff781c39d500ed8ed85411219" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="241060b322d60c3deb447e3fe63be9d479237381" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" revision="11b1a972c1b8b088f5242869394ec768d94f2109" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="94edb5f3c6a159ba52965e200f70ed86eb33782f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="98efad62aebc34fc2aa1cfdf8e069be2d0cd214e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="7b4b7a026543e0a0c60f9a097311b015f7bf3a5b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" revision="23a3758d77320dc8cd81f500f63db5de1fd22109" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="099fea4dbf0e094c6ffddf3d35acd4e2e1ba3864" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="5ed045277ef1644e56edba098b81002fa765cdde" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="dd763915fa9aeea962a090d9e47b468d3ca3d774" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="02d0f9aac2ee958bb505d10f5ee9034779094e43" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="9aa1ef21f0105883a7ec90c19a1e2f03b4dce937" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="ec5aa66aaa4964c27564d0ec84dc1f18a2d72b7e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="01d8e9b2383e028abfc1ba4a4d530a0b28623854" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="5539322d6dd14e871d47cb2676f4349e0f914a7f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="84fb09fafc92a3d9b4d160f049d46c3c784cc941" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="5a8beef7b1aa2c8ca0dfe4a00358559d12dfa3b6" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="c51fde9ed4d420d97ad95626f636448fff5d97c2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="02264a9f9b67bd33afe94a02692d3492c7df4bdc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="854ac980c57229d3d08901b78a93a4392ed414f0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="e4a6d249d018bf4fa86df49bd15ecd4145862d56" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gdb/darwin-x86" path="prebuilts/gdb/darwin-x86" revision="0a8c90248264a8b26970b4473770bcc3df8515fe" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" revision="8b7f27557ed8ddacb0a6124dabb0c0ff82f63984" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="5b0834493ee09028bd77b2e08d0723b277470272" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="e051a587f5856ecd3c9f621890fa9380711d719e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="06a6dface3299f99fb7ed2ad41045d6314925ce4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="9ed12804ecf554245a7b86661f1d3c6ea47d4b10" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" revision="9e2e8670be6f19f3c77fef568c10ecb091e59196" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" revision="f43915ba129c29516a98ddbfc88bc3942aa68d5d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="5003228f9448e1fc11c4f322555673b8552ccb66" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="8198e78965e06de4f808b8e81b6685b8193fa124" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/misc" path="prebuilts/misc" revision="549d347dd146c9c11d1e70da609e67a49dd209bb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="5162519ad277619b086b2e3311238444a5632faa" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0c5958b1636c47ed7c284f859c8e805fd06a0e63" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="742a8ba7b9eb306622260036b5b47c02db3ec783" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="8fa5688d16911aaceb7af8be7ae813ffafea0862" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/r8" path="prebuilts/r8" revision="ccd6802cc74eea300fb04c6e06c79b375ff925f3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="84a3c82b3a557dac79a5a32c11157bb163f178c9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/tools" path="prebuilts/tools" revision="9e339e12b5895fc4378cf10b85c910a5b9412d5a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="8c5e3ab4b02bad8cf6c31feb3ebaa75399f0206b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" revision="a61ee2827318e54a0d8d314f311be257a92bcbcb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/sdk" path="sdk" revision="0f698222ca9adfa15a5a6013c941a5918bd24566" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/apex" path="system/apex" revision="dc6a1937539f01ae3b87b6e9150523952e270094" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/ashmemd" path="system/ashmemd" revision="7761e34bbb8d7956341c67b5e5c7677b6e7ad35c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/bpf" path="system/bpf" revision="5f215272c82e24d0416911a5e2a53fdcbca5b473" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/bpfprogs" path="system/bpfprogs" revision="7455c3af5b3184bd900f92fd7feb2232d60574f4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/bt" path="system/bt" revision="f4bbd91f10e3ee6dfd179c53bdc8e321c2157b36" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/ca-certificates" path="system/ca-certificates" revision="ea03514ced2302d45c35b9ea6553813346affa12" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/chre" path="system/chre" revision="72a13cc9d19aa552eabaa84c13850d6ab7600524" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="421cc2e5f70e617e342b4f911233697dfac40eba" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="c4ca16abfdba4e531affd21ea78ab25242231ea2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/core" path="system/core" revision="8656271f73c04a94f57a968607ba33d885e013dc" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/extras" path="system/extras" revision="3001e015fbbec13b8dc3948c838fa9c33875b944" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/gatekeeper" path="system/gatekeeper" revision="b67d133b83c830b5341aaaaae0cb0cb1a45bb415" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/gsid" path="system/gsid" revision="0bbb95ee30e07d4df210d0c864f60c0dad83ad75" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="2ff2792a0c5cd668d331960cdc56ddeb3e23d217" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="2f6fdb3bd53ee11afc79d2d7bf59c03d40461f71" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/iorap" path="system/iorap" revision="b5c8630b7d60cf8c2fd0ee43400d7ee400bd3c2f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/keymaster" path="system/keymaster" revision="cd1a0026cb360446a50b0f49373f19a154e02973" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libfmq" path="system/libfmq" revision="922a25e2de65dd263810936d86a867574b1d8af8" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libhidl" path="system/libhidl" revision="82a6e1040983850aabe926f0192e25c4a23c7a8c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libhwbinder" path="system/libhwbinder" revision="6c114d51e6e46e42d7e52cd90757cfe9700ef017" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libsysprop" path="system/libsysprop" revision="e561be50b7167bc67159527a23437b9d7da4af0d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libufdt" path="system/libufdt" revision="6ab7b7b15fe339e7219f09ab31cf59686997a223" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/libvintf" path="system/libvintf" revision="ca23b5f14763796225265331a29675f355b8d191" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/linkerconfig" path="system/linkerconfig" revision="89ebe3f44e61f17c0c93c0b735f58005a224e900" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/media" path="system/media" revision="366c5dd7c7acdaf18cef692b180acca0d93a1dda" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/netd" path="system/netd" revision="096c4355c3e40c3d895a60c38cc41e991e9565d3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/nfc" path="system/nfc" revision="529f43aa05dec774e9dd039fed068d050adeba69" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/nvram" path="system/nvram" revision="c2d6a33bd00449e9e6e2441f3979a799a3428653" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/security" path="system/security" revision="58ee764b2ad34b3169a98fb47a7c0e9d29661f48" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/sepolicy" path="system/sepolicy" revision="d70cd3cd12f4f5bfe35885ab56879e27e2003b9a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" revision="72f96229b3a67531e79455d52225a4d0702285bb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="1c6b32f38fa024e9aeefa367f576cf147000ef25" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/timezone" path="system/timezone" revision="818547b6ea3092b00cc0434995c9789a4340c7f4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/tools/aidl" path="system/tools/aidl" revision="c86eb16eff5b94ac90ed4594be462ebb7db34b61" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/tools/hidl" path="system/tools/hidl" revision="ddca27c5a2c9d82638f7b228af8cba126992712a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="876ef9a96433e7b9f3ac65bc8b26d4cce61fde57" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="cd96be7d64a0a9ddf51076f30b9402d7d927669e" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/ucontainer" path="system/ucontainer" revision="19cc4fab68be7fa042f016dee333db1979a7937b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/update_engine" path="system/update_engine" revision="df7c89d6216acabe59ca511514860397477eb70b" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/system/vold" path="system/vold" revision="621e74e38e376708929429e73b8d8fb0a463a796" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/framework" path="test/framework" revision="5742a145faf016f7d0db8c0a7c367c2a2e352d9c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="239fa21b5fd71c5672c067e4aa513888184e3be7" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/mlts/models" path="test/mlts/models" revision="aa829a16dc527133960da6dc52d869543bb0d72a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/suite_harness" path="test/suite_harness" revision="8a96c1bc72a53da7bb9e42645fa1731116a19ca3" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vti/alert" path="test/vti/alert" revision="2270d160e38f0623d708cce36754fe14168dce64" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="062079021f0c917c9b445678c56ea1930d2710a0" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="ce93a16818c8b2cf79f6f5d08b9c3f7b836af0d2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="42271ea787fa06b08ef8520fe2cc851b99434e1d" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts" path="test/vts" revision="edd51e8200142326a0b067dbf34d15a88b1818b2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="5e68560b17eeccf526fa9c6704f69c5493830d95" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="e9f5871ab80f850dbf0ee6415f04d887a1789ba4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="5e4818510c53a876141bb0c2fec76fb18fa36a5f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="5316faeefe6adeaa79d0a4dfc365ec3a18f4a995" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="21d60e5c7590136e0e76f74e0b5eeadd9c30c5f4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="dfcc8451fd8e0d074ec7904b1443e986bcacb671" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="5c244a247bf1c341b8f9ab23444eba4fc2e9b8de" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="96035fa15851695b177d801c3af3207762047df2" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/acloud" path="tools/acloud" revision="a5a04590baca2daf95ba38b054af6d19331eed30" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/apifinder" path="tools/apifinder" revision="7fa228a612a41c551ddd786c79bd84294699178c" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/apksig" path="tools/apksig" revision="e1bd6e19a027f460fa8fcc5fbaf2cddfafca8a79" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/apkzlib" path="tools/apkzlib" revision="734b00a6c447ba82619240d3aba0f21c79b7dd61" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/asuite" path="tools/asuite" revision="77f1248940182c93fa4dda460a08e257d6c6fa77" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/currysrc" path="tools/currysrc" revision="2e5983face85bcb39a206900879e2db530765169" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/dexter" path="tools/dexter" revision="3eb2095d9343bc14a9b4051231bd5de1759e6ea9" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="2aa98e48614927413550d00c755351b3f68542b4" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/external/gradle" path="tools/external/gradle" revision="0ecdebd5bb7ac5e65739859754d229ebf7245596" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/external_updater" path="tools/external_updater" revision="1dc2143b13455b4ab0e2a0aa59dda791c0b0084f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/loganalysis" path="tools/loganalysis" revision="39b49e2fd9051045f6e2edde9c6b43813e50a53f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/metalava" path="tools/metalava" revision="5f45ec4987c8cdf2462a9211629bcfe70cb7aeee" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/ndkports" path="tools/ndkports" revision="74fefbc2160250129cbd157272fcfb3c9ac20f18" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/repohooks" path="tools/repohooks" revision="ff576ed175e4682252779113835de144ed4f485f" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/security" path="tools/security" revision="c5257c3eb92ec9a03dfb8c2fd34e2f45e247f43a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="23a0c2b0e33edbf8dc817a1b53e8ebde96063549" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="d1721cdd56636f9df5f39f0e6b6ac40676556b38" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="fcdeba5c1f553debce7bb07d9d36250a2ac5e0d1" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="fc1fefc6d90199af3d846aa327635870f2bcfccb" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="platform/tools/trebuchet" path="tools/trebuchet" revision="bf6734f0712deba2b08f8577a72e756e79723711" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="32be0b969fda853924f941e6c997181501d7db80" upstream="refs/heads/atel-prop.lnx.4.0.r15-rel"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="d2dba4e634018c37e3993f7a5d727897a882c454" upstream="refs/heads/atel-prop.lnx.4.0.r15-rel"/>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="6c3854f3f180abebf634f660f61952bd44133983" upstream="refs/heads/audio-drivers.lnx.3.1.r4-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/display-drivers" path="kernel/msm-4.14/techpack/display" revision="0fd6d6fe2fad06331bee7d784392dada53751709" upstream="refs/heads/display-kernel.lnx.4.14.r1-rel"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="c609f02661adcb5e417be99ac2dcf7f63db800d7" upstream="refs/heads/av-aosp-qc.lnx.10.0.r15-rel"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="09c54bb4c44102dfc4c6aa724daab6a303b20596" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel">
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="2dd97fbc724abf5ac3494b624cdc2074feaee3cb" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="1e6777c15f218d11e176f511f629b90aa910e1bf" upstream="refs/heads/data.lnx.5.1.r8-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" revision="31838ebfd5a4bee168607e775fa72f16e8b11b70" upstream="refs/heads/data.lnx.5.1.r8-rel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="b78c41df9a89d8794e683a8299f7c4aa68ca5f48" upstream="refs/heads/data.lnx.5.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data.lnx.5.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="2ef25ec2c4e5f7bc2b8cbea826260bbba3a0f9bc" upstream="refs/heads/display-android-commonsys.lnx.1.1.r5-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="8c98e1d8b44806ee6765de339107f2f3cb64e427" upstream="refs/heads/data.lnx.5.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="19746d6c16bc92fa2ffd8eb9a9341ab54f969868" upstream="refs/heads/data.lnx.5.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="e96727cdc5d0b0925299ec68faf46832e5032b22" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/hsi2s-kernel" path="vendor/qcom/opensource/hsi2s-kernel" revision="1f0763fddc35cc0885871728518008a690aac166" upstream="refs/heads/vnw-hsi2s.lnx.1.0.r2-rel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="75d6276c4f2c332f3e06672f4f61c3779c1f3d07" upstream="refs/heads/android-vendor-hals.lnx.1.1.r40-rel"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="d4609adb223167f56db332d7cf4fd571f1421c3d" upstream="refs/heads/location.lnx.5.0.r11-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.2.0.r43-rel"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="43e88dc927f07c7ee944b5e88f653a58be392fab" upstream="refs/heads/power.lnx.2.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="efe80cd4a570ee71bf41e5c81b292d2ecf69f4f8" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.5.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="bcaa76cc89ac554298b777dca8d814db9ad61c89" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="6e18a9b2a5ce5fe62046543b4ab5366b2b94c541" upstream="refs/heads/core-technologies.lnx.2.0.r43-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="f6137b96972ff98999af53537bc0a51d61315179" upstream="refs/heads/opensource-tools.lnx.1.0.r78-rel"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="5b8d6188fe0267fc957eb7928011d7164be4ca05" upstream="refs/heads/core-technologies.lnx.2.0.r43-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="776307b835feddbe9fb4f1411eb6fcadf4aa3a68" upstream="refs/heads/wlan-api.lnx.1.0.r22-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="580c96f1e06823756c1b8140a5bb88b08cffa378" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.r6-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="b831afc410da374597b166181c042af5f2c3a2df" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.r5-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="59cfa1181df8a9be6b29d46f4e7c61c30edf4047" upstream="refs/heads/wlan-service.lnx.5.0.r11-rel"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="62111536855630e0f2a1c26288a2be222a90a6a0" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/msm8909go" path="device/qcom/msm8909go" revision="738c6866138250a1b45ada90addc6e151c4a583e" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/msmnile" path="device/qcom/msmnile" revision="acfb43c9e002db6c2546e1292b785f9df7e47004" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/msmnileau" path="device/qcom/msmnile_au" revision="e0d38bd82294d591971787640b9b09c191d40155" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/msmnileau_gvmq" path="device/qcom/msmnile_gvmq" revision="a730ccad40aa23a929fe4072099a1400c110b88d" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/msmnileau_tb" path="device/qcom/msmnile_tb" revision="3e5825a64746b540c3c5781f1e0b0325d1e77521" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/sdmshrikeau" path="device/qcom/sdmshrike_au" revision="dcfc0d3a7d0c22fd6915d98d9b4468018aa172f8" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="248a1b1c06ebbcab6615ac51248d906d61131b89" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/steppe" path="device/qcom/sm6150" revision="b9f63c6dcae0c76446b4ba9e537e1f45513da515" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/steppeau" path="device/qcom/sm6150_au" revision="7a88cb58a750308052c027967709c62d09c18dde" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/steppeau_gvmq" path="device/qcom/sm6150_au_gvmq" revision="477736653017e0c22ba03a4baeb6ffa7bbbcb656" upstream="refs/heads/qcom-devices-auto.lnx.2.1.r1-rel"/>
+  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="f5b0d566211957f181bbde7224aef50d75aafbbb" upstream="refs/heads/qcom-devices.lnx.5.0.r14-rel"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="92f73d902b44e8943b2b5f968b5974b4dd3e41ad" upstream="refs/heads/wlan-service.lnx.5.0.r11-rel"/>
+  <project groups="aosp" name="toolchain/benchmark" revision="1fba1825631e6e52dff5b3ceb87a5b439e2acf52" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project groups="aosp" name="toolchain/pgo-profiles" revision="cf74396a78b48054dc351f62a664130a1d5c029a" upstream="refs/heads/automotive-aosp.lnx.2.1.r1-rel"/>
+  <project name="wayland/weston" path="graphics/weston" revision="8323d74e8bc7b0fdac78f4e87e758b7f759219cb" upstream="refs/heads/display-userspace.lnx.1.0.r1-rel"/>
+</manifest>
