@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release,yukawa" name="device/amlogic/yukawa" revision="38066ab343dece0f33ae8444dd9a9759dc8791d5" upstream="LAW.BR.5.1.r1.5"/>
+  <project clone-depth="2" groups="device,pdk,r-fs-release,yukawa" name="device/amlogic/yukawa-kernel" revision="7807a99270a74b5fdf39e1b8d6892911c38245e0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,pdk-cw-fs,r-fs-release" name="device/common" revision="2ca1b6184058b1edf7d545f21f75470f474f781f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/arm64" revision="3849335f68b2593ca4e1a8ca8e3996a2e93aea34" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/armv7-a-neon" revision="e211ed08d9720414e11a7af2f63857ebe9850690" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/art" revision="7fb5c6565742d7321fd34ade516e73da0a6a8e52" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/car" revision="5f87db26952fcb70733509b95c785080a7d02d16" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/common" revision="2c6b53df37f3a9a75ff18cd51cfbcbd28ef4f3d1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/goldfish" revision="b348fa1e2b4f7f8bca9cc3e04887739e516de026" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/goldfish-opengl" revision="5bcdfb8a92e51dbe093a7fbce645c57993d29317" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/mini-emulator-arm64" revision="40316573ef2976c9eb87bd46ff4140a6624c79af" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/mini-emulator-armv7-a-neon" revision="27959e7fd13665c8906fbd1ae5638ca697dbc7df" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/mini-emulator-x86" revision="2cfdcfa743942cc33773dbfb3081f5cfc2602b02" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/mini-emulator-x86_64" revision="4328c64160ec00f8d640ed92612714f70929d9ce" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/opengl-transport" revision="944c181cad3076f89e3093e1515f2f17b35349e4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/qemu" revision="afd963bca107f8023eea87003705949a13a731aa" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/trusty" revision="49378737b971a4544b26faf9baf20e2afa2a56ae" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release" name="device/generic/uml" revision="e347ca2b73a657e42e5dd6ea29c27524995d74de" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/x86" revision="6870298084f2798ac82826406413a4b3f24dca4c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="broadcom_pdk,device,generic_fs,pdk,r-fs-release" name="device/google/atv" revision="7e47dfc3119967211470893681b36a9429cbd690" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release" name="device/google/contexthub" revision="fb66283a40552d0b9613c2cbe0c36a4b7afd6cd0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release" name="device/google/cuttlefish" revision="1e65efa13e6f36e554b4f78fdc59d28df0f11420" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release" name="device/google/cuttlefish_kernel" revision="b7d97f9d3e79ddfe90e4b834a09ca040233254af" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,r-fs-release" name="device/google/cuttlefish_vmm" revision="ac4ae0769a502d8e894f4c2144f022595f4e08a0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/google/vrservices" revision="17063aa5857078c4ecd8a1cf065097d1c7cabc7a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/google_car" revision="736e8e631e0c866ec4bb502e29e397db019b709b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,dragonboard,pdk,r-fs-release" name="device/linaro/dragonboard" revision="a6401b0355287ea713aef961673c2934e5f3ef28" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,dragonboard,pdk,r-fs-release" name="device/linaro/dragonboard-kernel" revision="a88867f034172d6f0dd6d32b4a8323b6c5674303" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,poplar,r-fs-release" name="device/linaro/poplar" revision="906671d87cc9ab31512805fc7768046503369c37" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="device,pdk,poplar,r-fs-release" name="device/linaro/poplar-kernel" revision="2f6bd503cc92d285e51d2aa3c381e562b2f4a63f" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="device/qcom/common" revision="b1ec44e6fba6d75600dec231bfe1bd77a53d9432" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="device/qcom/qssi" revision="7c2cc5c28349733701e30d5131e8c194a333af12" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="device/qcom/sepolicy" revision="a72637bdd7e02b9f32a76c1f8c8982b3737c0ff3" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="device/qcom/vendor-common" revision="57a8f76a0afd2b1246191e7b58a2a0f53f982d2e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="device/sample" revision="fcf369915405a4d8941084ab1c0fa34b20768fd7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="kernel/configs" revision="0979caa062f563a57b6edbb24044fea39c60b83d" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="kernel/lk" path="bootable/bootloader/lk" revision="86c0702bb5a9862a630c536b59f35cf9ba804d28" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="kernel/msm-4.14" revision="e1663ce3fa0c6410c06dcce6f2c773d9cdbc21eb" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="kernel/msm-4.14/Android.bp" src="Androidbp"/>
+  </project>
+  <project groups="pdk,r-fs-release" name="kernel/prebuilts/4.19/arm64" revision="d4dcbecbd68ab7235d8c72d52bd53a34ce274695" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="kernel/tests" revision="9e76fad9145f7e0cc9d84608a134e3a3b5d7ed2f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/art" path="art" revision="c1fdf2df2fbdaa1690461fb0e7c5c413a8893c36" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/bionic" path="bionic" revision="5994db3578146f3ad58fd436263feec92e0d4951" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/bootable/recovery" path="bootable/recovery" revision="3f104901fff9c322b92b66ecca4d07b93ef1cdee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/build" path="build/make" revision="26e7a3da688b7a976dc987c298a66567945160da" upstream="LAW.BR.5.1.r1.5">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="c81813961b05ef48bae539f0a68a11de5526c730" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed,cyborg" name="platform/build/soong" path="build/soong" revision="75608abb0b7f30fa4dec8b98899dc7bab6199667" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="pdk,r-fs-release" name="platform/compatibility/cdd" path="compatibility/cdd" revision="b19bac69d49c0d69e6074f89f8eefc13344823cc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="cts,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/cts" path="cts" revision="e6341a09ce8c045a11c07de65d2709ab6b1b8f28" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/dalvik" path="dalvik" revision="d948c7f4f9dbb3ec815d2f61bd1626d68782df60" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="developers,pdk,r-fs-release" name="platform/developers/build" path="developers/build" revision="059a5f0705ebed5e3d2f3f317d2f2d4ec248af1c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="developers,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/development" path="development" revision="c3ce40577cd17cbd87aa49dc7aa027d806c5a738" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/FP16" path="external/FP16" revision="ef664cfb655e748463eba7907bcf12f46aade41d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/FXdiv" path="external/FXdiv" revision="2ab85460ed866041a4b2182b886df7ecde0cfefd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ImageMagick" path="external/ImageMagick" revision="4526193771b8040a3930ce4284b1949596b32527" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/OpenCSD" path="external/OpenCSD" revision="0631460b5632bfff3ac92166c504c5838bca52e1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="ef6c0233d647de4e3676d9a149048ee0cfb9fa4f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/XNNPACK" path="external/XNNPACK" revision="642cf48e938d115eb90d2b7e5d14c38800f274d8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/aac" path="external/aac" revision="3ed5980385dc969d646a8d33aa88a5792b58d9b4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/adeb" path="external/adeb" revision="e5f4afe4ce27759e21ced5396b4c1a3228d6a096" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/adhd" path="external/adhd" revision="b9758261f69552cc9533ae377c3f2d954f8c2f57" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="adt-infra,notdefault,pdk-fs,r-fs-release" name="platform/external/adt-infra" path="external/adt-infra" revision="792075098bddd6c5b2c5a83b76cf71b588211525" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/android-clat" path="external/android-clat" revision="27004fdbd665b2d239e9c4fecc5d6630f554eb13" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/androidplot" path="external/androidplot" revision="c86fba037c90456d55229417fdccc66880d1309f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/angle" path="external/angle" revision="84a1e4ba1655516434929824a1adcab6c5b8f89f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ant-glob" path="external/ant-glob" revision="c4ddd04d677bda58dbb642f04116e0feaf11118f" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" revision="53546c7ceef11b3078bfbb9487bb25a0456533e2" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="c674e613ac60fcd7583ca26bbb8878eec6aec851" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="6b3d142c5609fb08276ea0a5033145b1c1ae3110" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" revision="51934aa1e6197101102d0080e26361a7bc9bdc0d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/antlr" path="external/antlr" revision="b8079a693d183399b832026afd052a69aae6690b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" revision="c0357b5b1c60474d451fd6ae747639690768b199" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-commons-compress" path="external/apache-commons-compress" revision="3c321847345df22cf7dc3aa4cd21eab128f006dc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="023114fdb5e0c4d8de5fe9547c025ec0c204dff8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-harmony" path="external/apache-harmony" revision="9835d403323924982071feb61bb0c0d295576bbc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-http" path="external/apache-http" revision="cae6604134d2359ea4fc12e07cc59614460183a6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/apache-xml" path="external/apache-xml" revision="2dbd81c141553f1255db4948054996dc2a2e4b4c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="0423ef298a0b9c5a939714dbced28073a79e83d1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/arm-trusted-firmware" path="external/arm-trusted-firmware" revision="cdd932c117a552029a7994ff515fbcba405f28b2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/autotest" path="external/autotest" revision="9166a10786ae76cf2698fbf608f08892f75ff50a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/avb" path="external/avb" revision="1e226d05687e3fd5a34d26bb1dd03b555498ba04" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/bc" path="external/bc" revision="b3e5c1eba5722020b5441b44ffaa3ed19dc928be" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/bcc" path="external/bcc" revision="336c136f7f4c7aa9d6de0da531f1c72e4bbdd185" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/blktrace" path="external/blktrace" revision="1a1e474c93ad7d989d64fa4ea2f02b84a1d48e36" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/boringssl" path="external/boringssl" revision="909f86cdc296538fa403827a23e72bffa20e39dd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/bouncycastle" path="external/bouncycastle" revision="bc82c6e8ce0c42b6d33d521a30bca93329030c28" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/brotli" path="external/brotli" revision="7b1f570105e0127d0e7ffd0c2d8a10cd992f85d7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/bsdiff" path="external/bsdiff" revision="d7b37ece564a5127ad9b457e8056d2d68dd30c81" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/bzip2" path="external/bzip2" revision="2a246644d0ef8d31c7fd259f0cf7e0a0142ccb6f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/caliper" path="external/caliper" revision="ac45ca797dd2465bb83d6351e61b0ddc472820db" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/capstone" path="external/capstone" revision="2032b467328ee5ecba85de58184cdd92661d6eee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/catch2" path="external/catch2" revision="a33df8420a456fe381140211f084120b8208dbb6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cblas" path="external/cblas" revision="f4b35beb0a5bf68d234d9ba7499d72ca651aaaa3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cbor-java" path="external/cbor-java" revision="3f2422cd939d0657b09ea901d7238748ddd36fa6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="1dea950d9a1e26ab620277ddbc2fe1879ebbdb25" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/chromium-trace" path="external/chromium-trace" revision="89d82873e2dbd077f08ac69ccf23d28eeb2a4de9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/chromium-webview" path="external/chromium-webview" revision="b89c1cb158cbd06a30a70b500c86f63cda06c583" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/clang" path="external/clang" revision="4acb30275c7a10f043cbb3506010c1e24b7bacba" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cldr" path="external/cldr" revision="1b6af542b266d6275657ca6c28072cc3855e4f79" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cn-cbor" path="external/cn-cbor" revision="5b173ef675fc0d787ccabc219bec6dea473e0c56" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/compiler-rt" path="external/compiler-rt" revision="bddbe6a95f9bebf9ea82fae935545e64c956852a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/conscrypt" path="external/conscrypt" revision="9e77866e9fe360f0a8bcdc77787d7f2593926c77" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cpu_features" path="external/cpu_features" revision="c4bdcf4223511565a1867c24a39df691a4c280e8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cpuinfo" path="external/cpuinfo" revision="409af11868e386f7d791a8110670209755cc3070" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/crcalc" path="external/crcalc" revision="c9118720b3fea0d457f4a18ba0087ea13dbcd081" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/cros/system_api" path="external/cros/system_api" revision="b33d544b19d6c56ebfbfe99ceb6179e3bf167821" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/crosvm" path="external/crosvm" revision="f7a47180748cab95ca657388c1fb0f22c97f5470" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/curl" path="external/curl" revision="6655fa34cea21ef09d731e3e3fbe419d44954036" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dagger2" path="external/dagger2" revision="4084582e688790bdf4e14909d6dbc8f491849d79" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/deqp" path="external/deqp" revision="6260733df20ca220160f870f5b3b1b8c6b975bcf" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" revision="5ec8b943d5987a1ff32577f48775a4d99a012a8e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" revision="16cbd3c5be9fc31d119512275bc09f0e4c541831" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/deqp-deps/amber" path="external/deqp-deps/amber" revision="8a273fd94354edde971a0cea904316823b35faec" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang" revision="81815afdd04fa1453da11edb651ee10f42ee314d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/desugar" path="external/desugar" revision="a385c63deb0be904a829364074ca06933a69213c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dexmaker" path="external/dexmaker" revision="d3bb3b229133d47386d813684b9dc8e9ad1a15cb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dlmalloc" path="external/dlmalloc" revision="f5909393d49c2e8f97454680429a8637eab73c21" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dng_sdk" path="external/dng_sdk" revision="846583f1c2112e78bc466cf831bbcd54e112b059" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dnsmasq" path="external/dnsmasq" revision="b29548d32aaded4ad2f5b4134f154a83509cf9eb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/doclava" path="external/doclava" revision="a6aa778d75ec6eb541811fc65fa5d117ed44657c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dokka" path="external/dokka" revision="f6482af8f15f85031bcb445544e1e1d09afc3697" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="drm_hwcomposer,pdk-fs,r-fs-release" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="3717f94cc1c698f02a2cc1a385522848377cc463" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/drrickorang" path="external/drrickorang" revision="9defa3a6b2465d9118edccfe47a501af12b186f4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dtc" path="external/dtc" revision="3d873b8fc3055e9678319ac7ef8d218655062022" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="5f8b0c9f327e05e27d9a5496b8873709c26e0956" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="4846594332de3f470262da237f08060bac76badb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/easymock" path="external/easymock" revision="06189a650aa250b83cca10346a1f4ee80e10cda8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/eigen" path="external/eigen" revision="be8fda281fa245477db45d9dab2a47e8331c7b18" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/elfutils" path="external/elfutils" revision="4dd898cb48ff5b97dc61b313ad43f604a3fbbe52" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/emma" path="external/emma" revision="d8a33464ae117f880cbd8d182232273bff2a8921" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/error_prone" path="external/error_prone" revision="3cba2fac936c313d8371e3e35e0b4e083d3b9376" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ethtool" path="external/ethtool" revision="1e830c89bec79f91899136280222eaf984154541" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/exoplayer" path="external/exoplayer" revision="24fa9d93fdc24098c5889fa9882366309d2c4f74" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/expat" path="external/expat" revision="ac45c55b5b6bc78d206d5c123c7e22957013b19d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="c94ec1579bbf16df1b75bdbf4eeb25ef997af21c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fastrpc" path="external/fastrpc" revision="8e985b1871dfb345bbbf2031f586a1181ab323f4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fdlibm" path="external/fdlibm" revision="4f815a85f08cfd3a691efdffc3cd98798188399c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fec" path="external/fec" revision="81be3601c7b5ac2df040b880ccdb160bba745fdd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/flac" path="external/flac" revision="d1f10b64b12dd0bd509d2d13c3be61bd125ff045" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/flatbuffers" path="external/flatbuffers" revision="e6b83c75e206e997b9b12ac00983c6036da4a684" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fmtlib" path="external/fmtlib" revision="562ac7162be6fa2c56a508973f469adce053f8ef" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fonttools" path="external/fonttools" revision="4ebe2b95d964936d52b2440f1a800117fa356472" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/freetype" path="external/freetype" revision="8d901209387689e1fa9a37ed3b9fc26429fca1cb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="de9ccb31b554207f1c65abc3cd3e28fd5aa8fb17" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/fsverity-utils" path="external/fsverity-utils" revision="21976c08b719afc586d64a39621fe75d6414e773" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/gemmlowp" path="external/gemmlowp" revision="4adde5e24fef010447cf0550bd9ed1c7d0e82f4c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/gflags" path="external/gflags" revision="3a6a93aec78b49723570ad0d1790535cc0e07d03" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,qcom_msm8x26,r-fs-release" name="platform/external/giflib" path="external/giflib" revision="f7746ef4ac2c293c083b7cac21e741e2e93810c6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/glide" path="external/glide" revision="bc4cdb23c3ea5d7bdfe311b6b5e1af87699003c7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="79f24897da26c08fbdc25cf3eadb410fa15bdadc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-benchmark" path="external/google-benchmark" revision="e046e85e4a706eee4d535ac20703c2c100480b83" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/google-breakpad" path="external/google-breakpad" revision="44f7f536766676662f8bd21b94acf7d55232cad2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" revision="b75f7035ad898fe0fa831abe8aace77bd5342dee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" revision="d9942924be93e2cb2006152825423639d0b2e34d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/barlow" path="external/google-fonts/barlow" revision="289919b9e2cde0c2a00df13b382c7377fe4104e2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/big-shoulders-text" path="external/google-fonts/big-shoulders-text" revision="92f05c4a28b2dd54e00922a6328d7f33c98a3b35" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="811b7412b766de2c49a199adafc89a409163522c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="34ef9ed3a412a50ccd19e9093c2250038116b485" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="0ad9aff8acbaf92330e6032ed560439fac99a5da" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="9c35d0b64aa32846efb4c1d95dd3385b87d3fade" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/fraunces" path="external/google-fonts/fraunces" revision="c1d4b76aa0c992e1993fb7cc9939f1e02e11aeaf" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/karla" path="external/google-fonts/karla" revision="6e3c2de415a8412cd3d03d251a50a1282f6bbc42" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/lato" path="external/google-fonts/lato" revision="6cea54e26164e0280184c0fec5a702fdf1ae4e47" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/lustria" path="external/google-fonts/lustria" revision="da13cd3fc353ca37c6031f6f588ac9157a0ac899" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" revision="ad93c8ba9398a7da72e761c2ebedaf512f4def9e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" revision="4aa1d607c32ce0e9e734262a4ecf9e73c1ef09dc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fonts/zilla-slab" path="external/google-fonts/zilla-slab" revision="0f7392e365c973a55ddff4fe80b7188e6df02f8d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-fruit" path="external/google-fruit" revision="0830e044050d0ccf55d2a3080600a0bceb75ff1d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/google-styleguide" path="external/google-styleguide" revision="4f92d17dcc845c2d9ff3f8a2b25f094b713f5432" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/googletest" path="external/googletest" revision="5dbb7431e6481bb9cdad3db226e2635ca41fddb4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/gptfdisk" path="external/gptfdisk" revision="e1d2cfbf6106cbaf88f2444e34d8ec478b71322d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/external/grpc-grpc" path="external/grpc-grpc" revision="7d20764b2c1ee66f4c16280a71d3e9b1940236c0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" revision="48aab82b257ae2d3e4f7b38c11719b12a58e46ee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/guava" path="external/guava" revision="296434c950ac23ca19cc85e088fb65b8023d8c3f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/guice" path="external/guice" revision="694109fd5b1009a8366c6ca93ff212b7141f033c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/gwp_asan" path="external/gwp_asan" revision="dfa4d51488ee3ed152363f08930eda35b4e43846" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/hamcrest" path="external/hamcrest" revision="186265ead68fc3498e20545b61c7e08329dbd39c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,qcom_msm8x26,r-fs-release" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="6eb4478c11054030b09c54be82e44ba5d75affb7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/honggfuzz" path="external/honggfuzz" revision="fedd1653d1b3653cada91fa33cc5842bf7e934ea" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="832f998f57933ec08424e679d65e116b426f9875" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/icu" path="external/icu" revision="938eef865699f7412d354e74e1360651d5d93c1f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools" revision="e9c085119a2e0dba22f756f7a8edd335b2572d29" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/image_io" path="external/image_io" revision="f6d9ed9706f85a693a0c5efb815a107aada0ef1b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ims" path="external/ims" revision="ca37f0dfe785c5a0e96a5028cc5da323ef3820a4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/iperf3" path="external/iperf3" revision="da0e1f7f9a8d546aae2545955065d72abae185dc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/iproute2" path="external/iproute2" revision="c3845b83139a1c71238fac9e2011821e8768eebb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="23011b82ad55822a46c70420717ab398aa38e61a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/iptables" path="external/iptables" revision="0597db7732e577e5a1e01b39919fe0b8c338d424" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/iputils" path="external/iputils" revision="175ecaa108a77282d858ed64934678b8d53d73ba" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/iw" path="external/iw" revision="811ec55c859babadc5f75e9c1b7d9b8e2e8f04ac" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jacoco" path="external/jacoco" revision="160c070cf7ebce375f9344ab06c12f8fa62f449c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jarjar" path="external/jarjar" revision="64b64f0d924b811a48486cfc1a06ac110c9ad2b6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/javaparser" path="external/javaparser" revision="4b5e40f02b45cdd7d38c79dcc9c71ffe35fc6fea" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/javapoet" path="external/javapoet" revision="d5652c3ffceecdd3dae23215a226e7d62e39b64a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/javasqlite" path="external/javasqlite" revision="ac999569648e0febe68b810e084d81b5a3304e5b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jcommander" path="external/jcommander" revision="53ed106302916dfd67e379920901dd4d2647c765" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jdiff" path="external/jdiff" revision="b8b4270015417e8abe03b0c6bd81b886744fb690" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jemalloc" path="external/jemalloc" revision="a7cb2226b109d76f53e9456a462395b942de9ab9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jemalloc_new" path="external/jemalloc_new" revision="253902873aca43758a0383e0ae9e3b0f7dc7aab7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,pdk-fs,r-fs-release,tradefed" name="platform/external/jline" path="external/jline" revision="1e84c7bb4f3029954abab6333d16b4b01c07192b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jsilver" path="external/jsilver" revision="fb5323b1efc973f02a22b0fba9c79c8bd9fbc99d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jsmn" path="external/jsmn" revision="9c0958ec1f2537f653f1816df544813c37cb5b91" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" revision="04000b682f7c4b9ea14d791dd144af763ef6977d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jsoncpp" path="external/jsoncpp" revision="e56a1130bf759a6ddf4f1cda5aa67a74e20e8359" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jsr305" path="external/jsr305" revision="08b50088d2a2e3b26db822a9761ac8cd2c57ef42" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/jsr330" path="external/jsr330" revision="d9bfdf8e35f207b4358389922a16778223241dc2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/junit" path="external/junit" revision="be5b24d9f2bafae105389bff963782193d38cbe5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/junit-params" path="external/junit-params" revision="c672464a5fe08ad86c5fe6ccd731353f2d3c9baa" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/kernel-headers" path="external/kernel-headers" revision="b6a4f1ed08cfc831ecf5006123e530e1935af564" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/kmod" path="external/kmod" revision="13dccab506208b6f1afb8fcfff45814beb779fb2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/kotlinc" path="external/kotlinc" revision="90d0b6f38b8c755fccc12a562afd42dc92cdec8b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/kotlinx.coroutines" path="external/kotlinx.coroutines" revision="ba189ebdca65a947ca86bc2c5708b4c2638b677a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ksoap2" path="external/ksoap2" revision="4b17169bee17a41dd7cc06094123fdbf7f42946f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libaom" path="external/libaom" revision="14ec50cd87a75ab0c164e95d97eff5a0d17c1261" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libavc" path="external/libavc" revision="5da69aeb3570127bc58a43ad83aec09aae9bf3ca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libbackup" path="external/libbackup" revision="ad76f985aab3e601495f5ee5247c1f3e14c4fac0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libbrillo" path="external/libbrillo" revision="6694e686756c309aab9e5bb667a48f2fd8d8145c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libcap" path="external/libcap" revision="ded5130709dba63f929d53b265d8d51e34b1982e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libcap-ng" path="external/libcap-ng" revision="8fd5fb580bb10a0d073dc7abbae8f74c9dd6edca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libchrome" path="external/libchrome" revision="ea1a53051bd1c69045cf25279ab6d04d0b6957f3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/external/libcups" path="external/libcups" revision="986735d856896898450ff0fc3f9c7cd691f967e7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libcxx" path="external/libcxx" revision="0f67ec2d3503853b1054db8d879989f5de183796" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libcxxabi" path="external/libcxxabi" revision="1c04fa41c7a8e9e0da003669c837d97b315f30ea" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libdaemon" path="external/libdaemon" revision="1ad956cc3b155e4fffb45a4013192ce78738792e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="41b46ffa76b2774530d2aeacaf4f3616eff98279" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libdrm" path="external/libdrm" revision="16a292d48d2eccb98387e9e081b6c14d15bd4203" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libepoxy" path="external/libepoxy" revision="ab62cca8d9bbae7e97233ea1d7e9632f0d96e54f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libese" path="external/libese" revision="6b9eea8ab547070080b6dff94b5194f6c2090507" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libevent" path="external/libevent" revision="6ee3fd0e21a19e9e0b5c3e3e2e3d78a21d45c3e5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libexif" path="external/libexif" revision="ee58ad9e34145a712fecca050066ed7f9860a865" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libffi" path="external/libffi" revision="a3cbaeee7786f2ffb5d6bdc9e6620599bc8c7c4f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libfuse" path="external/libfuse" revision="dead1b92a02420cb4229f663b8bcd7fb43326823" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libgav1" path="external/libgav1" revision="094ae2439b870731f26852931c1077642ae099d4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libgsm" path="external/libgsm" revision="7e194777c1187e12a8a9e2ca76a42c2788c46cac" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libhevc" path="external/libhevc" revision="c31a18bc5bac502591028b0ae2f1324218a487e8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libiio" path="external/libiio" revision="81fa4f5780c38e805ca95ec3c580ec7605062c0a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="913b1681b2ae0e4b56a4331e74505f5beb5f7cf9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libkmsxx" path="external/libkmsxx" revision="751c39e69ae3bfbbf4ae93c08e5b60b3708d7f90" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libldac" path="external/libldac" revision="7c434905c8876f70414c3f47fc180c1d9831b08a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libmpeg2" path="external/libmpeg2" revision="7e847947f5f021ad041b963536d34068f8ad05c3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="6ddd359db33292e1d5e2b56ade7587a2bfc86ed4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="e96e7bca3208eca7ba3d0de79c73e32a01d812b0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libnl" path="external/libnl" revision="cdd2deb1827d70ea3ad12dc9b3963968fdaac53b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libogg" path="external/libogg" revision="cc2dcdd6471586c0b0c955a5b8f499e430dd0ad6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libopus" path="external/libopus" revision="0dfebbeba288e52ad1c11e900f1c00044397a549" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libpcap" path="external/libpcap" revision="a3afb5247e5338157e697aab2efb38150072b4ea" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libphonenumber" path="external/libphonenumber" revision="ad6b565bd4677de8e0bfffe2ecc16fc6e4bdebb5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libpng" path="external/libpng" revision="8db56f144f5f5aedf4bf4a892950949a1014a9c3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" revision="094f1996a31715e8fd297ffb9534909b8bb7a3e7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libsrtp2" path="external/libsrtp2" revision="301c2e877d850cbfb1ac161c48726eef50edd973" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="7939e8c5f63843b1d95952b340d66d89ab2d1008" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libunwind" path="external/libunwind" revision="4dca4e828e407b70056ae9ad6c227b6a5baabc47" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="e386f0d2d3a3e87c424b12b9573e4314a25cdc82" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libusb" path="external/libusb" revision="5c98e86e29ae3377c407e285a658de5c05f13bcc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libutf" path="external/libutf" revision="6d4f36e6dc9f919d4ea5f085c06f8c5de238154c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libvpx" path="external/libvpx" revision="b83511ab4de6fd443b5f3fe80073029fbba24426" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libvterm" path="external/libvterm" revision="e13f72e909517eea5678ffd0486d8e8bfd2641c8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libxaac" path="external/libxaac" revision="f0e3147cfdc3803b6c90683b54769f78c98867c0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="e539631a802dfa8a4079dd21a81c77e77bdeb644" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="libxml2,pdk,r-fs-release" name="platform/external/libxml2" path="external/libxml2" revision="3f90fef4b07abfbf6d7a652a8bed1e47a8faafca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="libyuv,pdk,r-fs-release" name="platform/external/libyuv" path="external/libyuv" revision="3863f6629bc5c5e7c03a51dd00413d1fa9d2636b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="64fb73a6c9af815f140ec605b6cffd148459d35a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/llvm" path="external/llvm" revision="b1dbbb724f0f35f69d6c57c4996b615368ad64b7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/lmfit" path="external/lmfit" revision="6acab6240504ef3b8452bbbe2f1b9b47f25336eb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/ltp" path="external/ltp" revision="71975dfb1c3cf8f4468fe7ea4a5d2270a5d7b425" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/lua" path="external/lua" revision="b1affff6b09af4a406c2ad81603324574de6f7ae" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/lz4" path="external/lz4" revision="5748676c26790e59e33a90887ee6e6b0965ace72" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/lzma" path="external/lzma" revision="dac47d356cb410088c084230207064d4c2dadb06" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/markdown" path="external/markdown" revision="2a8c8f8b8cbba6cdaddb4f35eec0b5787f9bfa1c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="5450f8ace84727663adc5edb06c96dcdf8d5e91a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/external/mesa3d" path="external/mesa3d" revision="714ffd8f31403b9f92423311d758ae44b8870dd1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mime-support" path="external/mime-support" revision="0c0ae47345ef5478125ba6dc7842f73170060ca5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/minigbm" path="external/minigbm" revision="af3ea26d71bc924356d5fffc82c76af4a0d562c8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/minijail" path="external/minijail" revision="e1390feba74c7e1ff014568c0db6c9dfed1c0d10" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mksh" path="external/mksh" revision="53a74d8efd1e8a6b1a80ee4f5f3c5bf95fc8424a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mockftpserver" path="external/mockftpserver" revision="9b58f046d7f627ea8be88c25eacafdb6d3f026eb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mockito" path="external/mockito" revision="9d01763f9f19f25223db84af5f2dcd247a465378" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mockwebserver" path="external/mockwebserver" revision="122ce31af747c3f16a50cd5f4a5dccfaff7d23fe" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/modp_b64" path="external/modp_b64" revision="85da02ffb3c9855fc547b55f5c2b42679b2a419d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mp4parser" path="external/mp4parser" revision="160d67cec100332fbe5f6a841368ecdeb307d691" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/mtpd" path="external/mtpd" revision="8817cdca5e362b8b0034eeacbce5b069c1bed317" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nanohttpd" path="external/nanohttpd" revision="e454b8b419ec567b27f38a8a3be69bf614dec34a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nanopb-c" path="external/nanopb-c" revision="403b102e74c63cfda9cd85b378950d57ce1dde50" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/naver-fonts" path="external/naver-fonts" revision="84f12a0c1c9ce5aeddaa6fd0061060948fdec359" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/neon_2_sse" path="external/neon_2_sse" revision="f16f829c2be25f11caffcc5479b4dda3b316db26" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/neven" path="external/neven" revision="eabf8e37c81452d0ac56611872d1821d75a6891c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/newfs_msdos" path="external/newfs_msdos" revision="5041cca171b31a55090276c1212104734088f169" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nfacct" path="external/nfacct" revision="3283d110a2725065a043ed7308d8d6914a08a1a0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nist-pkits" path="external/nist-pkits" revision="32fe5db4742450caddef2180aeddb28d790bff33" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nist-sip" path="external/nist-sip" revision="e09d8f3534e5f477f57c9e7759e3b144e2fc4e18" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/nos/host/generic" path="external/nos/host/generic" revision="e1e24fef09050354ce3e5f9f9ce62de6345c849d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/noto-fonts" path="external/noto-fonts" revision="035754a9539617731d8114216baad9fa283581e4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/oauth" path="external/oauth" revision="fc11dddb51c5cb145f40d05091d9c9434457ebc0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/objenesis" path="external/objenesis" revision="ed6249f672b24ea3034ec2d778fbc35b1f655091" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="ccd15673f53abf887aa62601cf90747856701838" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/okhttp" path="external/okhttp" revision="e56b9232868b61510841c8f55a2c7222218a5acb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/one-true-awk" path="external/one-true-awk" revision="a881e6cf5649751bebe7573a7669742a8741ff6a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/external/opencensus-java" path="external/opencensus-java" revision="867da0bc1117b7643ae2c426f64000805731c94b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/openssh" path="external/openssh" revision="f26624be7320a8567db5a0d8aa4eed8b3361039f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/oss-fuzz" path="external/oss-fuzz" revision="8f2f5be81156444ff1a55bb34f12db770f2c6eb1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="4dc06d6fe9dbbc116c42a82ab1fcd2ac3635562e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/parameter-framework" path="external/parameter-framework" revision="e4c405bd44f6d864c4fd65b53ea4b371c74655ee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/pcre" path="external/pcre" revision="811205692f4792e30d355d5f101833f9f2a1e908" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/pdfium" path="external/pdfium" revision="05a47bbcad06e6f26ddc18b3d5763959863a232a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/perfetto" path="external/perfetto" revision="db38aacbd8e3e3b9be130d92cbc68724e574295e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/piex" path="external/piex" revision="68dfe035f75d0e6dfcce4b6073da43f9b570296d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ply" path="external/ply" revision="9228c25a894ef2c3f5bb49d4a1215e650dbb16a3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ppp" path="external/ppp" revision="b6235b18ffabb956b4dc266c0fc07b48f0f96462" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/proguard" path="external/proguard" revision="b8fc46b1d6af366bcdb604b7c1b1a63f76580994" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/protobuf" path="external/protobuf" revision="f06eadce4292d01cbe5d5eeee4d275d601d2dc7b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/psimd" path="external/psimd" revision="f3310db0576e89ce768df849bb822c4a13b5a38f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/pthreadpool" path="external/pthreadpool" revision="d8368c9d9ce906d0e02783d338e5dad23ec60101" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/puffin" path="external/puffin" revision="b85e90cdb4776d4837a35724448a861d0acb8fa8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/apitools" path="external/python/apitools" revision="c5a1c1da978a910da1aa60d2bb860f0318051a38" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/asn1crypto" path="external/python/asn1crypto" revision="e673108e8933a14c5def5231c38c2f0908758c87" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/cffi" path="external/python/cffi" revision="bb7a10a4a61ac7fd652044c3972b2f08028e4ff7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/cpython2" path="external/python/cpython2" revision="0a1243c4f467ecc9877551905994fa6ec850fd36" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/cpython3" path="external/python/cpython3" revision="f6348c2ae9322c096d93034c54a06616c3594341" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/cryptography" path="external/python/cryptography" revision="a299a9bed2f24468f53fbabecb2ea966fa068f11" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/dateutil" path="external/python/dateutil" revision="ef8bff9daba0975a5f1a8ea11b5b3f587fd17f8c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/enum34" path="external/python/enum34" revision="43e7b826bcbc8ee0e869d1c89b71fd5bb194c72a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/funcsigs" path="external/python/funcsigs" revision="16dd4c033e6b5b9587fc259b1e346e9e10832b91" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/futures" path="external/python/futures" revision="6e37c81cf879b1176edba40be3be5a3de8f84557" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="1f0cc12ce876af1e07c7909771108fc433494bd8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/httplib2" path="external/python/httplib2" revision="12451d47a095060a958720ff1e315ad1f814d888" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/ipaddress" path="external/python/ipaddress" revision="0a3f96652dc89dfff7a3a9d59d46dcbd8b037bfe" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/mock" path="external/python/mock" revision="9223e9004e08c3cddb852df85d5850ca81d93e18" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="082a4a1f5663877c363df9db091a57b8cecf1ff2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/parse_type" path="external/python/parse_type" revision="a7073c593379b8ff40f74a2a26d92f917cb063c3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="3310a06ec24642c740d13fba67a3fe81b8474550" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="37243289ccff91f18d87c7cd769eb31a117f9b7a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/pybind11" path="external/python/pybind11" revision="3240d7e05cdd77d23d5dd1e11cbbe75702c89d2d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/pycparser" path="external/python/pycparser" revision="92d3717f7602e0b81b94c32b4ff30e7f7fd77b5f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/python/pyopenssl" path="external/python/pyopenssl" revision="9d2e9ea35087081aef0509190495e69f496b3015" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/rsa" path="external/python/rsa" revision="a5e6cda873503e1419707a339061e7a10b8ac11f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/setuptools" path="external/python/setuptools" revision="4cbf3c3f64c014913b421cad4e577350ef534659" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/six" path="external/python/six" revision="24c0a5266862f0a97b25d7ab2a7337bfaab74ec7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="645758df530ff8bde9a93cbb0b695b1b62e0d344" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rappor" path="external/rappor" revision="c8e7b6f25053a73c4bea43b441cb337a675adda5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/replicaisland" path="external/replicaisland" revision="5bd43494608e57dc4cdd78030c127cf33d1c9931" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rmi4utils" path="external/rmi4utils" revision="521d2003b966d849babf8f656949734ccd8078d7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="a8c1efa0ce68cff3455a7de85b6a4def3c714253" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="2d0551e8baec7034f9babbe9d2515fa79763161e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rootdev" path="external/rootdev" revision="02b67ed1fa18a90de052b3dba9c9764c85a30e3f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/byteorder" path="external/rust/crates/byteorder" revision="9c94a0f016be70262106adbb7f6d64b1f2491913" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/libc" path="external/rust/crates/libc" revision="67e79c245a4b6a86e004d40c4234c5f21de41052" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/proc-macro2" path="external/rust/crates/proc-macro2" revision="1c60238024a80cf3d319f5ee6855f35ee7292a1d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/quote" path="external/rust/crates/quote" revision="a8bccb7f54344765372fc22d9d71590afbb890a2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/remain" path="external/rust/crates/remain" revision="13b0aeb0881fe26b3805690a7d3b9d592859b241" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/syn" path="external/rust/crates/syn" revision="e549f1787b65dc0eaf5ac98d9a9c371585a00228" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/rust/crates/unicode-xid" path="external/rust/crates/unicode-xid" revision="b7fa47ef2815d6c9df6772c164ec5c2e5fbf31ae" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/external/scapy" path="external/scapy" revision="5657f9c4f9e6eab5dd9d4057c095e8a171f37d7d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/scrypt" path="external/scrypt" revision="c446482115f8399da4444325749ab9a493850118" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/scudo" path="external/scudo" revision="c677bdb0f04228c8f4e86fce52f3d0eccacc05b4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="2b7b2805a465a793f43217bf8e02357ef38103fe" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/selinux" path="external/selinux" revision="1836f4454cddfc6a1baab06b2e826b48a4bb4983" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/setupcompat" path="external/setupcompat" revision="c94e0fb25e20efdfc7fc20423864619741beed95" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/setupdesign" path="external/setupdesign" revision="e170499de87f51bec95c141b0eb1fd0d762c0bf1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,qcom_msm8x26,r-fs-release" name="platform/external/sfntly" path="external/sfntly" revision="86aab4c3531674ab9b03d624e97493557bf86553" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="c5d77e5e63501257e88198cfafae75ac197d5c8b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/shflags" path="external/shflags" revision="dde75481498f2a143b3396b02b3789ba22c650b5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,qcom_msm8x26,r-fs-release" name="platform/external/skia" path="external/skia" revision="f7e4fc5b06c994a4c0125490453abe2bbc0b0292" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="cts,pdk,r-fs-release" name="platform/external/skqp" path="external/skqp" revision="6992e621ca23b6dbac1ae8b3468341584e93aaf3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/sl4a" path="external/sl4a" revision="9f07abc1a998116e326086d219eb5942f0023012" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/slf4j" path="external/slf4j" revision="4e775f06465556764e7600038d97074f83a1c040" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/smali" path="external/smali" revision="d335c44c806df11c708059ad94f8738c810bcc6f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/snakeyaml" path="external/snakeyaml" revision="80774874dc9077e140d3731e2df9b0c31c8f852e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/sonic" path="external/sonic" revision="7064915b42e90dfb6ba4c80e8f5b5a7ddaff6c9e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/sonivox" path="external/sonivox" revision="b451f1680777f17fae514887c02cdb54d7885849" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/speex" path="external/speex" revision="e55e8157629b999e523d903398c8ae6ecd0223d2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/sqlite" path="external/sqlite" revision="2687afb50cc6a1a47b11e80269e968383d8fbf33" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="4373ce64d60b21a17bb6a277126494e6e8284ae2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/strace" path="external/strace" revision="ced54b1f4ebfaa7f051ed1c42a28a4a8e4c942cc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/stressapptest" path="external/stressapptest" revision="e0422f47044a1759232623ef7dbb4d90996fee66" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" revision="2c19df2ba2c5baf9db94e264673fb2f3afc738e3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/swiftshader" path="external/swiftshader" revision="2e6affdad0d127ff81de206913205eae9ec671e0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tagsoup" path="external/tagsoup" revision="d78b8d65387e314d563d903c1c972a06ad087c02" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tcpdump" path="external/tcpdump" revision="3b0796ae0f30dd33fd81fe573fb3dfb68e5a5bf4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tensorflow" path="external/tensorflow" revision="d9536531a39a29d2bce790c5da10abe15fe0e0b7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/testng" path="external/testng" revision="1463e6f1dad4e328ea45d79036c46f3babcafaab" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tinyalsa" path="external/tinyalsa" revision="1d73bac9e85f4f1683c9d17cc28afc81119179e0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tinycompress" path="external/tinycompress" revision="625aecf21bd93f98c9f9b5d1e863b2f71f936785" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tinyxml" path="external/tinyxml" revision="39cb8254e8ec706a63b8348f60c78820d5f94daa" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tinyxml2" path="external/tinyxml2" revision="89c32d589906bc1f7e746540da65b04a478f743a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/toybox" path="external/toybox" revision="1df35d92fe71b467fa7f4d7ec838ea2efa10daf7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/tremolo" path="external/tremolo" revision="b32130830f2f4d25e440c4bdaba08cf436f97727" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/turbine" path="external/turbine" revision="021dd0398e1865b00c9d0460f7aa5cb83117d72a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/u-boot" path="external/u-boot" revision="eef3cb486e8cdb31cfe99b147bcda0ea7fe415d0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/ukey2" path="external/ukey2" revision="78f2ea23e1b9e8943ff7c6224e7bf959e975d791" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/unicode" path="external/unicode" revision="cd53a9b5ceb1e51ceaeb991d390a0fd5b7ffecb1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="091905b0d9ada10e996cebe1bbb3ad177d0e7d02" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/v8" path="external/v8" revision="d4283135fd55089879981224a9e1872a0c268900" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release,vboot" name="platform/external/vboot_reference" path="external/vboot_reference" revision="d36c839eaf0e9d29e735d8e8fa61ea53185b6c7e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/virglrenderer" path="external/virglrenderer" revision="6aa2d9b5b2f81496c3f55263a172ac0ab08e2c55" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/vixl" path="external/vixl" revision="dd92292eb585c2abf323d403d0abaea74c18cb12" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/vogar" path="external/vogar" revision="2dc7d0b3d310a4cacd31e26626b185eabc8bcd51" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/volley" path="external/volley" revision="bfa2c3b9d702a5ced0bdd02e82946c47b91f46a4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/vulkan-headers" path="external/vulkan-headers" revision="565c5bf967e964885f1d61d74f72dbf8cba86a1f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="a21a1f785fcb3c9daf84095d96d597c844339b49" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/walt" path="external/walt" revision="752758e10090aba56ff28e2edef7b596b698aeba" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/wayland" path="external/wayland" revision="036c10992b64f21c3dbb692907f7021461396537" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="7080394482a85dcadb5808a511809ce7e59dd6ca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,qcom_msm8x26,r-fs-release" name="platform/external/webp" path="external/webp" revision="b9612ec874d56ac401432fba7e2d866af6fa1022" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/webrtc" path="external/webrtc" revision="80f388cc9a3f849b6c5cbb1277b84610aa12fef5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="097033c9b85d209325ea9c8c5082e9d6caecceee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/wycheproof" path="external/wycheproof" revision="cc7457e402efc8eaf389fa05cae65927dae59a44" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="e9ba442a19d8eb4d84d38c023b966745d3df6ad5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/xz-embedded" path="external/xz-embedded" revision="376b3aefa4f9ff028de12ed473d08b6acb18a98e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/xz-java" path="external/xz-java" revision="d63109f034a7ce795248535ebbc37f3f00651362" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/external/yapf" path="external/yapf" revision="aee186e9614dc64d9377d7a882cd4fc91971d363" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/zlib" path="external/zlib" revision="a090dc0661ed12cf503b7fa9bc3365d316773210" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/zopfli" path="external/zopfli" revision="1ebb510a3cc2283fc282aa4ebf9f521b32c61fcf" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/external/zxing" path="external/zxing" revision="ca46ddb16b366def72de987604acb4bc3660ada2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/av" path="frameworks/av" revision="26a2d607ea48eb622a90d3ab2d71c03297785a35" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/base" path="frameworks/base" revision="a494094d7191699a182481120e585e79f9033997" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="ff541ea78f12bf06e84a224667c44d50f6df7609" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="97459bde28b2f1aac96a52ac1c1ba38ce492bca0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="abbd43b7ce931218c5e8f8f21ae69bcf962d1d48" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/ex" path="frameworks/ex" revision="3aac4ea7815529984d3fa3b5420e3753c1904541" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="5bc31dad139247409e35aa3550947e68e1d39435" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="de9453ec222c40db7c0c5a1603ecd0572bdbef65" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/libs/modules-utils" path="frameworks/libs/modules-utils" revision="1e4cc89a50ba7d98866ed270047a9409049407f4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support" revision="321069a96e9d6b2e85037e3765bf48f53089fa0a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/libs/net" path="frameworks/libs/net" revision="353838e3756232fd7dbc52a5765f2db7160e761c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/libs/systemui" path="frameworks/libs/systemui" revision="f85bc16ca6d4a7dd9d47de355de2f28ad5b6cc09" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/minikin" path="frameworks/minikin" revision="bc19cd2ade2aa7046ac3a5cc401218d27e67666a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/ml" path="frameworks/ml" revision="2abe0ab4c460156bd728e16e2b0eb36ae5912683" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/multidex" path="frameworks/multidex" revision="eaf0f1549a10eff385db31b44cba3e5bbe593795" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/native" path="frameworks/native" revision="d1e8bfe12235ebdd903593081701e17c4f9c4fc3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="96e65a8d1811d353a133e1bcf98c095f2b7d43c2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="036276b3e5a101baf691dcd896efa4a64fb23b41" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="8781bbf12ea006be90226e0e86c5b382c7292d93" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="0153da29ea0ed613b29da676e8f2f46df9754b8a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="2d51f53bef970989c4d3f1515e13cbb1928fa871" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="b82bdd9917136937029cb7b115325f11558091ca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="3667d4db3622cde158a200a562b585015afe3b9c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="frameworks_ims,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="63819ea90c8d0d5ccc9a34cb014ef642ff4cce7e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="e60eae22795c4740dadc680c4fa581623604b6bd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="cf892eb466984f08b59c3e6d8b5da01ff888a830" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="3b684c8773005b8374ea35821da25977361a6109" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="7ce95d12d38560fec46b971faddde5de85e6a372" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="19867ff47f9a7e6e1d68856874bf40c67f2f9db5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="bbf880f151965f6a73b1a48919ce75bb3c1cff18" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/tv/tvsystem" path="frameworks/opt/tv/tvsystem" revision="7dae3edcf3afdc403dd3067054c9d6ee57e56bd0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="fcffe8a3924cbf0e9b55e185c1d0827433a2f5b7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/frameworks/rs" path="frameworks/rs" revision="036f491071b41d2f40d97efbefa8c940e047baa3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="40d41f522548545c639ae45177014a1305d4f157" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/google/apf" path="hardware/google/apf" revision="0949942ec6e42f327c7d75eda87a7ab12f0dfa00" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/google/av" path="hardware/google/av" revision="059b48bba9d2bb52c706b4d76e2e34ecf0c9dc63" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/google/camera" path="hardware/google/camera" revision="8b5984a8bba4d67a82ecebcaf40585f14c1176e7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="easel,pdk,r-fs-release" name="platform/hardware/google/easel" path="hardware/google/easel" revision="72a80060d8d427a156fa510a2e2de4cd9494fa6a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="a31d71ef76f3a954d79efbf09b634ee20c6e12f6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/interfaces" path="hardware/interfaces" revision="d5c476edf74de39a37bbe1ec66db7d0c25b7e3f5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/libhardware" path="hardware/libhardware" revision="3ad8aa95811d0563c4f6e65b527c4a85df20f015" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="cfa93bca0abe4f58a1878363797bbbe1c87bb335" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="218a470878fca2eecae9551416c2e1a737890afd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="7bf3da280978c84fa12a2837ac89b4367c4441a2" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="e0eb9e191e0355cb9c697f55be710132aabbde45" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="96bff3bdda1b9fd18fc16f674aed4fcfe0488893" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="bea73e0e60680e479fc11ec755c97e53a7ca0401" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="63d972de3ec71d6f1829f7cccd9e0b3770e6c869" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="43a7b3cfb13e4870c39551683adfb284de4a1ba4" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="1a5f157bb478c252af76dda4bdbad0a61338f800" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="ebbe122b55972390e1ded15e79a0f74119b6bcc4" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="b91632f4b04dece373817d80f08beec4615cb593" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/ril" path="hardware/ril" revision="1bfe8e6e3494adb7f3fabe182123fafe72cd3fde" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/st/nfc" path="hardware/st/nfc" revision="79f69e99e79d6f48becd4133ec571bc2b93e6bd2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" revision="ebdb36d192c7ec7043503a4e20786279d27d6967" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/ti/am57x" path="hardware/ti/am57x" revision="49a1efff7bed299dfd5384c26a1956f8ea29c2e9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/libcore" path="libcore" revision="344e27df63445667c2928c36298acdb5fd78416b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/libnativehelper" path="libnativehelper" revision="4630e19d3d1258ce52c8f8ff27feef76e5f5a992" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="4dcc19532d203d375a832c0bad14665ffab9c037" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="a9d7f53845431952156df38592885b0ba908d557" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="bd83f88ba4c2d91d138554f018ef00db6d198d33" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="9df56c18b152be795b347a2f386ad349110de544" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="ae0c2213ef2e7a7177fc17bf765f5241d352ea60" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Calendar" path="packages/apps/Car/Calendar" revision="982da58d6f9eef244441f563ddc7ec9f4ea6de79" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" revision="701029c4c7c27290dcda7cd816840bb9b624b07f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/CompanionDeviceSupport" path="packages/apps/Car/CompanionDeviceSupport" revision="8ae7e3a5ef7ec32ff15b7ec1b5279e9d5e3fcc1b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="93f1b59155ad5d66c8d4bb5f9df489543c3791a7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="8687a1a59c6e7763eb253c9ea0680025c69b72df" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="d59deed157893715eefdeb8660f8734800884649" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="b7b6c60d67ed4cef67cad5fb4b9684d0d22ad6cc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" revision="bad93b2d0198ce38b2beb4d6953c320474451c7b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="0976ffba4e8d32dd10b0b46cd2eb40302af50562" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="82b0d374e299ff0d0d304f009ef3da940889fd45" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="7f131944019fe65bee0be4e8644263ba6e80a1ca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" revision="011b998e8ef3f446871ab9ff13d9dbabe4cc507f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="3151c3486d582222063baea397c7be396985432b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/RotaryController" path="packages/apps/Car/RotaryController" revision="396a370d2850b5f0537aaa6913b9ad0d2be58714" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="9a7b715d074b2dcf776d092342a07aaeee21c676" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="a0d02de415c41f6b679842bff72d76730e791ab9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="d21972108beff993b9c3fcfd2853acf150d5fa9d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" revision="0a863572f887182350bce7b9d5c940d6c9c36a9d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="31128e8c79509e89c3a42adf74c3661e482d749c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="662aa0588b0817664fc858ec8f7c287262cfe631" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="253118443a8061eb4b61549ab3b64dd197948b09" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="31920cf36ecf7a472625407e068af9cb30f0c054" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="7c7498ba27da4d17992cf3fe0746587b7723092a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="54376d908472b46ed2b2d45874afffced30a8788" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="d177da0cb8423458f92c74e6c279ff56550ad609" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="d78aa6b40af58372008510b532ed66f19f7f549b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="aa8558d65f4dfa45ad290f9cb14802221d0cbdfd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="c07c526666600a76c438bef7976bac536cf6ab70" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="99714e06facd9f800358aa3c415b8cb3b22a4391" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="7532a1f5dc388c993d33220051868bb68a75c8ac" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="ffc9559690b074074e07ae0dae4c9e18c22dd2de" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="3150f59639171909b011ceacdf867a055463c6e5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="a81f7fd5c55b5a1e39a02aa9531890689de0f89a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="b5801216a36eea11581a347b8472a53f78c0be5a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="b0c983def47fe3ea3fe1770f019a7132b2e4b35c" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" revision="e56ed120e22945949c2d794c62de57c591de70d0" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/app_mms_product.mk" src="app_mms_system_product.mk"/>
+  </project>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Music" path="packages/apps/Music" revision="18bac938725f87f19c84a4411823e19637c33e8c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="c3808e158b043d1c14a6deb21a1e0e6f14e3a2a4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="apps_nfc,pdk-fs,r-fs-release" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="ff31e16ae7b929cd4f61ff68e80fb81e78cef28c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/OnDeviceAppPrediction" path="packages/apps/OnDeviceAppPrediction" revision="673437914e2baff07dc99407538d7d41234b0286" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="0c0efb071df1ec93a3bb08c73705ec29e783db4e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" revision="f521a9f6fb5f2bf738fbd97107c04f13d89d799a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="9f263036621f91d7a84723add75ceec3aa22029b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="0c3af2e2684d7256445850913d442524237346e0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="994b9fffc6cf51ff683578c28e4ef0f62634139a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/QuickAccessWallet" path="packages/apps/QuickAccessWallet" revision="c2ef09bc529e595b92bc53d5b858ff239de5c2fd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="722f394ad0dcebfe58712207a1f4937778e63c91" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="d275c1452cde85d7487a5c23558d51cbc020bd00" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="f2779ef63dca4d12c8612618a034b82f19e3842f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="apps_se,pdk-fs,r-fs-release" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="c546a4855ac23be16fb8def036b50599fabaf1c6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="152f66ff338d4b6917c8a81fa557fe7ba9822f57" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="e7b68ea55cb768d4889b192acbdff0002a768ef3" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="027c8a15f1ad9c0cdc717c95791ef7d611f8aa91" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" revision="2a5fccce0ae95addd711e65e657a67f19f5451bf" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
+  </project>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="09315e7fdd64f9c7d2c9e967e58b21e7bfaab8c8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="a9e22893a94e4902e774334f3065c86d960a5b92" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="apps_stk,pdk-fs,r-fs-release" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="dd2b2b8dc9782ed85860f777176ea040783bb038" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="af24066a0931221ca46fcba620e75ca0e4e12e02" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/apps/TV" path="packages/apps/TV" revision="e287a80f73649b07d7fe201663e3b7cfeefa138e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="efd2af5dd60f59e84ffa7256e94144426fe67ee8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="d9c6b8b01a38ecc837edfb259a6f1e28f95739a8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="5229f909ba827ce34856fca8b578f05c09757466" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" revision="4aa3079ed3775b313310ac0c5b6ec76118488bca" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="dadd250778d75d6f839a605b93313b11a162d5a6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="866a083aeb740803515ca1b71468b269143ad43c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="358a20e6db9fde525ed2f80a05b5649ab20191f4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="4e67f9b44e24945fe70afaa9bd747ac871741df9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="a30e2606a9f5c54a93c14c1abfb3c4402925e211" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="465284f2eaffc3bb26413c874bef34b7a4db1486" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="1531b2951c4001a3c772cf83177083218cfe562e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" revision="1d3320ef13603d56196d636986e00f87b9440765" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" revision="1fba8ffeb09ad264b569d1210b1220bb992e526c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" revision="53c82ebe1b858f7449c1e0b7642dc338f63b556b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" revision="02846e1a236b08d6b999e0f9c6d1b2d8e607c2af" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/Cronet" path="packages/modules/Cronet" revision="2e69f53e336f77e31197775e50b2db05f5906283" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/DnsResolver" path="packages/modules/DnsResolver" revision="9f380411ae372fa20ecd8431af8d522e522d0940" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" revision="6047a5c409e7d843c8f61f0d1a21d2b270d5e2e3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/IPsec" path="packages/modules/IPsec" revision="20a61924cb5a196cccd5b1784eff898e049c80fb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" revision="7ccc60c7b7b4b9210aa661af36a181c08c208c65" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="3e3ea1c05d064f57be32d73c3a5fda1132ca0f49" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="dc5d04a91fe995a6f920d4fcb039fd7b09482e44" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/SdkExtensions" path="packages/modules/SdkExtensions" revision="07274249196ed97ff9e9f1f462ad45da1ce4b39b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/modules/vndk" path="packages/modules/vndk" revision="7a7dd98b54ccfa0b94d876349eaeb8c9b64d8056" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="03816af7b8c1792b7eec20d29275c2ffea6a4cb4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="c81c04b9f8ae4bfcdf7d339929d00ec1b9e5b47e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="a2a5ec91b418cd8895dc780ac59561e0356dcf5a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="70e9bb165e01fd2e31338e092562243010ca924d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="2118eae5dadec14b9e9de08f3b5544e48c68c135" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="8efe2ae90ead7bea02e221ce5f5a207e1f9bb1c6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="8af2af72de7693829d7bd6721e720e2761c6d23f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="1cd6619b9d64e78f737a79bc8e795558918a5fa5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="98acfe7a4f3c7cfdad5c675e0f2d12f26ad08ec9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="dc4e5b7585d16adf0d2fb227acb38d51a698bee5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="486150d627d332843f12c16a35d207bcdb584d91" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="aecab095db8677d5bd39cb7cd7a2c847550d2e10" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="7c7ef641f1586abd7af2d92c5df100363f7fe3cb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" revision="90243674a946339bfd05c6a284f61351ca0a4711" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="47e6fac97bb66bb4aaa25985babfd0882d0b65d1" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/Car" path="packages/services/Car" revision="af844387932b2a885855ad8402f22c596e222ef9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/Mms" path="packages/services/Mms" revision="4172ba524aed490d4631d6eb9921d0735a4e42d5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/Mtp" path="packages/services/Mtp" revision="a90f9ec78fdb6336157ce88163266fa8a9803fea" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="b40f26ad8e58cc115d01b2f584b0695fe85e6384" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="36542bfc8c4c1df404d2a4317fba05498610ea5f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/wallpapers/ImageWallpaper" path="packages/wallpapers/ImageWallpaper" revision="0a1680f07b09889c7642a775b6bb69d1b27f9b09" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="b3878341ed0ceff3114f805d3bbaf330ad5d4a00" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/pdk" path="pdk" revision="6c6523f3bd893e5b530480b1dede185d22737d2f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="cts,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/platform_testing" path="platform_testing" revision="33e402ad7b3c5283956e3e075c5e05681d7ada06" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="6b2aa1f13c6dc604efba20f2728f79a987719c5b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" revision="331141569bcb0dbe24dfd9eafb3945344f3bd92b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="4258fe635d98e6f248e11aec86b0d7862c799991" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="d3be3c9eb85273d1062d6d344eaeb62f2abf4475" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="8a445d17baa6b7cd775ef2e33ce843903a17c019" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="dd014f7c54273f1a2e5ab6992d8ab5470fd99c1d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" revision="d70de9bf225a88178f4a6c73c4df272a8d64b8ac" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="207e01e2e68f0031edd084521456c3077266f6b5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="823ee618a0182656501f7e30ad6a46f8cfdad456" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="8d1f0393edfed0a2fa86b94780fc254e80b9d522" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,cyborg" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="e0140dca9a7746d8c503ba888c735a164a07c2e0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" revision="8c85c96243e7d9e28576377f7b02ac4fcb2d6ed4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="6b71dfa56a93e3cc7675b6056205b8c2a6d04d64" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="00793d9c61cdfe08077cbf4e4132fdf3fd8334d7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="arm,linux,pdk,r-fs-release" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="e96fdcafcd060f51c408b966f3c39bea07e69fba" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="arm,linux,pdk,r-fs-release" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="ed4dd4061ea14ec822ec5acc4ead64891c255882" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="linux,pdk,r-fs-release" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="e763c254003f138107cffefde180bb661a3470bf" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e384bbf3fdb8d26f0400a54909f7a01bab638d17" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="linux,pdk,r-fs-release,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="b50888f6d587e5ac28c0ec674ec5a144e386b1d5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="linux,pdk,r-fs-release" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="c3df18fb8b5f5f90d9df7cd8be74a9d3eb07e8fd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="linux,pdk,r-fs-release,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="7d03a83fe1149a54db6084c3f3e160d4eeebe7bb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="3ae4b63dcf2358307b4059fd875db6f8584cff5b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" revision="a4c80b0d31a687b60c55af519e5ecb422bca93f9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="217e3fcf633eae0f15573ffc2db63ea82b3d230b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="c11a442c5560218fed859605f74bc31d71aa7e0a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" revision="955aac8176a219bf91afc51f7c233dc18b597e74" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" revision="cd4bd4483f96b113b8b983e681beac7f83a67d5e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="338d681f7c300b0a9cf5a7c7d776f940cc52f843" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="26bca579c836daab49fdb2d61aae4f189241b803" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/misc" path="prebuilts/misc" revision="1e3c11dd806e7104605fef46561b552eb67dd65e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" revision="0a68152386e56eab7fce3813aca01301e197b17b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f0ddff949c345df38c2d65d5332d54bb1932d596" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="linux,pdk,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="314e0378097fdf06364465da6ceb367ffb45e6b6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="542cb0cdbd2f71fa3f5ac1234d45a61a1e686ac0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/r8" path="prebuilts/r8" revision="74a1915e2315540cd3375728c6fe240e234e8550" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" revision="e44ce8f3002f95f0529cc15fd1cc451debe896b4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/runtime" path="prebuilts/runtime" revision="71b4b433e294167765e3d863919b71552db96c32" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/rust" path="prebuilts/rust" revision="2adc53fa19f69eaf24423e90807b691c2a601807" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="473fb53ced019b6ac93776914a1feb88bb405a7e" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="frameworks/support.md" src="current/androidx-README.md"/>
+  </project>
+  <project groups="pdk,r-fs-release,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="f605d239e89b88f813b34c92c4c5c38d71c08221" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="8f5cda388b1ec4f93231e843d6a8d9ceac397da3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" revision="0eea7bca6faf600e8d51e86073b4ede3c2a3fd75" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" revision="5b3afc5734673e32ef0070c32db254bf768aa986" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/sdk" path="sdk" revision="7c5799ff89a1b9033c30559ea08c788168649b45" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/apex" path="system/apex" revision="53c3f77f78960487685c1ac567027c7cb25599a2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/bpf" path="system/bpf" revision="4ad773b207bfcf23cb99024fa393d11c4a5e150d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/bpfprogs" path="system/bpfprogs" revision="881c2a9d0227ac88aeb29887d8663486c1405952" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/bt" path="system/bt" revision="694aeb1e415bd4bd04b268da9a3cb349e27fca00" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/ca-certificates" path="system/ca-certificates" revision="51c06b71034834c3f10ab82dd18975ca94817797" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/chre" path="system/chre" revision="dc91e1b38496e1fa7061c192972fd277e4c38d64" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="7a48ef3d27c724cc44405fc991bda48620a22ad8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="f4bec7a17a1af81c48079626c0133843c79ac2ee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/core" path="system/core" revision="15c82c91332ae8010a789c43529a90352f9db270" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/extras" path="system/extras" revision="8589c79f9f1c67aa3d6ce725f8dce25b3258928d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/gatekeeper" path="system/gatekeeper" revision="259f031d4314c9870dc9a1cf89f67082afc1fa9b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/gsid" path="system/gsid" revision="cc268a91f3a0dfe3a5646898a7465f9bd52f79e5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="b1905b17704873c5f41e7af7ff8fac6f7707438f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="d9d6ee8d3a63aea4a4a1919bdf1ca61112ae0a43" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/incremental_delivery" path="system/incremental_delivery" revision="95fb54991288e8a631d44f061ab9b551f97e9af0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/iorap" path="system/iorap" revision="aa7fda3a97eb114354af341c7132a662b6cc5bb4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/keymaster" path="system/keymaster" revision="6959650b23d9dab17a2da8d7ebd8eb9e131e22fe" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libartpalette" path="system/libartpalette" revision="800adf7c5777499422646e870b3ac1785b44344e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libfmq" path="system/libfmq" revision="159518e199e3408020a9eccebe2ab42660d5466a" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libhidl" path="system/libhidl" revision="454c6bf61f373d99a295884dbda1bae6df7f5df0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libhwbinder" path="system/libhwbinder" revision="0c2556a2977ad825fd51cc19463d4b9b9c93f252" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libsysprop" path="system/libsysprop" revision="a11e20ace50d458a520ccd408a55ccd727099b61" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libufdt" path="system/libufdt" revision="081dd4abfa9f8cd4c13ecdd1106c4ed48a5b99f0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/libvintf" path="system/libvintf" revision="5131012dd61865d87573b4d2c560d01a35f58676" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/linkerconfig" path="system/linkerconfig" revision="4166ab18c9128e17f7719e0fef9984913cf2dc07" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/media" path="system/media" revision="c3bdaa942be6f8afd6205c70fd82e67b1d585e18" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/memory/libion" path="system/memory/libion" revision="403d7150ff221dcd24bf8d8ae97a0aa61222a13e" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="system/core/libion" src="."/>
+  </project>
+  <project groups="pdk,r-fs-release" name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" revision="b8ba2077194a3e93a64700d932310fdeea3e5c32" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" revision="6b5f796f2cdb061657ccb871f0a58d33ce15696b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" revision="a9be34cd9d57d0387af2f0e8126aee521045817d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/memory/lmkd" path="system/memory/lmkd" revision="3d6ee70ae7076f08568ebde43c914dbebe90cf6c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/netd" path="system/netd" revision="06ac9908755a87d19a1072782690e6bc4354af8b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/nfc" path="system/nfc" revision="d5c3f4c289167826b77d2286f89ca1aaff95c5c2" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/nvram" path="system/nvram" revision="709145921a1c92e801ec29fe73ef5372d04da8a4" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="1b6053c5cdca6ef02fc970a17f47db8ad7007f32" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/security" path="system/security" revision="8afffe4652ec7315dbedafd009ebb1e4e038cfdb" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/sepolicy" path="system/sepolicy" revision="c3b0117d03bf66f28b65ec7e76744afe687529ee" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" revision="16103ea59e47cffb0f95070db4d29a2e7672fa9e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/teeui" path="system/teeui" revision="1b30cf0f6db35e94bdfac16e86c9be5f9cb99450" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="ed963cdf32bbc23f2da80eb6074db8288f553547" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/timezone" path="system/timezone" revision="6b9717efdb50b62c6f8d0ffa8a91db04265b60ef" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/tools/aidl" path="system/tools/aidl" revision="0a275553c49f3d435a289d15741c3e79f75dc44d" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/tools/hidl" path="system/tools/hidl" revision="aac2eb268e39dac56a9a04241d08f8e115e5adf0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/tools/mkbootimg" path="system/tools/mkbootimg" revision="4c678c95a306748e2beadf0e56a90834f34dc8a0" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="ee30ee105174fc76967f150423b9a606b1678aa5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="06055a38771d68ef349061b721b094e44683f34f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/update_engine" path="system/update_engine" revision="efdeaf93cad39eb9be45f92dfe257343d292d02b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/system/vold" path="system/vold" revision="8988754f89a813c198cc8bdec702889d3c77ebe4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/framework" path="test/framework" revision="1ce1a99c5da6765f4494f34f4956339e7d40004e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="7900c275aff8b4bbbf8a98d436966575b5350746" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/test/mlts/models" path="test/mlts/models" revision="fd176933679f6931f4c3243684fa1e9833587df5" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="cts,pdk-cw-fs,pdk-fs,r-fs-release" name="platform/test/suite_harness" path="test/suite_harness" revision="ed144d85b4af9d865241615634d3932994b57327" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="7a8a0d93b49348c183649cbed4ec8b48d4132f1f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="68069a277382148adfad918140dcf9dc32ed4640" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="3c81f28d79afd4b015028845a90e9484c2cadb6e" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/test/vts" path="test/vts" revision="82ea54d919fb070af744df1a5d1036a5d2b7c481" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="b4692c6b7f8202d3ad7c2fc8e8c325f636433f95" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="c58d839bf02fa868f226a24093889d0efe630348" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="184077a1b1748c90ff17459761bbe0aed746f5f9" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="862834d0d9abeb4db9d8b73985680c4b6787d1ac" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="83ed9b1860dd1d2ca20411e8fdf462056a2ad3fd" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="014dd88b733f700b7a7174c0053b584f1403c33f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="3b6a70319ba0b54d7350b4be56bba0266a0884f8" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="8bd77028e9869ee01205b725e5307993f7cc76f4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,projectarch,r-fs-release,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" revision="91ea592e729543dc8d34c7bf06f8be3a16006e01" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tools" name="platform/tools/apifinder" path="tools/apifinder" revision="7f645fa641c96551be35fa8ac8c3bbef2aab4b41" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="fef96464df746197fb77ca2335f6c1f7184451fc" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="365dd3f3acb59f0d40e062a8802c122eab349a6f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/tools/asuite" path="tools/asuite" revision="1bb874a4c44a61b5b0823042160f10f95911fd8c" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/tools/currysrc" path="tools/currysrc" revision="ca481a7bb21bb7e97f3d8f3868065b516f869262" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk-fs,r-fs-release,tools" name="platform/tools/dexter" path="tools/dexter" revision="1999e4f036adb45b1c0c4e320214ab9b8e696a85" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tools" name="platform/tools/doc_generation" path="tools/doc_generation" revision="535ddbb879e69e5275cec441eb253272b0bdd060" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="nopresubmit,pdk,r-fs-release,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" revision="cc5f692bac1da39e976a3e6e4c7e8457cdac3ad6" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tools" name="platform/tools/metalava" path="tools/metalava" revision="bf413f365e32a14ed7574048079fceb4176402b4" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/tools/ndkports" path="tools/ndkports" revision="c1bf030ee33e16b3527b4a3c20959a8f7dee89d3" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="adt-infra,cts,developers,motodev,pdk,r-fs-release,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="ca58556d6771ee1456ab77a605e9a398130b6ada" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tools" name="platform/tools/security" path="tools/security" revision="fc669511c43a6c1c8f827daeb859666d08c4bfc7" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="c7baf4d30a267b844d68ea69d60d7197332f1d1f" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="4d2a1539ed8ad92fdf2a7a384c84cbcfa398f121" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="19f2f32c9e72eed347efa1b4b42fe6fce49f6340" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="6f61e9e34baaaa910e4dc1c62e065fe6fc92bf1b" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="cts,pdk,pdk-cw-fs,pdk-fs,r-fs-release,tools" name="platform/tools/trebuchet" path="tools/trebuchet" revision="21137a37a9ac11c42718a3521bd8d154f540a9fa" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="656bc42f89176f0cf64af22ed1dbca3fa6572bea" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" revision="a31e5d91be49547543d6855a49f9a4a8fa33dd79" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
+  </project>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="bac7cebe705bdc1f7a639be15ab0979eda03d2d4" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="3595f360d4c9eb43db378ec3bc2d689aff2d031e" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="90dcf51252c12d8463b3e18ea1c64a3f608c9fc9" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="59168cf36d32a4fcab64a02c53df3faf07ddaf59" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="d5ac38adf00caf67ccf3493b371c68679652cea1" upstream="LAW.BR.5.1.r1.5_1">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="57157f3927dde4f5830595b85c011e7fae994c85" upstream="LAW.BR.5.1.r1.5_1"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="88729eefb4ac93dfd1e91ac9e1c4b03a930e69fc" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-system-product.mk" src="nfc_system_product.mk"/>
+  </project>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="c4e783f7ed587af75232e9b8c3a3a47f63d74191" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="a5956c72a350ca32cd376f3fe4ac30df604b6bdf" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" revision="a14740e1360e6d02f91b8686546576d9f8b64972" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="7c0c561d893974b8386ff27f8a10774db37bc191" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="dd86ef04c47c868386ca21cc62a2b25ce5b9632b" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/bt-commonsys-intf-legacy-board.mk" src="bt-commonsys-intf-legacy-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="4fd80e42d2eb84e5456fa3863a94c109782e4790" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="b9f0121315e426fa14c0575f05a7780b31a0ede1" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="f9ddb744de137f8acfb5807e24c095c79c67f910" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="34cc20762944c325819de775cb2cf02124277827" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" revision="f2d8a201653c2404f312c76f85a35234cd8f350e" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="0fb7abe717fab15465cc508e1952991147d96316" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="53df0a5530f0721486483056477e902f83feddcd" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="8c98e1d8b44806ee6765de339107f2f3cb64e427" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="9ff587035fddde3d21724b61f9807f347d69e03a" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="1267ec9e1336bbe8ab690f6afea4089799907bf9" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="ca2b3021076abc53ad4327180412d1cb655ad009" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="995c63a75db6366c28b3a4c1dcb00a77cba090d4" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="4aad682a21f80799914bf39dd00fb3295ab1b9eb" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="6619687a16f2331b616af4a5815fddabb3cb5852" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="0e9369a6c035d08950b9491f36dedadc8b6ebf46" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" revision="64624b923325f76d0cd7754deb59ab5054252d7a" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="d595877610227bb3403ce07540014af09e1cfa6c" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="d3e335019b1250cf8e9b328187c81ec9d3c96afe" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" revision="131df3f7d4a77940b06d410b80fb09bcfff7d9cf" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="3254395841b3d4dec4b309494dac256fe2c68aa4" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4392352f2d649266057459dca6a3944a750f7aee" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="6c961ae775ae36e5f8db9e51be41365a729624d9" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="a411f5e679bc245a3b384c1f80f4dd3190d4d5c5" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" revision="c8f31f143e5ed2bfed4f47193fc7514580e87220" upstream="LAW.BR.5.1.r1.5">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="5b1bdbbfdb2410cbe304fc402047df67604409a7" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="ccfff426c563e7d4427cf105ae033f141cdffb8e" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="72a78d04fa8899c1e21988346c85f0ed5c574b91" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/atoll" path="device/qcom/atoll" revision="2c1b68d8ccc8c57026f4d44965a21b6417e721f1" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/msm8937_32go" path="device/qcom/msm8937_32go" revision="5dd2168ca780ecfb8d1d6a36893750b4a9b743f1" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/msmnile" path="device/qcom/msmnile" revision="7fb7b26ef59b6ffa9e1d7e4d85cee3067d7c62d0" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/sdm429w_law" path="device/qcom/sdm429w_law" revision="8ceb0a62e9e2ac85c1856a3e722325dc02cdfc29" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" revision="f176a7a9850c6c4f81babd7c620e8f23c73b8ab6" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" revision="5c155c286e221093ba4e68958230e5dba77ce197" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" revision="666faf1b76088352112a1c0bace28b74838ad056" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" revision="0d5477b1a6c0cb20505a30e4c9e79fc3955427bf" upstream="LAW.BR.5.1.r1.5"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="3e943ea89b5786b14a1ac986662c70ddfaafd407" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,r-fs-release" name="toolchain/pgo-profiles" revision="a9b35ec3cd277bf394bf9741a801cf5f65d72d00" upstream="LAW.BR.5.1.r1.5"/>
+  <project groups="pdk,pdk-cw-fs,pdk-fs,r-fs-release" name="tools/platform-compat" revision="363512494d4a5823dc3c7a4e761f6a8f97a70efa" upstream="LAW.BR.5.1.r1.5"/>
+</manifest>
