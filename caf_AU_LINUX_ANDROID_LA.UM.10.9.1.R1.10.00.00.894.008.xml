@@ -26,6 +26,8 @@
   <project groups="aosp-android12-release,pdk,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="device/generic/x86_64" revision="632e1067892f25fa7bea36781331a475950129a0" upstream="LA.UM.10.9.1.r1.1"/>
   <project groups="aosp-android12-release,broadcom_pdk,device,generic_fs,pdk,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="device/google/atv" revision="bf4f14f14d9224989a3ba8a7d6472bff598e8053" upstream="LA.UM.10.9.1.r1.1"/>
   <project groups="aosp-android12-release,device,pdk,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="device/google/contexthub" revision="c0776b6d5b1d26407dc1b241f039f2b05588f14a" upstream="LA.UM.10.9.1.r1.1"/>
+  <project name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys" revision="a9e7ef915df0b3415a1c94cc39d358477aadfbf3" upstream="LA.UM.10.9.1.r1"/>
+  <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils-vendor" revision="86168e7815ce5300cd3f5106a114efc3d373a508" upstream="LA.UM.10.9.1.r1"/>
   <project groups="aosp-android12-release,device,pdk,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="device/google/cuttlefish" revision="a393ce8e1a5eff4c03e76a538b35f47d64525264" upstream="LA.UM.10.9.1.r1.1"/>
   <project groups="aosp-android12-release,device,pdk,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="device/google/cuttlefish_prebuilts" revision="ced8e739959b34cf441633c7bdc4148110376452" upstream="LA.UM.10.9.1.r1.1"/>
   <project groups="aosp-android12-release,device,gull,pdk,trout,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="device/google/trout" revision="3f16bfba79124558692675cd398977660c990150" upstream="LA.UM.10.9.1.r1.1"/>
