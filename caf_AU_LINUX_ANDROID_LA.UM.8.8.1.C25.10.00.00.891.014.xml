@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="LA.UM.8.8.1.c25"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="96a84d908e63301130e263a3457863149498ab2d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk,yukawa" name="device/amlogic/yukawa" revision="e6bdb83eb57cd9fa46d827950b4d52ffe8e101d3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk,yukawa" name="device/amlogic/yukawa-kernel" revision="07b36535a6f33844060a580b0bd38472e5752aae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,pdk-cw-fs" name="device/common" revision="905d582ee81e54b03abfcb9a164917bf6a3606ea" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/arm64" revision="2337fe4abf70460b166df34587ea18a0843197dd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/armv7-a-neon" revision="2bb8590591e663f79a6ab3d9b36ad556fb8852c4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/car" revision="02949a548e006158416dace5f6febd92d1f3bc28" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/common" revision="9f99f1373affec4c54f30585029030c14ab401cf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/goldfish" revision="0e46beacbf3aa163b11a394308fabfe16d95f73b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/goldfish-opengl" revision="e21f73b8902af2a68757e5aee592e0a9530632a2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/mini-emulator-arm64" revision="cd3454ae5690548db09266817ce764e661aa6da7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="670dc99bb67dc0046e4e6b08fb1472985032f49f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/mini-emulator-x86" revision="2ea0286662ebdbb86abc8865e9ab43370ea7e1fc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/mini-emulator-x86_64" revision="0bd953f7e79da411c979721eaa256f7b7c61503e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/opengl-transport" revision="6445406846d115c8019352f76a891843562ab398" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/qemu" revision="c9a6840a81c80e85629ba999c7b3d2d085a44762" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/trusty" revision="2cbff32589bb660edbe4c5e0573e5f1a836d336b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk" name="device/generic/uml" revision="bfc57ae5f0fe80d780ae908bd3232415027be6c2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/x86" revision="51524b60e840dbea4f81307e5e7091212daa34f7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,broadcom_pdk,device,generic_fs,pdk" name="device/google/atv" revision="12f929870beb9fe72183515faea595a2ccf96d2b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,marlin,pdk" name="device/google/contexthub" revision="dc81e0029998790fe8d65674d6ceab500171f275" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk" name="device/google/cuttlefish" revision="04176918e0601a4bf34a994ec63950949fcc6255" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk" name="device/google/cuttlefish_common" revision="c0e892a90d47a61f7c6ad6c570da5b3f2f2738e8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk" name="device/google/cuttlefish_kernel" revision="91458a8b8be01894214f8a89f311fbf237402a0b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk" name="device/google/cuttlefish_vmm" revision="3af09fe499e3b8685db2c90e881c9b08dfc7f725" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/google/vrservices" revision="7dceeacda909c5b9979a7993d5afdac2888f9d85" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/google_car" revision="117ed0328b5a09b1b09c8de520379f5344ffb5ae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk,poplar" name="device/linaro/poplar" revision="eae1a3c9c5563196556b4f698839c3a50efac82d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,device,pdk,poplar" name="device/linaro/poplar-kernel" revision="5f58a9c755b269575cac24a1563b03a510efe59a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="device/qcom/common" revision="234135f6937d3564efb250334cce4303da1e93b9" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="device/qcom/qssi" revision="70cc59fd48bc681a5482713007849233a690af50" upstream="LA.UM.8.8.1.c25"/>
+  <project name="device/qcom/sepolicy" revision="d7a1aeaab65a42cea6a7e0a5891351b06fb85ec9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="device/sample" revision="ebdc9d9f21405a85f0522beb3991ba7e4bf393c7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="kernel/configs" revision="c4c3630576f8370f815f3b877f7716960005e4e3" upstream="LA.UM.8.8.1.c25"/>
+  <project name="kernel/msm-4.9" revision="d3400a50fd5c2931dbebbd113b40d4356df2ebaa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="kernel/tests" revision="bc238c5d32049c21e3e095201c08ca11472b0305" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/art" path="art" revision="b9c684e98f31df93c503db79fc66bdf88597a043" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/bionic" path="bionic" revision="33fc1805d38d890798189ad6180c4ad0303380a1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="39a59c04a43c784fea46416fbbac2545bd124012" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/build" path="build/make" revision="be7dfe59a9c2965b18c2e32d672ee91b04e61435" upstream="LA.UM.8.8.1.c25">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="6951e149c91c3aaf7996499a0884ac6387cd5541" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/build/kati" path="build/kati" revision="f90180b1ad6a42314ea5e35c80ab439220605c4a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/build/soong" path="build/soong" revision="536459d3730204459be0c03e2fc95a9424b4dbb1" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="aosp-android10-release,cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="dc167289470556cad7d9b202a46acbe84e7b6576" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="cef062de2f3e4f4fb532b2ad780f9a855fa7a254" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,developers,pdk" name="platform/developers/build" path="developers/build" revision="eb5366cfda11a138dcb020416c38e8ea76ee420d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,developers" name="platform/developers/demos" path="developers/demos" revision="7377b04ff64f892554ce5a74cceadeafd80e7516" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,developers" name="platform/developers/samples/android" path="developers/samples/android" revision="d3b595718487478ada1da2941bce82568fa371e1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,developers,pdk-cw-fs,pdk-fs" name="platform/development" path="development" revision="577ea3812f883a55712b6a8c5d71a809df42810c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ARMComputeLibrary" path="external/ARMComputeLibrary" revision="23a16533b968b01c0fab733dd13dc418bd8434ef" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="64fb50320126668ee90e8a24a5b54ae38c4aa765" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="3713092bb3caf0ebcadf8e8ddfb28b29d727273b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="1334dfc2f81eb2d3bcccf4299132b88f7e674b04" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/aac" path="external/aac" revision="03c55964627bedccaf7197822fb5370e1de673c4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/adeb" path="external/adeb" revision="db6e28c02be46b9237c664fd8f4bfb7a3dda24b0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/adhd" path="external/adhd" revision="d2da870f591f0dbd995e7b9fe4c5e279f7b7312c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/android-clat" path="external/android-clat" revision="5a7d2d99a1ea9b3b78ab06e1651bdad9365d92c6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/androidplot" path="external/androidplot" revision="e9e3f274ffe934f8096fde8d860cf91313a5b957" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ant-glob" path="external/ant-glob" revision="21e8c03203eabd225fabf34647cb73c3bae6f6a2" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="a445953622ec8a3891299b6f591978bd6c1e7c38" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="200fcc9565814288bd2cfe7c81620b6dea3a75d7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/antlr" path="external/antlr" revision="9922915fa587bd29d91fb9a94724ced2b1f999f2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" revision="54964fe1cd760e326ee73fa82a3ac083b4cadd3c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-commons-compress" path="external/apache-commons-compress" revision="06bb1e1ae34f0b7ab1e2b2be2a0b8d663b9dd743" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="3e937bf46dc77fea421ca4fcac2c8e5acacb74d0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-harmony" path="external/apache-harmony" revision="dd663f045438ec21557292d2d377a26dc217f07f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-http" path="external/apache-http" revision="ea7328fc2a6a58e3716003b1f6ee49063f1be873" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/apache-xml" path="external/apache-xml" revision="5ce62f4d90a8a7f822a650f9cdebe995e7c7606f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/archive-patcher" path="external/archive-patcher" revision="350ffe3023671495fcb8638da49e9dd3cc208dd7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,vendor" name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="b0c19a28adc30af7a1293db31aa0674f80ef67a8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="afa2259e89d27121126327f16cb777430fc113de" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/autotest" path="external/autotest" revision="4f7b6d9d4f017d8964f36aeded2bce9223a1ee35" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/avb" path="external/avb" revision="526d4ae6267bd10c3a6c4e86e29f1b54705db82e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/bcc" path="external/bcc" revision="1c70caa0777bbc53795dee312c6bf339dd95a843" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/blktrace" path="external/blktrace" revision="426377f93a640c02076f46b74c792b5ebb926756" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/boringssl" path="external/boringssl" revision="472b2ccc1b2adcde4fa1e2ad0cd6a86b26df53ae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="35296b321d24bdf70d24ee97ee2741ba497fbacb" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/brotli" path="external/brotli" revision="de053807c51df3be874918246d5ea921f600ea07" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/bsdiff" path="external/bsdiff" revision="0714879dd6ce90328ead162c9f0b7f6664fcb2aa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/bzip2" path="external/bzip2" revision="a06cf153c75acc22e39706cd680eec63739acf98" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/caliper" path="external/caliper" revision="ab17d515e5e2616938412995a35bfcda1743c44b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/capstone" path="external/capstone" revision="d31da98bfa00204266b2aa5988300dcea42623a8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/catch2" path="external/catch2" revision="c8d10e18fa3f93d0292a44e5c92c5b9ec73e608d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/cblas" path="external/cblas" revision="a525127bfaaf47f014f5e61d82f94c9fd5aa66e1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="8609b46a9d4d3d4caad6b0719fb95ae96cce1075" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/chromium-trace" path="external/chromium-trace" revision="e6ea6100100c3c1109966b90a73272a19cb293eb" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="17bdd434483ee32f6036a803392bd6f0a87baf8a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/clang" path="external/clang" revision="997558ae1347acf749e9e42c0a2b141bc7110fb5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/cldr" path="external/cldr" revision="cdb59a52ffa92d740c5ec8f0a181f2430df7507b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/cn-cbor" path="external/cn-cbor" revision="7d4e0a019fea37c419432e7611edc13160a5e817" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="5eb2536400ef5ef8795a21d023dd9149f10dabf4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/conscrypt" path="external/conscrypt" revision="6b31b5b8ad1e4b0294bfb1b28a62bce988f5a6e9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/crcalc" path="external/crcalc" revision="bbb27a536cf71378f0e12e4b6b521965f8eaae8b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/cros/system_api" path="external/cros/system_api" revision="ff602054fb185cb05bf7ffcddd54d7f7d0121f8c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/curl" path="external/curl" revision="fcdc8d07d57cf39ac87189824468e96304af3364" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dagger2" path="external/dagger2" revision="a3d2f2cb51c587c66b2f0f6376831ee60e7dae85" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/deqp" path="external/deqp" revision="6f118a0c01c4bdff87be3edf0c2f9aa972739ffe" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" revision="de8811f0d1884477451bd1b1b82931e968e0f6ae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" revision="5771dc6a3c9c2652c738195d32b32f407be03cad" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang" revision="87b9ad657c99c066f5ea586cc0630754ae3324b9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/desugar" path="external/desugar" revision="c4c557eb1266c0ac3ece912729767f61ed8cf1ab" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dexmaker" path="external/dexmaker" revision="a0f87995a9bb81d6bfaa88eaf575dfeb64ef78d3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dlmalloc" path="external/dlmalloc" revision="eb8b67187bf9cf1e64d41c4dbfa7a0c10f9ef12a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dng_sdk" path="external/dng_sdk" revision="fa2adc8a8fa5cbfd9c94de53b36c19f45685059f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="90c173c84a78b3f27d86cf0ec1a79b5794ade6a0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/doclava" path="external/doclava" revision="762e838333127450d73560ca3d678bff7e7b64ed" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dokka" path="external/dokka" revision="39b7fc384775fb450ba60441f59a08ffdb4062ad" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,drm_hwcomposer,pdk-fs" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="b8324047f37a1ed13a9f70430ca66832c8dc4794" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/droiddriver" path="external/droiddriver" revision="049d9785570df6f70e22310c2018f4b6dfdf611f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/drrickorang" path="external/drrickorang" revision="d6b8e12d66f0070e6aca06c15df1b1d28253d334" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dtc" path="external/dtc" revision="51345dee2d91802c713aa909164cf8e3c02ceccb" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="ba5c8437c82604eed4796eaec29da7b4fe06a6fa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="f73e7e777ace1bf638acd74d712d13e9c5d651fc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/easymock" path="external/easymock" revision="ae7da87a374885e5fe514dfe7892ffc893ec767a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/eigen" path="external/eigen" revision="27ca1c329e6434435b18b0b45d45ba313532d245" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/elfutils" path="external/elfutils" revision="8719d141861c46a7bbf3a301549470e176483e9b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/emma" path="external/emma" revision="9b057c52ecb129b653ac6672368de83a5ab29553" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/epid-sdk" path="external/epid-sdk" revision="0483339e42e628d8ba2689ac10d72e7e92a6f014" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/error_prone" path="external/error_prone" revision="0652fe11c47861a51f4ef7d10f58f3c8c819985f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/expat" path="external/expat" revision="b110c907bd13ad68b2f0ea19aeb67168ad8f4074" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="43a855e510e6912720c93f42f9f877f8916c5496" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/fdlibm" path="external/fdlibm" revision="8cd4c3d051db9501c9920d75999e14d2be15828e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/fec" path="external/fec" revision="3a4de1dc66aaedac2681607384023b67a3aad27d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/flac" path="external/flac" revision="ff2df2206e724029d2ef639a59f7c60a2d13c6af" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/flatbuffers" path="external/flatbuffers" revision="de6c6b1c6c84dee4b9f2516d277a079398bd8dca" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/fonttools" path="external/fonttools" revision="741cbc2f1e7d321fa463f4d7c2364d86d8fcef44" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/freetype" path="external/freetype" revision="4f3c55090402fc0e2926da6f4c28babf0c898b20" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="687c36bcee165ac56270dfdaf5f73ce1721861f8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/fsverity-utils" path="external/fsverity-utils" revision="aac344441a08dd2b2114d266fc61272df1465347" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/gemmlowp" path="external/gemmlowp" revision="cc3454178ea7713bfae11d3d009fa504ee94f0ff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/gflags" path="external/gflags" revision="af4ec95840e31b4c5c95399f16b365df3e57ea66" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="8e5139548f614a5aad6f85097a3647d806eb8d87" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/glide" path="external/glide" revision="196acf372dc32e6f8801be5805c8a161ddb4cbca" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="1404238cd88d8682d637d93fd803ce186615b137" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-benchmark" path="external/google-benchmark" revision="88971fca805fe26eded8a3c93f4d7bc4bf35fa6f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/google-breakpad" path="external/google-breakpad" revision="292200f2abe4d1ca26abf1440948fd623b843269" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" revision="4052560648f181fc2a78d941fa9f35175aca1864" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" revision="ec80a3bdc48b302508068d7f8c4f89d060ea293f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="fd46538b70ac835af12f08c2f0511fd9512cd592" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="21510b8bd0cc86dae6c88aa1e1cfa1dd33256dc1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="34449090cd3a16706d02ded459be8d98ba061506" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="0b0280aad472ad0118d4c571055a56b4443d9ae6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/lato" path="external/google-fonts/lato" revision="d1a5e637e8d20218c3ad674e5d45f319e6cc9f55" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" revision="a97c0173ce137365de2f1732ad945959680bc634" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" revision="044fb85b51f28553b84afb2638f85fca63f4c017" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fonts/zilla-slab" path="external/google-fonts/zilla-slab" revision="4d19e56e855b08650ae48ffed1f272d53c251b91" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-fruit" path="external/google-fruit" revision="82a97729ed86edaf4839fc9e1efc3ec29dae0138" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/google-styleguide" path="external/google-styleguide" revision="749f7ae008c0d2dd9767fdfe202e6873e864a956" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/googletest" path="external/googletest" revision="fad4362c2ddeacf3fbbc6f09d56297ef0b7f68d7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/gptfdisk" path="external/gptfdisk" revision="c3ba428cc250bf37c744de7d4ddbedffac2f0ec8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/external/grpc-grpc" path="external/grpc-grpc" revision="68b326f6e0ad9c37bb434ce728bfabc7d99988cf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" revision="20c05b0f8d1dd83c1afdf3681317383137df6e1e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/guava" path="external/guava" revision="fc836bf1265ec8f37e719c053008fa5c8d57dd90" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/guice" path="external/guice" revision="8db18442660b482ed3b1c312a76f74ce37eac575" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/hamcrest" path="external/hamcrest" revision="1927134e25b48f3066d18ded7f174357e77bd11e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="c926b76abb42057707a93ea414e2c62d96e5d23f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/honggfuzz" path="external/honggfuzz" revision="37c5804f39c93662d95d50c09f1d1e123ec4b059" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="5ea24c895b4e818f47868504756688afc6c23da3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/icu" path="external/icu" revision="0fbbe5ee708eaeaf6cbb515166c06542bac2fa0b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/image_io" path="external/image_io" revision="e13341dd2bcec5a419ab52c3160edec611db934b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ims" path="external/ims" revision="904bcef6f12749695ba8fd68258b157fa6d80c52" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/iperf3" path="external/iperf3" revision="0a2a3bfbcdfe432a131dd546c8f1a3172a4cad11" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/iproute2" path="external/iproute2" revision="d6a7dd65412119f33353407ab2f5454d5cdb80a0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="939e9b2f25efb484bbef1b0091fb719f7a4398e7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/iptables" path="external/iptables" revision="43ba85f8f2b5f208e1ca4c7ff2f2023dd75d242a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/iputils" path="external/iputils" revision="7f755b86e000ea43eabd94da8c20f981d305f0f8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/iw" path="external/iw" revision="d5c3f5d207837429913fcdfc8175338bd202f511" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jacoco" path="external/jacoco" revision="cc0302fb1b1c073fd777e5aca0098058e6eef201" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jarjar" path="external/jarjar" revision="9aa4fb26ef24cc5eefc63c94efab48a344fa9c3c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/javaparser" path="external/javaparser" revision="74fdad7e88051be4907d64e880e32ffe3e859c19" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/javapoet" path="external/javapoet" revision="4005fdd25ae1d33d310f7289f63143f31b30bb00" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/javasqlite" path="external/javasqlite" revision="8c399820041634f7c637d6f7c390265cb062392d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jcommander" path="external/jcommander" revision="3694ca1483e26e7e2d684ad9c8f999d0a68b6846" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jdiff" path="external/jdiff" revision="26eb8b26ff59645dacaa67365c52dcac0c2fe824" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jemalloc" path="external/jemalloc" revision="879cd823fc9c8fce2e816a6e2ddf52c898590471" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jemalloc_new" path="external/jemalloc_new" revision="7878fe226535b14cdf3e9251d773e90901dc9d5e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,pdk-fs,tradefed" name="platform/external/jline" path="external/jline" revision="c178c6808d9566e1acfde95fc6b4bd42671b2b6e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jsilver" path="external/jsilver" revision="0abb8d23f562d1464a5150d1e81e6c41b0d150ae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jsmn" path="external/jsmn" revision="2bcb201abd4c6a4448f2e325e99156d3ff5189a9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" revision="1509b55c68721360c2431a46d1a1eaab84846e90" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jsoncpp" path="external/jsoncpp" revision="76cf42a825f182336e1a1c36d38cbdd0cfc742ce" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jsr305" path="external/jsr305" revision="43a85b6f71de303577b010688103cdf631b676a2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/jsr330" path="external/jsr330" revision="b3f52e9bf268d9bbc303b0a18f4e709b5144f81a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/junit" path="external/junit" revision="d36f66ff697e674867c500f612570cd5e014153c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/junit-params" path="external/junit-params" revision="0fe5f41081b0d9e46b2ca550580e437acaf46fed" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/kernel-headers" path="external/kernel-headers" revision="d166522471064fef881eac23e2f477d8cef12f9a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/kmod" path="external/kmod" revision="8b734b7ff7e50e4ee22e66b8b94c13ec2e67f09b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/kotlinc" path="external/kotlinc" revision="f230dc694cd249889229202bb203fb2f80e9d13c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ksoap2" path="external/ksoap2" revision="48da5b8819df25f51f370650e80e932cb29d8ec8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libaom" path="external/libaom" revision="cbe741806c57c2b8a8646eae90b19b05aa0e7c9b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libavc" path="external/libavc" revision="2da3bce9ae12ee8a96eee87983c545cdac65548c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libbackup" path="external/libbackup" revision="9d78958f6dbceef0fcef5d04d07cf6e4915460c2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libbrillo" path="external/libbrillo" revision="0b43fd23abd23a50f3d8ce3828cf1a8fe2f15437" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libcap" path="external/libcap" revision="0b31977f6a3e5b8696dc1b8ae02055b246452f84" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libcap-ng" path="external/libcap-ng" revision="a213bf90463de79a2426bc139a87bc2120693a9e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libchrome" path="external/libchrome" revision="d0568b4e946d51124fbeeac194ea5cc6e91f3dc5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/external/libcups" path="external/libcups" revision="6494bd47219941b41e6f7308d75ddb5490d78974" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libcxx" path="external/libcxx" revision="16acd3ecf8d1e7ccf52096c53b274e029bdf9f49" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libcxxabi" path="external/libcxxabi" revision="4ed23629f904572facae4efba990debb7fd99b27" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libdaemon" path="external/libdaemon" revision="77120961009edb04a4e75baaccc7e80c9c3d06ba" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="7e273cd98f0f0ac42290fcaa4d03551e0c5839f2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libdrm" path="external/libdrm" revision="11dbddd6c66d8576011011fdd76acd4d68a99af8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libese" path="external/libese" revision="9463806f022905614fbb4cce48f2f0e7ef09f931" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libevent" path="external/libevent" revision="574790b756cf8dfb7daea721136dfd7f0a8520b3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libexif" path="external/libexif" revision="3a88441e63cef8412838a45d3fee993abd297d1c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libffi" path="external/libffi" revision="d8905568052fe29c6de2659e7313141d05843b97" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libgav1" path="external/libgav1" revision="2cb66823e1f0808eb677845d401b145909719d39" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libgsm" path="external/libgsm" revision="6d62b95a9551e9d598b62eb96e31497d8c05be47" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libhevc" path="external/libhevc" revision="828782e8e86c3fd3fdf53e5af03d47baf9a98d62" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="dc93290aadad1f9acae9562beb987552a0780234" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libkmsxx" path="external/libkmsxx" revision="7651a12f99ad96fb300444061b42bb50c40a9c66" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libldac" path="external/libldac" revision="08a445fa6c7e3efbd6852832bf3f797a733dcc54" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libmpeg2" path="external/libmpeg2" revision="6c6a3f2f4ad10a919bcec3889f6d447dfcd2833c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libmtp" path="external/libmtp" revision="1124065cb425dc7a3ac10111f837cb4dfd015a4f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="2244298ef9de283c7a011da4b2878332a2fe6f31" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="027c39566c9ebb2b7b931e26b2b5061e4f5626df" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libnl" path="external/libnl" revision="e0c1becd8c981d98baafc6873f569ba406f97833" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libogg" path="external/libogg" revision="53f98574a4281c6e23125f3eea81f9eb425a84cd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libopus" path="external/libopus" revision="a8a4e124ecdf5e7de3e16d987856a8fa74e3a1ce" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libpcap" path="external/libpcap" revision="bb4764340c25f24c5ef56da8fdbb004860f263f8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libphonenumber" path="external/libphonenumber" revision="8a4747e5b1c4eee1e5b410b8a8752321d5fffac1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libpng" path="external/libpng" revision="6135c1be60da35ea73be50ddb5eb5b962538d636" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" revision="3b33d44247298d1ff1884e69c5fd906a77260187" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="e5455cd745824988939c7156c8501485e14f808d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libunwind" path="external/libunwind" revision="116d036feb5f176634a4525e10dc65f9eac886b6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="e9a76fe79bbf9a1f37420a37cbb93be01fda4f41" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libusb" path="external/libusb" revision="c115406aaac8652be8081999476d4c19f6906337" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libusb-compat" path="external/libusb-compat" revision="01b750917bb388a1e2af2da8136350e992c89299" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libutf" path="external/libutf" revision="04936bb742f25f49b975ee5cd798c475918c21ce" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libvpx" path="external/libvpx" revision="0bee47a4547cf5403ef191e1a897a6acab7cb58b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libvterm" path="external/libvterm" revision="2b3e44998fe3e9e27c1841584e7f46d710a08aff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libxaac" path="external/libxaac" revision="d17d370a0105710017582ec1ebafd8d2fdad0bbe" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libxcam" path="external/libxcam" revision="8e8893f5795ea86b9a91d81c3accffead37c9b63" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="a8d3ed1d8a1dbe97ec6ebaa4d87da34a60c3875a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,libxml2,pdk" name="platform/external/libxml2" path="external/libxml2" revision="c096ab0341296edb0f7b40eb6340e177e4614ebe" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,libyuv,pdk" name="platform/external/libyuv" path="external/libyuv" revision="6a5de35d69e0f3aaaa5e62bec88eb6d4b898943b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="c4b42dfe6e86b7ec658bff6e23015ce6cb40569a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/llvm" path="external/llvm" revision="12802533b7448c191360399b6db75e4be8a62a77" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/lmfit" path="external/lmfit" revision="8c6aff57274c2468a07ac2f342e6f37fe8d1c70d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/ltp" path="external/ltp" revision="f7a0094485dbf0ab64952ddc8ef73bac4f1617ef" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/lua" path="external/lua" revision="a594b235545e427d5b5187b35f1d7cc6c7960057" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/lz4" path="external/lz4" revision="2aad3c10d43b8e41003ac733c74cdb73bff35601" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/lzma" path="external/lzma" revision="157f0f45faad874508ef05024a70ddba4cca793d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/markdown" path="external/markdown" revision="3d6ab3d547e08d3c554f32332ba56ad83d6abf0c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="93fff1cc4a1a34d81b77e30e1421f485462e88c8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" revision="5ab9bf96dde2a4d2c53fe668a933f98eea2ba6f5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/minigbm" path="external/minigbm" revision="cf0601dd12e427aae398072dd92605a0046fb5b9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/minijail" path="external/minijail" revision="dbfc809407f00997e98b3ec9cf8bddd8904c5d1d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mksh" path="external/mksh" revision="c4b602aec08a3f386866071b9912c7edb7e2cd60" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mockftpserver" path="external/mockftpserver" revision="10507d7cf72b186ec21d444235ba4323028cc7b2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mockito" path="external/mockito" revision="5c5e49aa7b2955596e172c2c11c375c073f12d49" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mockwebserver" path="external/mockwebserver" revision="eaf2304fd063b8639ea5853f62e88b6f9964f34b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/modp_b64" path="external/modp_b64" revision="5e961b70dc373bcac1799852aac73d05ed590c33" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mp4parser" path="external/mp4parser" revision="cddb4ab7098c270589de156c338ec9d460e0ce42" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/mtpd" path="external/mtpd" revision="556889a6a74f268cb2e7d4e8331496f28c60a801" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/nanohttpd" path="external/nanohttpd" revision="1583d77cdbb90dcf81a8302b1a1a8305fd60702d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/nanopb-c" path="external/nanopb-c" revision="2b7feb0b61efec1694b628d52773529f9041d1e4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/naver-fonts" path="external/naver-fonts" revision="01e1f54e45f1bd7fc21c14187c500d9e9ccdcd5f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/neon_2_sse" path="external/neon_2_sse" revision="940f9c5291f87b859b1d299cc164ace75f6d7463" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/neven" path="external/neven" revision="95cca1db8b0407ae6ea2505b129f423d90277463" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/newfs_msdos" path="external/newfs_msdos" revision="76bee49b748d223989398ec5cb335b259a9b649f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/nfacct" path="external/nfacct" revision="f58fc4cff2f431d7a468b9db8356929e3033b05d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/nist-pkits" path="external/nist-pkits" revision="b0132d2f2363ed6e80d472084cbc16df296699d6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/nist-sip" path="external/nist-sip" revision="a5e8cb8a64bbd2e4b3acac063f977237d1e8f7ee" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pixel" name="platform/external/nos/host/generic" path="external/nos/host/generic" revision="66ed265d662d8023ba9976a73847af3f0aa7c763" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/noto-fonts" path="external/noto-fonts" revision="f8fd85470e576f26e154484093f267d38b72550b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/oauth" path="external/oauth" revision="0ca8c70b6c4fcd345a6c51a7b7a2acbdcde340e3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/objenesis" path="external/objenesis" revision="17b58a8b3c6ee41f93d1cb0ea1664d384b0c66a4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="aaadb029271cdb5571c1e94f85d7e340ea101f1d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/okhttp" path="external/okhttp" revision="2ec07c81e575c74d233cc0d3c5f4275461720593" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/one-true-awk" path="external/one-true-awk" revision="ccff4f6f19b642920403402597198bb88b78fdf0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/external/opencensus-java" path="external/opencensus-java" revision="409c066d92a4b38b582685cbf0075506a1b451f3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/openssh" path="external/openssh" revision="78eefe83c8dd348fe0d1740535b182cf9c4dccbc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="1c7bdff4f382d252f0ffed0e083472c04bd25951" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/parameter-framework" path="external/parameter-framework" revision="59ed13811b84367a2905895b8346920baa9d377b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/pcre" path="external/pcre" revision="4e2927314b4d977e504e8323bc6c143358081447" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/pdfium" path="external/pdfium" revision="50ce9e05b8ff44207909f38e539f399d2a21c96d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/perf_data_converter" path="external/perf_data_converter" revision="13659264bda48620f7d69dc024220a83f4d36d49" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/perfetto" path="external/perfetto" revision="adaa6688810b1ad5861c96a9845b7c96cb654f37" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/piex" path="external/piex" revision="97fce3fb39497c9fec1c5e9d764c8556ca6b07df" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ply" path="external/ply" revision="6fdbdb34ab7863aec716491c42daec7de5c105aa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ppp" path="external/ppp" revision="7b46830f87c1b3858990926c63fa3f662bdf4b9d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/proguard" path="external/proguard" revision="a24441a52ac4432db7ae3f25605069e13c52e437" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/protobuf" path="external/protobuf" revision="f17d9dc0fbe8aa419e529e7b4ba6b6776638fe73" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/protobuf-javalite" path="external/protobuf-javalite" revision="0f4feef52eae17e8a780e9e098683f13a7188b1e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/puffin" path="external/puffin" revision="5518cb559b28f4a1be86a1897a77246bab773a75" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/Pillow" path="external/python/Pillow" revision="f3c199592ff4bac5c621598c5232e8a61582b6f6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/apitools" path="external/python/apitools" revision="0a75651d00816436e3d1ae91771cc92ed9c08a8e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/appdirs" path="external/python/appdirs" revision="4c315a22c069f459d7a37fa1d67428d7a1b560a6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/asn1crypto" path="external/python/asn1crypto" revision="1208f0f8b78755298ebb98a9f4ce5ef76814c708" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/atomicwrites" path="external/python/atomicwrites" revision="d9b8ef523d1d84497f7a9e1d20db95844a163c70" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/attrs" path="external/python/attrs" revision="39141c7c716c3942cafdccebe6a1acb4653c4d49" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/cachetools" path="external/python/cachetools" revision="6634de9a4d0d38a80aed5beb3faedbf8ce213e37" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/cffi" path="external/python/cffi" revision="99013222844839c42437f16eace25f4e6a8a8b20" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/cpython2" path="external/python/cpython2" revision="412d5406c8a88076154c913dc059234db4ef679f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/cpython3" path="external/python/cpython3" revision="14aea8013855a9824e5d28319504ca5e8daa43a8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/cryptography" path="external/python/cryptography" revision="d45069b23a8e6d21df64d5b6f2553a7aa7ef9886" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/dateutil" path="external/python/dateutil" revision="40085017f80f827d1a5d9b4d5417fa3dc568fecd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/dill" path="external/python/dill" revision="201a634b41a76c0a4b975066273eee819fa5677e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/enum" path="external/python/enum" revision="dcd61a1138597e9604f1733eb078cc27659f8994" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/enum34" path="external/python/enum34" revision="91b3b2fbbada14469274d6e5961a2be1503778b9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/funcsigs" path="external/python/funcsigs" revision="2ca6b92e4b3d2dd62133c05306af121d6baad35b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/future" path="external/python/future" revision="735da1696c5d60154d10fc7bc1eced65d40d5676" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/futures" path="external/python/futures" revision="b4facb89e5019a481e110f88090b4e712b709106" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/gapic-google-cloud-pubsub-v1" path="external/python/gapic-google-cloud-pubsub-v1" revision="6cc25290b4db9bb41a3cbc7586e8c18f4eec063e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="bc471ac1da81edc116439d08e8548e0eea5f70ba" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-auth" path="external/python/google-auth" revision="f13f74a6b157bdb3c4c95de13a67122b794c9879" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-auth-httplib2" path="external/python/google-auth-httplib2" revision="3cfd34b01fe4c2b9ffa2eaa56f5f3d023f89b738" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-cloud-core" path="external/python/google-cloud-core" revision="8112320cd17e26b0cc16300e1de52e3c2fef8e21" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-cloud-pubsub" path="external/python/google-cloud-pubsub" revision="1028325db40a3bd5c374433b34e5e1cbd5333d7f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/google-gax" path="external/python/google-gax" revision="0747e2302150786a2eb1f89acf5d2a6463d781ee" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/googleapis" path="external/python/googleapis" revision="14961ce76b6738008fede27fbb77cfd9db5b8466" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/grpc-google-iam-v1" path="external/python/grpc-google-iam-v1" revision="d2d136096b096a92968a8ea95450e98f9515bec8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/grpcio" path="external/python/grpcio" revision="46691547911a30baadc690621df6a94489c097e8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/httplib2" path="external/python/httplib2" revision="e369faabfa8191a213bdec5d26329a87a158f0cf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/matplotlib" path="external/python/matplotlib" revision="b59c7d7660ebc6381e34ce3945897e70490f4b10" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/mock" path="external/python/mock" revision="a3c19d97ffd8424c13aebacc83da86ec58ad6bff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/more-itertools" path="external/python/more-itertools" revision="a919cf89a1cd125f0cc4c3f542ad270e5b31cad8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/numpy" path="external/python/numpy" revision="9ae291bddb04e2b7ad518e97d727a7485eafc08f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="6cfc35a5d9190b69571bc5e111980fda2494c93f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/olefile" path="external/python/olefile" revision="6bded66b73408a3b5b2281e73fff13f2e729b239" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/packaging" path="external/python/packaging" revision="e3ed0fb306979b58c0a9f2650950ec45070ccd40" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/parse" path="external/python/parse" revision="977eb025ea9bbfb89f436efcc624f964d6473f23" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/pluggy" path="external/python/pluggy" revision="902932089e3136736ac93a6fbbedc7fbaa08668d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/ply" path="external/python/ply" revision="1551a909837159a5b2e3a5c15435cc57b92d5075" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/proto-google-cloud-pubsub-v1" path="external/python/proto-google-cloud-pubsub-v1" revision="ab49e4896a736e9967467043193d3a8a0e898327" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/protobuf" path="external/python/protobuf" revision="addb77086fec697da798f9df367ebe811fb4fd79" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/py" path="external/python/py" revision="1ef527f544e527198d9b80c30dcf2b54fa591987" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="28f5355b353af01d970a07d774ad56c38465e2dd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="c1df7b7834c211a4bcc979fe772755b43005571d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/pycparser" path="external/python/pycparser" revision="775e41a49bd0233ed94f379fd99b5a5837e257b2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/pyopenssl" path="external/python/pyopenssl" revision="3d7e6f31c43fe50e1147b4cfa49fd365a71295cb" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/pyparsing" path="external/python/pyparsing" revision="7bd4b381720f0776bd1b140d2cdb8746b12c5b22" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/python/pytest" path="external/python/pytest" revision="b8a547f1fbd972f251cfa3029af6ffbf5a90a0dc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/requests" path="external/python/requests" revision="ce92a50b844a51b384409eeaf81aa305fcfe45cf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/rsa" path="external/python/rsa" revision="e3a5bf78c6475c32f9b34e9ee533d00cd1bbe65f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/scipy" path="external/python/scipy" revision="a03cce5f58502ab24523f603ef74bbefd0a7e15b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/setuptools" path="external/python/setuptools" revision="f92ee3c1950ee2af058fe9aa1b671de4c2cf68c4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/six" path="external/python/six" revision="e6adec046a60f6769bc74d6df53ae440fc235c86" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="e6ed5b7e1dd098c55993d0c547368fd2d2987c06" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/rapidjson" path="external/rapidjson" revision="908d461a0bb20eafba2a2c4c0f1003d9c9ab188a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/rappor" path="external/rappor" revision="eca60ef177f32421308d46766ac6596ee52dee45" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/replicaisland" path="external/replicaisland" revision="16ff8f002537fce819ca9d3de4dc9c7663511a5c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/rmi4utils" path="external/rmi4utils" revision="1aa989d10f03d3224da6ba03aa286604c9cd8172" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric" path="external/robolectric" revision="d3e37dbb775c1b080fad6795c7305270e7582a99" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="3ec0602c8cc06d4d5a8219c5e282aaac54aca2ee" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="432bef7ed68870f73e74192e5a9e51dda9e30289" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/rootdev" path="external/rootdev" revision="e56e40cc32ec01b4c5e7292707652c62bb61fc15" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/external/scapy" path="external/scapy" revision="f798f906edad69200eac28a78ba887ca15ddbd71" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/scrypt" path="external/scrypt" revision="7026cc443a3e3574e337cd600f20c0106922553f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="d28a1dc4a1c7a2fcbd33df533a34078867f907f4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/selinux" path="external/selinux" revision="2108b48307a92179bd394788c63fc6b8ea26f76c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/setupcompat" path="external/setupcompat" revision="d5f376f2b79f300ef92d6b6a78626ed45eb08407" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/setupdesign" path="external/setupdesign" revision="bb98dd9d197c081a14e8ea18918121ef14d2d092" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" revision="b99de9714b393547c2b7bc30a3cdab32242adc8f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="3193d992d730953e1c0014c36b4dfb9dd151d12c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/shflags" path="external/shflags" revision="20d1b7f07884783105a60050a4d78f03ac486d2d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" revision="d8cbbc5592fdd5f562bddd4e214d32edc3a5e6fc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,cts" name="platform/external/skqp" path="external/skqp" revision="657d3f981f8214a6616a877e2a04f3d90eb6d07f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/sl4a" path="external/sl4a" revision="f71d4af2cc1f86b8ac93f32f9c854641b8734d20" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/slf4j" path="external/slf4j" revision="eb199bc88618d75f9d3aaff06bfc64d982d26247" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/smali" path="external/smali" revision="9bea3111ee717e7a209db2a82282cd6fc9df6873" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/snakeyaml" path="external/snakeyaml" revision="fa24fd1861dcb68e078769c0e0a1c7d7be34cb09" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/sonic" path="external/sonic" revision="8c8e97b948359dead1262780acbef123946d7eda" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/sonivox" path="external/sonivox" revision="a445178fa64aac2502c0bbe4518d5f626f5acd32" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/speex" path="external/speex" revision="4a6a33fad9379c0e87af44a2decf51cbd46fa6d6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="5be217960672493422db56baf95777fe6871d57f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/sqlite" path="external/sqlite" revision="77c96b44dd032762b89c9ecee606d5d24275c812" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="cc0d49815a568f816241087577b0c377abbcce79" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/strace" path="external/strace" revision="8a1f7b2c3d158a76695ec069d662609fb45bef07" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/stressapptest" path="external/stressapptest" revision="646f4053d0e6ebadd8ed1b163100776bb733757d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" revision="21380c7c3985d280013f7083295121de92af503d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/swiftshader" path="external/swiftshader" revision="da8e82babe0b770f90ab4e502b71f5c86045f1e9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch" name="platform/external/syzkaller" path="external/syzkaller" revision="d375a3aba21cfb0b1e5f34c1599258087d1f5b0b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tagsoup" path="external/tagsoup" revision="1128b22cf4273e1b075569047892a252f8e6e932" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tcpdump" path="external/tcpdump" revision="018159cf15ff3be16992bba1a77de7ea42b928fc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tensorflow" path="external/tensorflow" revision="6ec622f6eaa3c89b886d345d16e0a536f68103a1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/testng" path="external/testng" revision="391f524da69e437c7745be35ae7dbac4d35f2920" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tinyalsa" path="external/tinyalsa" revision="412175da75a4edbcff1717163ceb64e00bc6f970" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="772140383f1b8e4003be83bfa0618948094bfe60" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="f16101fc82c06217fbd1b58c0aff6143f8fd049c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="29d44df044798c308abe41fc4f8014debd29c42a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/external/toolchain-utils" path="external/toolchain-utils" revision="7910dd7c073363da3a252166789360f4fb2177d9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/toybox" path="external/toybox" revision="f4c8de9ddfb33737a11d160775389f074bf77979" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/tremolo" path="external/tremolo" revision="32e2ba1eb11bb127c2ece22321a748bc64db506a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/turbine" path="external/turbine" revision="3739216b7d0f536c4fe41f4e0230cf2d4b229160" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/u-boot" path="external/u-boot" revision="af30b85b1bbc4ee211a6e52ee571730e25057803" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/ukey2" path="external/ukey2" revision="02c9a200a07e36d4cf878534792b1739b2ac18f2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/unicode" path="external/unicode" revision="b1432f92d739ea186fc0e6788dd45cd7ecc44d00" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="6ae18bd2f62e2a96e61e489671cc496dc922e608" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="ae22f032dc6af2b287c2b5be745b774d41c3f626" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/v8" path="external/v8" revision="ce2136ff06a36f554a45323ffdc82f05cb2ace37" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs,vboot" name="platform/external/vboot_reference" path="external/vboot_reference" revision="484740d36af43aaa376bb78c27d7596bdf79f377" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/virglrenderer" path="external/virglrenderer" revision="ca6b79051c0324837d2e4f0e9f4c2ab1383bf85d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/vixl" path="external/vixl" revision="a43f281a5ad78a44bc6d066ce464746577bf68df" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/vogar" path="external/vogar" revision="a0675d7893937f9dd8f23a1a0ed7fc95534fab72" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/volley" path="external/volley" revision="f6a347e6f2553963c70aadc377fb34b73041158f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/vulkan-headers" path="external/vulkan-headers" revision="be91ce3c74b1fd269a610e9188948cb65463d677" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="83be16228ca0f66d2e9332ad838ef8ba76813268" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/walt" path="external/walt" revision="ba4739360826e232aa12d0848efe91ec3a2ddbd7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/wayland" path="external/wayland" revision="a1b43ec0f4eed98480d3ec05174ea45269e1f7bf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="cc62c088f9e441a7b11c1cff712f58fc1f7c4b36" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" revision="cc8e4d0323b31f9e6a260eb1a8756565325f3ca0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/webrtc" path="external/webrtc" revision="e42c660867907fff08cc442da728aa3a7edab352" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="9637d4b0474d28d87edf904a46d11050b929913e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/wycheproof" path="external/wycheproof" revision="015b1d49e919feedd42c9ce25f84c375723781ff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="9a0a867d76e6c35c69fb1d05fff9ed821064fb75" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/xz-embedded" path="external/xz-embedded" revision="7bc1aedda7d1bf9a5c08ba09b0c28e8193310f76" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/xz-java" path="external/xz-java" revision="c6dc1d9d216ec73f4af0482c7c4f60a4b6eac68d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/external/yapf" path="external/yapf" revision="1e5b481c093d869879fb9f039551e5a93e6d95a3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/zlib" path="external/zlib" revision="6ab7a275844849ca0fd1d62eec52a476b346f23f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/zopfli" path="external/zopfli" revision="5baf48738c40ff5e03dfd648f5c5c484f7988c8b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/external/zxing" path="external/zxing" revision="3782a71dea8f63faf50a3c369e521105c8d9a3e5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/av" path="frameworks/av" revision="b8a7a961cbace3b038411ca91467992d1f383d0c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="dac828f895510a95ca51552aca4ff80f49c2dd9a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="c7f1e1104261f0aec34efaf66e66a90987607e49" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="9c8c53d7cd34500bdbeeea9f34d3781ec4cb6655" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="f69d18800891d8f6d1a0e1b276542a0712407912" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" revision="8dad83d6ad1a21db804607bbd23cb67163359841" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="72625acd25704e2a70c3d7d07550c6d5a8e42c72" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="17b8701d928874dc97dd3900fab24973255c28ef" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="9dfd1cfc11af783c67c01ce14fa4e81d4e636c03" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="ddc70d3efeee44e09fe16a478727e287112a8a63" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="1c4b0a757a9619aa34241487f87b4c57be826e0d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/native" path="frameworks/native" revision="248f87c6cb9ba64acee5837e147c09d6906285f6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="aa36fe5bb8957bc09b14aa865c0d0e29be395f23" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="44eb4a9dc30fcfec71c4293b240125064a5f3c81" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="b673d14ff698735085b2e4bad580d1eb3188d566" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="392d5a24e6c984fc591e199e32ea8b38db15b641" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="776b4678e7c20496931e7ca647e05f5083c9d959" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="0e2ec325cf2975576488a66a8cbbd1969a441c6d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="d578e1a250774777cb798fe87fbf0476bc637629" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/frameworks/opt/gamesdk" path="frameworks/opt/gamesdk" revision="f207a8d314ccde4adb9f93db363084875fed46b9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="62c7f0fe226c4a4165b28a850afdd63b4e129d5b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/opt/net/ike" path="frameworks/opt/net/ike" revision="98876d1ec442f8575c89cd106f795828bbe17f35" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,frameworks_ims,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="a1278ef68835cd6ad517d3d9005ec6889f1247e8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="00cead517aa9abbbf6f724ac93324ffd567ca547" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="4c2dbbd48da65375645c5551f94454b5564ceeb6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="2fdd4da3f4e7159660d8215c07fd56919cb83b13" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="c2b7d076755ab8694995856e7c7bbe784fc04f39" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="3f5a0e59feb09a132c99b1c730c1602849a95109" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="f393effef995dd91503cf876a747d3294d592658" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="6fda80a6f417eb116926a46cb131986a27e018d7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="0c8a1cb385284446e5ea2e7a214f7f0322ff0107" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="880d7244a5108370bdbdc3528a999b2adb019382" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/google/apf" path="hardware/google/apf" revision="28fe3e0675c6377af9c96235f239561fa43fe4fe" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/google/av" path="hardware/google/av" revision="76d4106103858d6fbd5b4fb9ad30424cdb356fb6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,easel,pdk" name="platform/hardware/google/easel" path="hardware/google/easel" revision="c222cc02b406157e1034677bd75dd12910325c30" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="0fc3ebced8c1c673e16a6b013840a9baf739c2dd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,generic_fs,pixel" name="platform/hardware/google/pixel" path="hardware/google/pixel" revision="33b1357e7db2a2a6c8bdb04988711ecefe90c4de" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="496eafdc434d84d26491034d8621849327e444f3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,invensense,pdk" name="platform/hardware/invensense" path="hardware/invensense" revision="86ed606639b2e61035897c588654f39c5b69405c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/libhardware" path="hardware/libhardware" revision="79a099193bc226c32cc39609fb47771fb756217d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="b1a6e4e177d176117acaa3b9cb8d4be3bb7f1683" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="4288eb1bd403f2ce70baaa34b5de8631192fead7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="1a4b50987bf32929367578a5ef46976dadda3bf7" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="6ef733bbda8902c1dbef24e4884ed60c7d6a166c" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="c94d11a34ecb2da9ea9916288e105a0dcb4d1acf" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="173ca7891085c031b32e03418beb3b7d67c3d9a4" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="3a6b7ae307f9b2bff4b040b11dc17e855a0f28c6" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="4d4a6f9b2f082c49d02d811228db120b43563957" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/video-product.mk" src="product.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="47ed1e93d659dc9a3f01938e3dd04dbc3bff2893" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="526345dab4f8fbe6897476af115abd8fab5d73a3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/ril" path="hardware/ril" revision="0cf8426e0ae7062cfe0ef6ab0d7c4a2a15c06b86" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/st/nfc" path="hardware/st/nfc" revision="8a3da3cf7c047e914e38213d27bff7a133ee466e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" revision="ce252a1dc2cc536ec023bb68a01604e0a11b2496" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/hardware/ti/am57x" path="hardware/ti/am57x" revision="41bb1ecdb1480e4bf2fb3cc6074129abba178bea" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/libcore" path="libcore" revision="293a49bd7644244544f497f750f6494d48b47d5c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/libnativehelper" path="libnativehelper" revision="13b3cdc03f14fb534b596c498f6a8b412984ee2d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="a30d1d42a264f8be4f0161ad7ebfb97171a1ae9f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="b81764c9ac3f85e60f82f7bb0fb8dadb02e48d7d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="553e2a5764a0ee57ed3352303cfd6e601eb3c305" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="3d20511c98985b9a7c2a7779fc257f2d777cca96" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="1353cbe2abb452ad73710f1b62aa6b36bc2ecb77" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" revision="ecc981c94c2926748c50fc336252a2b0b5e81838" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/CompanionDeviceSupport" path="packages/apps/Car/CompanionDeviceSupport" revision="f1596ebf6026a4668c66327bb8bf35a209361720" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="8272aa2f545cef63591a591bd60aead6dc3e9ac4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="a1163f8b45a8715512cc9708b39c6737555d398b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="242cc2e41488db6ac27e26aaf513b0e52f37e653" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="b811eda4d0af819388df96c9a6a34d8fb1b0d554" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="569ca126fcb1cb2cbb208748812c3241b0e263f3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" revision="72551573d088be402ebdaf76306202e52469b41f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="53490d00196d4c242e10f8fed6b34cfd5a21d6d8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="f603a3a9b663a6a760353d49645b670e995d8ff8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="133a0c7f9e42f91e4dd05ebbb5f24345d997d2dd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" revision="b3451790c0334cc3108e4653b98a778133987d24" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="f52b497a791273e674ce24ebb0dc2723f15060dc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="f60bd2d46c755f0d376f186c4aa1837d4826df5f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="d8c1bc37e6b5df662cb542f80ba3522babe7401c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="8188d1cc69460fccc169689f9f5b3890216a4693" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="9923c582717db7d045619c0502d7ab4a8fef1534" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/externallibs" path="packages/apps/Car/externallibs" revision="bc16257053938c32c75d502cd990b4fec5a76be8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="ccc198912106b620b771dea042b2a6341f2697bc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" revision="52826f84f5d810daed34604035bd8dc2061157ea" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="c6bce552e800a3d22c7b4b3432d9bb9c1a38696a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="0038b3bedf120837e04bed88eb06ed0ad04b3727" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="378c9801b4e0460141cfd7b57688f692cfec91aa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="e77ad64583a049203ab91b76e6290b5b1ec99798" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="0fb6fb4a19d86fcf5dde05e3294f3af5d722fa33" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="9b69aa5c3c55820ad7bc3dfa97b78f4d3e6fe4ec" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="3544535dc846816d78471c11866c0b22241ddc1d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="89340b6fe49a4579443ea8f3d0ed7010806e20b8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" revision="a04c0540999628004b4a8c4f2d3169744e2052ff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="4b3b4fd0f2de8a999975d4de54eb1491d4af7d1a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="0448c7c89fcdff7857cfcb7f43f3ff6d02e00b01" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="06ce63304df7eb99a0c48674cc6dd1b1f176118c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="6ac66408e2992e878a6de449134ddce6cfcd0e74" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="e9f04580c73f23721a2c5edf6ac97c4b12a30ab8" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="b932d3cf82b50cc4e1e1b0bb7b029f742c3d662d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="9619acb9daa6798cefa121907a5f00dce9032e3c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="fe274a595f6ec5bb51d7784ee5ce04a84c598eab" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="87e07271e4c657497ec61cb7f37a70cc33f06b42" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" revision="baec5278d14d659162cfae6cf93e142cad35702e" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_mms_product.mk" src="app_mms_system_product.mk"/>
+  </project>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="27b576b973ab5a675a21d9c70f089def4fb1ab27" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="11975c63058629d097f69c8f9bbf682e11b779ae" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="7a2fcf49c5d8cf72812a57012469ee75b21990e0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="9939b667b4318600ad02525e30bf3819db9ab666" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" revision="11f89af8200607b6dd014261a9b132c041a9390f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="de890d84093fcbf1f71d39c5a2c183155835825e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="3cf0118ccdbd32d5caf58579d06ad361e9894dc0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="99a866973af4a3d3468130ec738b2c61ba070daf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="e521c149ef75d3e14825bde795420d8a410c6dd9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="b38221ad2675857887f1bd5cd1897c57aa7f4eba" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="31fa15b1bc5af188791bc6ec3cafc593379f726d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,apps_se,pdk-fs" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="175a34d88c44f08374ca0e6eb3318dfccc58c75f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="02ce36cbe48e50f342112d54e3c89dbcbb6f7c9c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="3ddebdfb941bb0dc33730093fb9daaeb4162746e" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonCamera" revision="bb220f015fad66d3441cae1af6668241eb3ec3e4" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapcam_system_product.mk" src="app_snapcam_system_product.mk"/>
+  </project>
+  <project name="platform/packages/apps/SnapdragonGallery" path="packages/apps/SnapdragonGallery" revision="3c3e91a5df624f2e62b3df8bb328122dcca3a045" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" revision="b64ce29a6632d7cf04c051751174dee0aad49979" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
+  </project>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="b5d5f3507836111f84dbe9beabe04efad31bdf54" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="37c1e3a5544cd524f144f00c8b412e568004f2e7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,apps_stk,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="f0ef48cdfe87815e4842d3b7c74fd7752c5a7f09" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="71ce307c5d3e4f765aa7425bd130f632773e28a9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/apps/TV" path="packages/apps/TV" revision="d61ed3971f56e07cf4e0bdc9a6eede8bb667ad14" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="34151761e1d886ca0e9b1ab8cd7e4e3c34018f7b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="501c8b555e3257c74f126bb107efe3608e6b099d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="65e71fa6eeb47185cc9c445fa590192d056857a4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" revision="d77b60e6ce8601d71af440c328ef90169af125f0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="5b056c7c43bb58bf63b839e16c8fb66b8375d1e5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="a01cba47ce72fb96e4a7acd4eaf10f3d63e99196" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="6421b7b1c89e6b9e45f092b3450bd9bd90e8ba87" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="de243c48005d5866e94bd9aa23fc1638deecddb3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="eb412162fdf25cacb9fadd90186b329233a20c3a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/packages/apps/UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" revision="383c84955d3ff8689774ffc9954935fdc0d842f7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="87bb776e84f9dc23391d78778211700e5343d53e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="9bd10eaaef609e4f7f54d13b0ff72812964acbcc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="f13b91e83bab909e6ed76c9b5f7a7ef8bfa9ba0d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" revision="99662cac8cbae6776e9e7abe630d99d257055d01" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" revision="87ea2ae5f379d1949fa3607fe343c799e0155462" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" revision="98ddffe3ddbfcbe0d91e2a3ca31bc08fa5679973" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="f3dedce272520c15522aa96931da26c114b51873" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="987778f48552a902f19f7ec7692dbb29b81d08fe" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/packages/modules/TestModule" path="packages/modules/TestModule" revision="3523a2f0f9b12d4e60374af63aae14f75a2b4c10" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="76a98eab9b6e91a67761a3ac72a213704f21af63" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="64e089b16bbe6bcab22dd32b436538f5d5f2f0f0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="be79bdcbd3e5fd36924074a2e5f704ac059c2b12" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="58ef78b08ee461f4a79ecc061e4c243ecaf4640e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="17c79f74e2f391bf782ee434d89a7343acf735cd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="b5cf24c6823a4a805ab7688d077fd824ccaf2538" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="7ccd505ecbf5ff415f1dfb69a78fb529a46b8ef9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="4df2fecf8c76827169a2eba4ec933649fb5e8b85" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="33d76c0204c75f8c191373791395a856e1cab972" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="e1cdd8bd5a15bbd09242acb92260dcf6fa837b24" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="8450cb89f17fe2be014389c758cc7fa51cfed58f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="0417dc6e93d549e7afd14f3bbaccbeb50ff80b47" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="0d6aeca0c576472c0a077c510c78894b8576d0ad" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="3ca5359dae15c0a1f2ed80a5382768bbe7f6dde6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" revision="2fb204de29bfd8c8caf1225a3359994c15d1dda2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="a2b16b71c9d11b8f91645676461a55d5bfd3b94c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" revision="31bed4d04baa3c5eee3031d83930806fd0f04e71" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" revision="7390bc42aa488f6102cf8bd39bc10cacbd04002b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="df9fb42a0b280d2b001d2fa180b66b9b0c8753ef" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="cbcc6973154b14447a1bbad842997b96d8359047" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="f852c4cb18fd6e1ac0f356f9c9c019be1032cd57" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/pdk" path="pdk" revision="04dea8e93f530cfee5d8e6b9df88e61bc1358b9a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,cts,pdk-cw-fs,pdk-fs" name="platform/platform_testing" path="platform_testing" revision="6d4a23b430c2b8374ea236d7a50cb65c3cac005a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="dc81df141c086398fbf1c84882f9cd40841bea46" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="3150f5c3166a9aaf5182ad930bfb1e5d745bdced" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="cbdfa5df4f2105148cc2fa6ce4ddf3bc1695b488" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="ebe448426bbe232385de2680ef29fe5637322c4f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="3d71b496b919248768992e2cbedb5e086b915519" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" revision="9df8e2a47ac7d2566f7133f9aca480e73461487d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="96bd884916fd971c48c33f76acdafd24f88fd8ea" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="4b49e9ec91ebbb9714d63a3e778cf22ae680ba95" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="f1d4bdc8546754315a8eb9f164f8e157b4c67cff" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="38c0e7183356a4fc227c8a65e6a93ee3a65c9bf4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="6713e0a74b008e0e35922995d5769f90ef601347" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="1fff0b0cfc932b9159ada7dda645516c2dfaa89b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4fac8721b8d1ad95948d53ad618c1b8c4288ce52" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="f438be63c27ca31cb39b5e473b38d88146eb1762" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,linux,pdk" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="e89a92698158429df828d0f99bb88ad6cadff476" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="4759c3dcbcafb544d5666f767b2b0e86d1347c30" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,linux,pdk,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="5d3ef6f3cc888e2d30a63acf7b010aa392a2317b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,linux,pdk" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,linux,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="6a2e6d9d02bc6a27e532934bb510ffa06f770c4b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="1119d6a0493370b3746c3fa02669507d728e4465" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="cc9d9fa676b34d90d9cb8e8b751948b31337c540" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="a755e29b2dfb5fae58daf3ee18ca5dabc322f6d1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" revision="38bb923f67a31f3b818aed6ad6974403c675afea" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" revision="b36129e7179767fd84a3713b59ff9a2ff7f816be" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="5d18f26c53f8d58377e4898386394d9ed6b7c83d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="76f6db4bdcaf1cf6b14b926990d4451ff64360ec" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/prebuilts/maven_repo/google-play-service-client-libraries-3p" path="prebuilts/maven_repo/google-play-service-client-libraries-3p" revision="427e6e2267fd43142ddbd1a87268e0112ddb9b11" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="34a678ee36e8886ffc43b29c11d58080899673cc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="b8b9fc96d540b2c3154ed4aaedae10644b70786b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="1661abbd28f4d5b2774f42ac6313815069c17d65" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="f83757c6f4cd29833ffe304020f6c2fb3e8d0eb0" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/r8" path="prebuilts/r8" revision="94d61241366f3f649e87ae4718836d6663cf8157" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="9fcfb6d8c3de3c96c6313f0718afd42486c1a5be" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="4fcf4c5d600692a6b1686fb536327872cdcbc53f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="8842be74c67871e2355d38b4ba80db6e929c1117" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" revision="efe84a5b05b0eb823539b8186193216e10e7f3c9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" revision="790850a54862f337c5c1b7bfc6d64d76b290f615" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="frameworks/support/README.md" src="current/androidx-README.md"/>
+  </project>
+  <project groups="aosp-android10-release,pdk" name="platform/system/apex" path="system/apex" revision="940fc224bc9a4aefda4c85a8d69074877ac920aa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/ashmemd" path="system/ashmemd" revision="f6a8c0ab3d55616406bc92086577ad3b40827c7e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/bpf" path="system/bpf" revision="67fdf6a7aeaeea3d0bff537c6d76c941ed5d86b6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/bpfprogs" path="system/bpfprogs" revision="55141000d485510cf5790d9dd6d1dff2bba95680" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/bt" path="system/bt" revision="f982c86c12f2d1ee2c93732c34584c092b99881f" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/ca-certificates" path="system/ca-certificates" revision="acb20ee916c95faf6603a0952fa93c1ab72c4e7a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/chre" path="system/chre" revision="364ea229229aae8dda75c305ef3031ba0d5f8a21" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="f44c1bb3b3052f6fb43491c4b15ec755de8e60ac" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="c9065a36760c121dddb6ad02535dbbc2a004e050" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/core" path="system/core" revision="d51f498655907f68be5d1f1e0833ca6a1e94ee18" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/extras" path="system/extras" revision="d41b366e8b4e77fd6f8527bdbb751c56468979c4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="e1ff3a436dbc765aee328b77328e03d93b36975c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/gsid" path="system/gsid" revision="873acba6200db6141aa1894c485e5556f7bde5aa" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="b6b9dfc409a53f72dc6e2285315714f8f2fddbf7" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="9d351b3d31c3f673cf7bdfc1c13dba3dfec3790b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/iorap" path="system/iorap" revision="13a350a76ebb1414bd5e0efe3a60f46d9dc61108" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/keymaster" path="system/keymaster" revision="e6c4b5683a3512c5af0d7af237d7060977b916c1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libfmq" path="system/libfmq" revision="2172954aa2b2afd2de4f44b8fd25a1a1ac5f2d3e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libhidl" path="system/libhidl" revision="739f37db918ec1f03f2fb0212a5c2f2dc9424f14" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="1e420d834f72b77f649027e628d84b2256d8e263" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libsysprop" path="system/libsysprop" revision="b1ce258edf951ad649e4468d51cb902c60dbd347" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libufdt" path="system/libufdt" revision="0116914df5c07cabd322f12bfc2be32ace203c19" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/libvintf" path="system/libvintf" revision="06a000deeed1602e0a6adb8dc37db1aac4262d67" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/linkerconfig" path="system/linkerconfig" revision="00ca26e0af2a03090e4a3e344409a5ced5ed4784" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/media" path="system/media" revision="55a34a9e58fc434506cf3d4941af3e4855b8e6a6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/netd" path="system/netd" revision="1c862b6f811020b7c4171e0e767980264dc29c83" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/nfc" path="system/nfc" revision="56535b7c5746a37a03d6f6aa988f55389d63fba3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/nvram" path="system/nvram" revision="fe5882d7ee29dd4e300f5bcfeba5b495a37504ae" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="c4cffa8e0374f05123f53c8cabc751fefe055fd6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/security" path="system/security" revision="323fb08d97ab05f64fb9bfdfb6f79960e89eed10" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="62bcb91423eec83a8b9db48ced4cf25806d5a070" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" revision="9a33a58cf8d42e1369fd16304c8c2400953c0648" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="57a5f6cb8ca627954f116e882618df1a10948eca" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/timezone" path="system/timezone" revision="95d2e814ca8f318c4152f904dc5826b348eab223" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="3bd0fa6a13fb20cc13523876dbdf694a728dd342" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="5499564bd14fb98e1be8dc2c0e009ae486ff53a6" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="6116fb34485a2c9e20a36bd4e76c65c25f805a11" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="9bb47428f7eb21faa617f38ba217914d79b13548" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/ucontainer" path="system/ucontainer" revision="32ea48047fcb25bfedffde4b5ad29320d6e6f725" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/update_engine" path="system/update_engine" revision="62248744908fba273c3ebce02d490de9b138f5fc" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/system/vold" path="system/vold" revision="77fe33e10a1ca8c74382062bead8314f54d5e6a9" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/framework" path="test/framework" revision="7fc1f8ffc3b7e2c22aff2a5f1c5d7fd34237b261" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="58e659975cf37caf73dcf384ee41ca0b19ca6a74" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/test/mlts/models" path="test/mlts/models" revision="26e586d8a83dab024a6c033ff667b71673514cab" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="platform/test/mts" path="test/mts" revision="98aea3f31548c1406de2d38e57be775cc4fecb4e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,cts,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" revision="eb28048f3bb42be2522d114fa9edd1fc11810fd4" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vti/alert" path="test/vti/alert" revision="2270d160e38f0623d708cce36754fe14168dce64" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="312a49bae192536c1a79a6104cb2bfa1132a6364" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="261b0f5cf95a4833b52cfd240c588a9948666e27" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="2c5b11505c901002dd66c682357744d015cad0e2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts" path="test/vts" revision="dec9192f73b52dd55718fea029b298348bbef878" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="ed8d2fe5127528c855fe73529af6b2f550083ec1" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="403871ab34bcaa3510f5b734f9e845318244dde2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="5313392039fb6b1c92e7d6a627b3ef0ad1aafc63" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="0306ca6514c0af196e4ca4117f74119499ab0d9e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="4b29d381952af396bf0dd6c1879543edf8ff3708" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="2e8373c22dc971cd5bc5f84bded2e8accf4c49b3" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="e2aa67d4c040fa4239fd3f474768b1a20d1c39cd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="420dde33280b093c97f51c1d2075e583fac5a972" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,projectarch,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" revision="2fb2cf6063ed56bd5132315da11130edfdb955bd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tools" name="platform/tools/apifinder" path="tools/apifinder" revision="e82d35c802b2ba85d50d43e539d3131466d3fcbd" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="7b5ce94982392a0407744a41dd65b8af4363a1f5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="198a794f455578abb728d92717b24c22923d2e91" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/tools/asuite" path="tools/asuite" revision="4867e6a9d4ea4420cb7a6e5712d1d67ba594e82a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/tools/currysrc" path="tools/currysrc" revision="26dc689e3a00605a78cf90bf997613b6d46b839d" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk-fs,tools" name="platform/tools/dexter" path="tools/dexter" revision="411164efe027052d9355578488c2b616dd4db5b5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="3825d2d1fabedda238fd60f8279c53f2b879d24b" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,tools" name="platform/tools/external/gradle" path="tools/external/gradle" revision="170553c1fcc5adc924bac584eea8cf9a86c511c2" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,tools" name="platform/tools/external_updater" path="tools/external_updater" revision="0e402ee0f6a3fa350c788060ecba851ac43134cf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,nopresubmit,pdk,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" revision="667f12b71b8a474736c084b4ecbb3b6b6093368a" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tools" name="platform/tools/metalava" path="tools/metalava" revision="fa111bb1688c6eb042448d07186caf7ff65fbadf" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/tools/ndkports" path="tools/ndkports" revision="74fefbc2160250129cbd157272fcfb3c9ac20f18" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="adt-infra,aosp-android10-release,cts,developers,motodev,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="e161faefbca628681f996328f19f26181c8db20e" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tools" name="platform/tools/security" path="tools/security" revision="95ecd1e129fe3b7c0acf54cef41c0f071b35cdc5" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="7d7cd0651e9bde59e3903a5ba36326215e950514" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="fa7f51d271ebbb5867c0f0ebfdaf6063eb149353" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="047e60b0438212db24d4856196a9fb6243cc3610" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="881ed89f69b1f20db09743c41773d4d602a7a294" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,cts,pdk,pdk-cw-fs,pdk-fs,tools" name="platform/tools/trebuchet" path="tools/trebuchet" revision="a014b3f47bce28e6385d8136ceda96983ec9b3c3" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="33d387d8a3d120bbed9bf41bf18c6707f8757998" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" revision="665a11feeafff333d26efa44dc3a847f0705a0ff" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
+  </project>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="2df0ee8f3f368e962c1d5e5e37f7ba220a608be3" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="3a1ceecd13ec0cee7706d7ef02e940a4c0d2df42" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="0e89ba6030a76ef13bd105d309719f4e4dd0f789" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="28d8d76b3437f9541eb40bbe2bac1caf0a69f6fc" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="866afd8477ad77c57b19ad27db8e05d2fb9fd1d6" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="847d3b75007bca3f3b8610daf2ed3108bc72df2c" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="fd6afc58bf8719518d846883370c35d03b237e1e" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-system-product.mk" src="nfc_system_product.mk"/>
+  </project>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="fe34eab58010b3b1d7bca418727e76c5db7892f3" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="d4d5ee81f1b440badbbeaeb1db5ed2be70940239" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" revision="27080786e00658fedde84088350113cca56694f1" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="378556760c312b2f29275900e4ff13b822a59085" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="eed8f9307dc51dc8151686fedcb5b6466ec98292" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="db2c1c28f8c1c56fea1d325f85b334ecb9c29136" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="b414e981de7bbed9f7e33bdfc2244b618c4b5658" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="5a22329e44348ac48d13abcb7aba70329c4a7220" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="47b4a05ff939b9f2b1c0a439bbcb92d210133c6a" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="a5a0e6b5d1643148fe2656009cd5fb071294a9f8" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="514c957d068ef8b20c1a28efbb0b88e1b9b3f838" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="8c98e1d8b44806ee6765de339107f2f3cb64e427" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="9ff587035fddde3d21724b61f9807f347d69e03a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="8104669f9c6fd1ccb609da7878285edb020ae649" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="b56e3364411e3d144c941a88342332ad7ede5d8a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="e96727cdc5d0b0925299ec68faf46832e5032b22" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="f1f1b900949af6b8124e7180f9bcc29c877fb76f" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="660678bad0dbce455c1de3d81c1d6aa0238c34c4" upstream="LA.UM.8.8.1.c25">
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="0d520d36c160add567e9ebad07f0886cc1e2ff7c" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="ee645a3917c8b2cd0edefcb3f1089d62b107c644" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" revision="ebb881ba3cd252e88757acb2e5027a678c70370d" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="deed05713f43cb5ad6cc72aae3702e194f410bd3" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="c99885457eeba616345e4dadad33c092167119f1" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="febe23fb437affa1076fe77ac2af14edf4917039" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="5b8d6188fe0267fc957eb7928011d7164be4ca05" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" revision="bd6bcec2192809bbd9f4ef4531ac6eb1205da4ed" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="5b1bdbbfdb2410cbe304fc402047df67604409a7" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="9d5362f8b3009669baf4fbd031d93c5e3e26a60a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="524decaf61e2faf1fae23ec2aba0c5d4fb03f521" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="221043af55391cd5a13fd453d05da94b92cf1924" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="fd3271b4ea10de574d13247386ac3759ab5d2192" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="dd83803da5cfeaf28db9ed1519cb459596c1662a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/msm8909go" path="device/qcom/msm8909go" revision="acc6c98eaeaaded0b2dd7415c5ee26ee4faa8c7a" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/peafowl" path="device/qcom/sdm710" revision="280dccc51bb61e7766a89bb96668a8af7b1f95be" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/qcs605" path="device/qcom/qcs605" revision="298420fa8bb4ee9365ff3ffdf34c56f1db0ec283" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="6fbdb0193badad0dd054e65219afc1d419ce2908" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="401cd07ba06560bc1d94b61a32b757e0c68d4967" upstream="LA.UM.8.8.1.c25"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="05d7394527e1fc93d2e028a30f1ee44cad27ee1c" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release" name="toolchain/benchmark" revision="8a10ad96327b4bc67e80bf9e6695d48be3d35385" upstream="LA.UM.8.8.1.c25"/>
+  <project groups="aosp-android10-release,pdk" name="toolchain/pgo-profiles" revision="3676f93a9490da561854c8a33efe70bd1f36a06f" upstream="LA.UM.8.8.1.c25"/>
+</manifest>
